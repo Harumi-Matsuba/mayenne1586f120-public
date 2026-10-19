@@ -2,6 +2,19 @@
 
 [日本語](PRIOR_CHECK.md)
 
+## Re-check before reporting (20 October 2026, 08:20–08:40 JST)
+After the two checks above, the same places were checked again for anything new. Category unchanged: not found.
+| Where | Date, version | Result |
+|---|---|---|
+| Cyphersolver ledger | origin/main 0258b8ab (2026-10-18, unchanged) | no entry for f. 120 |
+| Same, issues | up to #51 | the only issue on f. 120 is the report of this reading (#51, Harumi-Matsuba) |
+| Brett Burford's repository list | latest 2026-10-19T23:09Z | the new ones are on Dee and Soyga; nothing on f. 120 |
+| NoAutopilot/cipher-lab | 2026-10-20 | nothing new for "15573" in issue and commit search |
+| GitHub repository search ("15573 cipher", "mayenne cipher") | 2026-10-20 | only Burford's repositories and Harumi-Matsuba's |
+| Cryptiana henryiii.htm | Last-Modified 2023-09-23 (unchanged) | f. 120 still « Undeciphered » |
+| Cryptiana unsolved.htm | Last-Modified 2026-10-19 23:08 GMT (updated) | searched the text for "15573", "f.120", "Mayenne", "Forget". For fr. 15573 it only notes the readings of f. 143 (Cipher-1) by Satorunet and of f. 385 by Burford; nothing on f. 120 |
+| satoru.net cipher pages (https://satoru.net/crypt/) | 2026-10-20 | the "mayenne1586" entry is the letter BnF fr. 15572 f. 143, not f. 120 |
+
 ## Part 1: check by a separate reader who did not make the reading (20 October 2026, 04:50–05:00 JST)
 A separate reader who did not make the reading of f. 120 (Anthropic's Claude Sonnet) was given the reading (docs/READING.en.md), the ciphertext sign names (data/) and the record of Part 2 below, and searched with the aim of showing that this letter had already been read or its plaintext published.
 

@@ -2,6 +2,19 @@
 
 [English](PRIOR_CHECK.en.md)
 
+## 報告の前の見直し（2026-10-20 08:20〜08:40 JST）
+上の2つの確かめの後に、新しい動きがないかを同じ先で見直した。区分は「見つからない」のまま。
+| 先 | 日付・版 | 結果 |
+|---|---|---|
+| Cyphersolver の台帳 | origin/main 0258b8ab（2026-10-18、変わっていない） | f. 120 の項目はない |
+| 同 issue | #51 まで | f. 120 を扱うのは、この読みの報告（#51、Harumi-Matsuba）だけ |
+| Brett Burford 氏のリポジトリ一覧 | 最新 2026-10-19T23:09Z | 新しいものは Dee・Soyga の題材。f. 120 はない |
+| NoAutopilot/cipher-lab | 2026-10-20 | issue・コミット検索で「15573」の新しいものはない |
+| GitHub のリポジトリ検索（「15573 cipher」「mayenne cipher」） | 2026-10-20 | Burford 氏のリポジトリと、Harumi-Matsuba のリポジトリだけ |
+| Cryptiana henryiii.htm | Last-Modified 2023-09-23（変わっていない） | f. 120 は « Undeciphered » のまま |
+| Cryptiana unsolved.htm | Last-Modified 2026-10-19 23:08 GMT（更新あり） | 本文で「15573」「f.120」「Mayenne」「Forget」を探した。fr. 15573 については、Satorunet 氏の f. 143（Cipher-1）と Burford 氏の f. 385 の読みの知らせがあるだけで、f. 120 はない |
+| satoru.net の暗号のページ（https://satoru.net/crypt/ ） | 2026-10-20 | 「mayenne1586」の項目は BnF fr. 15572 f. 143 の書簡で、f. 120 ではない |
+
 ## 第1部：読みを作っていない別の読み手による確かめ（2026-10-20 04:50〜05:00 JST）
 f. 120 の読みを作っていない別の読み手（Anthropic の Claude Sonnet）が、平文の読み（docs/READING.md）、暗号文の記号名（data/）、下の第2部の記録を受け取り、この書簡が既に読まれているか、平文が刊行されていることを示すつもりで探した。
 
