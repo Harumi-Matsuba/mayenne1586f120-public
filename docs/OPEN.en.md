@@ -44,7 +44,7 @@ Signs that get no value in `src/decode.py`. Line numbers are those of `data/tran
 
 ## Not checked
 - Sender and date. From the content (the Cardinal of Guise's letter of the 2nd, Biron, the deputies of the army, La Marsilière, six more weeks), comparison with the neighbouring letters of the volume may narrow them down.
-- Persons: who Bilart, [M]ontablaye and La Marsilière are.
+- Persons: who Bilart, [M]ontablaye and La Marsilière are. La Marsilière appears in another document in the ledger as an envoy of the King of Navarre (« le Sr de Vesin de la Marsilliere »), and the catalogue describes f. 192 of the same volume as an intercepted letter to a secretary of the King of Navarre's chamber ("Notes" in [PRIOR_CHECK.en.md](PRIOR_CHECK.en.md)). Neither was checked.
 - The endorsement that Tomokiyo calls « illegible » is not on views 246–247 (perhaps on another leaf).
 - Accuracy of the transcription: on seven lines of f. 104r, the vote of three blind Claude Opus readers reached 90.5% sign accuracy (95.6% counting same-value names as matches); the first calibration (another session, one pass) gave 86.9% (89.1%) and 70.6% character agreement. The accuracy on f. 120 itself was not measured. Agreement of values with the independent second transcription (Codex) is 93.2% recto and 90.7% verso ([METHOD.en.md](METHOD.en.md)).
 - The confusions of # and 4t, and of 2o and "a 0", found in the calibration were not re-examined in the transcription of f. 120.

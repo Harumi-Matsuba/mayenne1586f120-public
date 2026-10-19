@@ -38,6 +38,8 @@ The images are not redistributed; please refer to them by view number. Source ga
   - The scripts (`src/decode.py`, `src/control.py`, `src/calib.py`) are based on it, and the calibration follows its `docs/METHOD.md` (its agreement on f. 103v was 74.8%).
 
 ## Check for prior work
+A wider check made again on 20 October 2026 is in [docs/PRIOR_CHECK.en.md](docs/PRIOR_CHECK.en.md) (category: not found). The table below is what was checked before reading and before publication.
+
 Not finding something does not prove that nobody has worked on it.
 
 | Where | Date, version | Result |

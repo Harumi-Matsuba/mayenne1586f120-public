@@ -6,7 +6,7 @@ A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 
 
 ## Status (20 October 2026)
 - **A partial reading.** Many lines read as French sentences, but 13 kinds of signs (19 places) have no value and some short stretches are not read ([docs/READING.en.md](docs/READING.en.md), [docs/OPEN.en.md](docs/OPEN.en.md)). The sender and the date are not known.
-- **Relation to prior work**: Tomokiyo lists f. 120 as a Cipher-2 letter, « Endorsement illegible (to me). Undeciphered. » ([Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm), last modified 2023-09-23). In what we checked on 19–20 October 2026, no reading of this letter was found (see [SOURCES.en.md](SOURCES.en.md)). The key is prior work (Tomokiyo's table, Brett Burford's key); the transcription and the reading were made in this repository. Whether anyone has read this letter before was searched only as above; no check separate from the work that read it has been made yet.
+- **Relation to prior work**: Tomokiyo lists f. 120 as a Cipher-2 letter, « Endorsement illegible (to me). Undeciphered. » ([Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm), last modified 2023-09-23). In what we checked on 19–20 October 2026, no reading of this letter was found (see [SOURCES.en.md](SOURCES.en.md)). The key is prior work (Tomokiyo's table, Brett Burford's key); the transcription and the reading were made in this repository. The check for prior work ([docs/PRIOR_CHECK.en.md](docs/PRIOR_CHECK.en.md), 20 October 2026) found nothing ("not found"). That check was made by the same session that read the letter; no check by a separate session has been made. Not finding something does not prove that nobody has read it.
 - **No person has checked the transcription.** It was read from the images by AI. Agreement between AI readings is not a substitute for a human check.
 - **Figures** (details in [docs/METHOD.en.md](docs/METHOD.en.md)):
   | Item | Result |
@@ -29,6 +29,8 @@ A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 
 | Total | 1,101 | 88.5% | 96.9% | 98.3% |
 
 ## History
+- 20 October 2026 (check for prior work)
+  - docs/PRIOR_CHECK.en.md (and Japanese) added. Category: not found. Made by the same session that read the letter.
 - 20 October 2026 (revision for the amended publishing rules)
   - Following "correct only where the image confirms it", the nine places corrected after the vote were re-checked on the image: seven were confirmed, and two (v c05, v c07) could not be confirmed and were returned to the first reading. Share with a value unchanged (88.5% table only, 98.3% also inferred).
   - After that, OpenAI's Codex read both pages independently without seeing the first (`codex/`). Agreement of values with the first: 93.2% recto, 90.7% verso. The first was not corrected from this comparison.
@@ -97,6 +99,7 @@ See "Status" above and "Use of AI" in [docs/METHOD.en.md](docs/METHOD.en.md). No
 | second/ | transcription used for checking (Claude Sonnet, by shape only) and its decoding |
 | third/ | transcriptions by three Claude Opus readers (f. 104r lines 18–24 and f. 120) and their vote |
 | src/ | decoding, control, calibration, comparison, vote, image preparation |
+| docs/PRIOR_CHECK.en.md | check for prior work (places, dates, places not reached) |
 | SOURCES.en.md | sources and the check for prior work |
 
 Licence: code MIT; our documents and data CC BY 4.0 ([LICENSE](LICENSE)).
