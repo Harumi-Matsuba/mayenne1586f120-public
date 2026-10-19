@@ -2,12 +2,36 @@
 
 [日本語](PRIOR_CHECK.md)
 
-## Conclusion
+## Part 1: check by a separate reader who did not make the reading (20 October 2026, 04:50–05:00 JST)
+A separate reader who did not make the reading of f. 120 (Anthropic's Claude Sonnet) was given the reading (docs/READING.en.md), the ciphertext sign names (data/) and the record of Part 2 below, and searched with the aim of showing that this letter had already been read or its plaintext published.
+
+- **Category: not found.** In the places below, nothing was found that reads the cipher of f. 120, shows a correspondence between ciphertext and plaintext, or gives this letter's plaintext. Not finding something does not prove that nobody has read it. The reading is not called the "first".
+
+| Where | Date, version | How | Result |
+|---|---|---|---|
+| Cyphersolver ledger | origin/main 0258b8ab (2026-10-18) | search for "15573", "marsili", "montablay", "bilart" | no entry for f. 120; hits are other documents |
+| Same, issues and PRs | 47 items, highest #49 (2026-10-19) | titles and bodies for "15573", "f. 120", "marsili", "montablay", "bilart", "mayenne", "forget" | hits: #49 (a report on fr. 15572 under the same name as this repository), #44 and #46 (Burford, other leaves of fr. 15573), #9 (unrelated) |
+| Cryptiana henryiii.htm | Last-Modified 2023-09-23 | read the f. 120 entry | « Undeciphered. Uses Mayenne-Forget's Cipher-2. » |
+| Cryptiana unsolved.htm, ai.htm, verification.htm, GL.htm | 2026-10-13, 10-19, 10-15, 10-15 | the same words | GL.htm (Lasry's solutions) has only f. 127 of fr. 15573; nothing else |
+| Cryptiana blog | 95 feed entries (2025-07-06 to 2026-10-19) | the same words | nothing |
+| Cryptoole | all 854 items | six words | nothing |
+| Brett Burford's two repositories | latest in the list 2026-10-19T12:24Z; both fetched and searched | "f. 120", "montabl", "bilart", "marsili" | nothing |
+| DECODE catalogue copy (decode-catalog.csv in aaymeloglu/unsolved-ciphers) | 10,106 rows (2026-10-09) | "15573", "mayenne", "forget" | nothing |
+| GitHub code search | 2026-10-20 | « Montablaye », « Marsiliere », « Marsilliere cipher », « Bilart escus » | 0, 0, three other documents in cyphersolver, unrelated files |
+| Internet Archive full-text search | 2026-10-20, about 13 queries | « Montablaye », « cardinal de Guise escrit du deux », « cent cinq mil escus », « trente mil escus en or », etc. | 0, 0, 0; the 19 hits for « trente mil escus en or » are one passage of a 15th-century chronicle, unrelated |
+| Berger de Xivrey, *Recueil des lettres missives de Henri IV*, vols. 1–3 | full texts from the Internet Archive | "montabl", "bilart", "marsill" | Montablaye and Bilart: 0 (the one hit in vol. 3 is part of « insurmontables »). « la Marsilliere » (the King of Navarre's secretary): 9 in vol. 1, 8 in vol. 2 |
+| Web search (English, French) | 2026-10-20, 5 searches | plaintext phrases and shelfmark | nothing |
+
+Not reachable or not checked: Gallica and HathiTrust full-text search (both 403); the BnF catalogue (403 for this reader; read in Part 2); the DECODE search interface (search URL not found, 404); the full text of most printed collections (Archives historiques de la Gironde and du Poitou, L'Estoile, Mémoires de la Ligue, Duplessis-Mornay, Villeroy's papers); the text of Lasry's papers; web search in Japanese.
+
+## Part 2: check by the same reader that read the letter (20 October 2026, 01:00–02:30 JST)
+
+### Conclusion
 - **Category: not found.** In the places checked below, nothing was found that reads the cipher of this letter (BnF fr. 15573 f. 120r–v), shows a correspondence between its ciphertext and a plaintext, or gives its plaintext (a contemporary decipherment or a printed edition).
 - Not finding something does not prove that nobody has read it. The reading in this repository is not called the "first".
 - **Limit of this check:** it was made by the same reader that read the letter (Claude Opus 5.5), not by a separate reader who had not seen the reading searching with the aim of showing prior work. The side that might have missed something searched for it itself.
 
-## Places checked (20 October 2026, 01:00–02:30 JST)
+### Places checked (20 October 2026, 01:00–02:30 JST)
 | Where | Date, version | How | Result |
 |---|---|---|---|
 | Cryptiana (Satoshi Tomokiyo), henryiii.htm | Last-Modified 2023-09-23 | read the list for fr. 15573 | f. 120: « Endorsement illegible (to me). Undeciphered. Uses Mayenne-Forget's Cipher-2. » |
@@ -25,12 +49,12 @@
 | GitHub repository search | 2026-10-20 | "mayenne cipher", "15573", "forget 1586", "henri III cipher" | relevant: only Burford's repositories and this one |
 | Web search (English, French, Japanese) | 2026-10-20, 7 searches | shelfmark with f. 120, plaintext phrases (« Marsillière », « Montablaye », « Bilart », « six sepmaines … estonnés »), Japanese | nothing |
 
-## Not reachable or not checked
+### Not reachable or not checked
 - Gallica full-text search: 403 (Cloudflare) with curl; not used.
 - The DECODE search interface itself (only the catalogue copy was checked).
 - The text of printed collections (Berger de Xivrey, *Recueil des lettres missives de Henri IV*; *Archives historiques de la Gironde*; L'Estoile's journals, etc.). Only web searches for the phrases were made; the texts were not read.
 - The text of Lasry's papers (only the list in Cryptiana's GL.htm).
 
-## Notes (not prior work, but leads for the content)
+### Notes (not prior work, but leads for the content)
 - The ledger's docs/navarre1586.html mentions « le Sr de Vesin de la Marsilliere » as an envoy of the King of Navarre. This suggests that the « secretaire La Marsilière » of the letter may be on the King of Navarre's side (not checked).
 - The BnF catalogue describes f. 192 of the same volume as an intercepted original letter addressed to a secretary of the chamber of the King of Navarre. This may be related to the letter's « [?] du secretaire La Marsilière … tombé entre les mains » (not checked).
