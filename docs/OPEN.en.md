@@ -2,12 +2,12 @@
 
 [日本語](OPEN.md)
 
-## Signs with no value (13 kinds, 19 places, among the 1,103 signs of the two pages)
-Signs that get no value in `src/decode.py`. Line numbers are those of `data/transcription_f120_all.txt` (c1NN = f. 120r line NN, c2NN = f. 120v line NN). "Second" is the reading of the independent transcription by Claude Sonnet (`second/`).
+## Signs with no value (13 kinds, 16 places, among the 1,101 signs of the two pages)
+Signs that get no value in `src/decode.py`. Line numbers are those of `data/transcription_f120_all.txt` (c1NN = f. 120r line NN, c2NN = f. 120v line NN). "Second" is the reading of the Claude Sonnet transcription (`second/`).
 
 | Sign | Times | Where | Context, candidates |
 |---|---|---|---|
-| oo (∞-shape) | 6 | c108, c109, c111, c114, c208 (2) | trente mil [∞] en or, cinq mil [∞] pour venir icy, cinq mil [∞] ne [?] sauroient relever. Reading escus fits these three. In c109, pour les [∞]voyer, one would want en (envoyer), which does not fit. c208: the last two signs (the second reader read one as 2o = qui) |
+| oo (∞-shape, two loops) | 3 | c109, c208 (2) | c109: pour les [∞]voyer (one would want en). c208: the last two signs. A different shape from the three-loop sign after mil (ooo), which is read as escus by inference |
 | hsb (ʃ with a bar and a dot) | 2 | c114, c124 | ne [?] sauroient relever; ce que l'on en dira [?] |
 | thb, 7, Sbar | 1 each | c101 | opening « [thb] a [7] u [Sbar] je vous asseure ». Perhaps an address (Monsieur or the like). The second reader read thb as tt (les) |
 | 30 | 1 | c105 | ne se ra[p]portent [30] aux advis |
@@ -40,11 +40,11 @@ Signs that get no value in `src/decode.py`. Line numbers are those of `data/tran
 - curl (backslash with o) and curlo (stroke whose foot curls right): in the first transcription the backslash-shape was named bslash and the curling shape curl. The calibration showed the backslash-shape to be Burford's curl (pour), and the names were changed. The curling shape (o) is taken to be a sign not on Burford's sheet, but it was not compared with the sheet again.
 - lambda (λ): q in Tomokiyo's table; x in Burford's key and in the calibration. In this letter it can be read both q (qu'une, r c09) and x (d[i]x iours, r c22).
 - Pairs on which the Sonnet transcription used for checking differs most: ls and S (24 places), r and xbar (18), 8s and 8 (8). The first transcription chose by context in all of them.
-- Differences from the independent second transcription (Codex; edit distance of values 60 recto, 20 verso) have not yet been looked at on the image.
+- Differences from the independent second transcription (Codex, second run; edit distance of values 63 recto, 17 verso) have not yet been looked at on the image.
 
 ## Not checked
 - Sender and date. From the content (the Cardinal of Guise's letter of the 2nd, Biron, the deputies of the army, La Marsilière, six more weeks), comparison with the neighbouring letters of the volume may narrow them down.
 - Persons: who Bilart, [M]ontablaye and La Marsilière are. La Marsilière appears in another document in the ledger as an envoy of the King of Navarre (« le Sr de Vesin de la Marsilliere »), and the catalogue describes f. 192 of the same volume as an intercepted letter to a secretary of the King of Navarre's chamber ("Notes" in [PRIOR_CHECK.en.md](PRIOR_CHECK.en.md)). Neither was checked.
 - The endorsement that Tomokiyo calls « illegible » is not on views 246–247 (perhaps on another leaf).
-- Accuracy of the transcription: on seven lines of f. 104r, the vote of three blind Claude Opus readers reached 90.5% sign accuracy (95.6% counting same-value names as matches); the first calibration (another session, one pass) gave 86.9% (89.1%) and 70.6% character agreement. The accuracy on f. 120 itself was not measured. Agreement of values with the independent second transcription (Codex) is 93.2% recto and 90.7% verso ([METHOD.en.md](METHOD.en.md)).
+- Accuracy of the transcription: on seven lines of f. 104r, sign accuracy by the same way of reading as the published transcription (one Opus reader decoding with the key) is 90.5% (95.6% counting same-value names as matches); one shape-only pass gave 86.9% (89.1%) and 70.6% letter agreement. The accuracy on f. 120 itself was not measured. Agreement of values with the independent second transcription (Codex) on f. 120: 92.9% recto / 92.1% verso and 92.9% / 90.7% in the two runs ([METHOD.en.md](METHOD.en.md)).
 - The confusions of # and 4t, and of 2o and "a 0", found in the calibration were not re-examined in the transcription of f. 120.

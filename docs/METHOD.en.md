@@ -13,11 +13,11 @@
 ### Share of signs with a value
 | Page | Signs | Table signs only | Table + Burford's alignments | Also inferred |
 |---|---|---|---|---|
-| f. 120r | 885 | 789 (89.2%) | 856 (96.7%) | 869 (98.2%) |
+| f. 120r | 885 | 789 (89.2%) | 856 (96.7%) | 872 (98.5%) |
 | f. 120v | 216 | 185 (85.6%) | 211 (97.7%) | 213 (98.6%) |
-| Total | 1,101 | 974 (88.5%) | 1,067 (96.9%) | 1,082 (98.3%) |
+| Total | 1,101 | 974 (88.5%) | 1,067 (96.9%) | 1,085 (98.5%) |
 
-Signs with two values, such as f (`i|s`), are counted as having a value. In the first reading (commit 6982c5d) the totals were 970 (87.9%) / 1,064 (96.5%) / 1,082 (98.1%), after the revision following the calibration and the second transcription (441b3e9) 975 (88.4%) / 1,069 (96.9%) / 1,084 (98.3%) (two signs were removed in the revision after the three-reader vote, so the count went from 1,103 to 1,101).
+Signs with two values, such as f (`i|s`), are counted as having a value. In the first reading (commit 6982c5d) the totals were 970 (87.9%) / 1,064 (96.5%) / 1,082 (98.1%), after the revision following the calibration and the second transcription (441b3e9) 975 (88.4%) / 1,069 (96.9%) / 1,084 (98.3%) (two signs were removed in the revision after the three-reader vote, so the count went from 1,103 to 1,101). Before the three-loop sign was taken as ooo = escus (inferred), the total including inferred values was 1,082 (98.3%).
 
 ### Control with shuffled keys (both pages, 1,000 times each)
 The same transcription was decoded with keys in which the values of the letter signs were swapped among themselves, and the French-likeness was compared with that of the real key. French-likeness is the mean log-likelihood of letter trigrams (built from the top 50,000 French words of `wordfreq`, with j→i and v→u). Word signs and signs with two values are not scored.
@@ -27,8 +27,11 @@ The same transcription was decoded with keys in which the values of the letter s
 | First (revised) | Table signs only | 751 | −2.752 | −5.611 / −4.834 / −3.910 | 0 / 1000 |
 | First (revised) | Table + Burford | 830 | −2.761 | −5.663 / −4.974 / −4.109 | 0 / 1000 |
 | First (revised) | Also inferred | 841 | −2.775 | −5.698 / −4.992 / −4.235 | 0 / 1000 |
-| Independent second (Codex; see "Independent second transcription") | Table signs only | 736 | −2.680 | −5.675 / −4.798 / −3.877 | 0 / 1000 |
-| Independent second (Codex) | Also inferred | 826 | −2.785 | −5.649 / −4.945 / −3.983 | 0 / 1000 |
+| Independent second (Codex, second run; see "Independent second transcription") | Table signs only | 734 | −2.702 | −5.664 / −4.800 / −3.856 | 0 / 1000 |
+| Independent second (Codex, second run) | Table + Burford | 816 | −2.752 | −5.652 / −4.956 / −4.179 | 0 / 1000 |
+| Independent second (Codex, second run) | Also inferred | 819 | −2.752 | −5.623 / −4.941 / −3.944 | 0 / 1000 |
+| Independent second (Codex, first run, shifted images) | Table signs only | 736 | −2.680 | −5.675 / −4.798 / −3.877 | 0 / 1000 |
+| Independent second (Codex, first run) | Also inferred | 826 | −2.785 | −5.649 / −4.945 / −3.983 | 0 / 1000 |
 | Three-reader vote (see below) | Table signs only | 742 | −2.762 | −5.622 / −4.827 / −3.890 | 0 / 1000 |
 | Three-reader vote | Also inferred | 832 | −2.786 | −5.697 / −4.975 / −3.979 | 0 / 1000 |
 | Second (see "Second transcription") | Table signs only | 717 | −3.079 | −5.493 / −4.767 / −3.948 | 0 / 1000 |
@@ -44,6 +47,7 @@ This shows only that the key's values produce text far closer to French than cha
 | nous (gg struck through) | nous | 3 | que nous somes (r c12–13), mais nous somes (r c26), qui nous le (r c29) |
 | 2c (2 with a swirl) | m | 1 | initial of a name (r c22, [M]ontablaye?) |
 | qx (q with x) | le | 1 | [le]urs estrangers (v c02). The second transcription read r |
+| ooo (three loops in a row) | escus | 3 | trente mil [escus] en or (r c08), cinq mil [escus] pour venir icy (r c11), cent cinq mil [escus] ne … sauroient relever (r c14). At first given the same name as the two-loop sign (oo) in r c09; the image shows a different shape. Two independent readers also noted "three loops" |
 
 ### Values revised after the calibration and the second transcription
 | Sign | Before | After | Reason |
@@ -88,13 +92,22 @@ Signs also named from Tomokiyo's table: dsi+ (ꝺ with a cross) = c, xd (u-shape
   - Spelling differences between cipher and decipherment (not misreadings; Burford's sign reference has the same signs): faicts/faictz, principales, dificultes, restent, Guyenne, estans, campes, etc.
   - Place names (Xaintonge, Poitou): signs with no value in the key, or not read. Three line-initial signs cut off.
 - Following the calibration, bslash in the key of f. 120 was renamed curl (pour), the former curl renamed curlo, and λ given q or x (see "Values revised"). The confusions of # and 4t, and of 2o and "a 0", were not re-examined in the transcription of f. 120.
+- **Calibration by the same way of reading as the published transcription (20 October 2026)**: the calibration and the vote above read by shape only. The published transcription (`data/`) was written by one Opus reader decoding with the key while reading, choosing between look-alike signs by both the sentence and the shape. A blind Claude Opus reader (subagent) was therefore asked to read the same seven lines in that way (`calib/transcription_f104r_l18-24_context.txt`). It was given the line cuts with the margin side blanked, the reference sheet, the sign names with shape descriptions, and a key of names and values only (no notes, evidence words or mention of f. 104r). It was told not to open the references, the full page or other transcriptions, and reported that it did not.
+  | Counting | Result |
+  |---|---|
+  | Signs (as Burford counts, reference alternatives only) | **90.5%** (13 errors, 8 of them naming differences: 24 vs .24., : vs dots, ooC vs phi) |
+  | Signs (also same-value names) | 95.6% |
+  | Signs (strict) | 81.8% |
+  | Letters (current key) | 79.4% (70.2% with table signs only) |
+
+  Caveats: a single measurement. The key value curl = pour was learnt from these seven lines in the earlier calibration, so this reader may have had a slight advantage when choosing by context. Through a bug of ours, the row for the sign # (value r) was missing from the key list given to the reader (the reader wrote # by shape, so sign accuracy is not affected).
 - Meaning: a transcription read once by shape, combined with the key, may contain about 30% character errors. In f. 120 signs were chosen by context, so fewer errors are expected, but this was not checked. This is of the same order as the calibration of matignon1586-public on f. 103v (74.8%).
 
 ## Record of checks 1: Claude Sonnet transcription (20 October 2026)
 A key value of the first (pdot = puis) was revised after looking at differences with this transcription, so this comparison is not called independent. The independent second transcription is "Independent second transcription (Codex)" below.
 - Another AI (Anthropic's Claude Sonnet) was given the same image tiles (two lines, left and right halves), Burford's reference sheet, and a list of sign names with descriptions of shape only (no values, plaintext or evidence words), and transcribed by shape only, without seeing the first transcription, the key, the decoded text or the notes (`second/transcription2_f120r.txt`, `f120v.txt`). Turning signs into plaintext was forbidden. Its list of names was the one before renaming, so for comparison bslash→curl and curl→curlo were applied (`second/transcription2_f120_all.txt`).
 - The second reader's own report: only two places were enlarged; the rest was read on the tiles at their own size. About a fifth of the signs (226) were marked as uncertain.
-- Comparison with the first (`src/compare2.py`; against the first transcription before the three-reader vote. Against the revised one: recto 81.7% / 88.0%, verso 79.2% / 87.5%):
+- Comparison with the first (`src/compare2.py`; against the first transcription before the three-reader vote. Against the revised one (after the ooo renaming): recto 81.4% / 87.7%, verso 79.2% / 87.5%):
   | Page | Agreement of sign names | Agreement of values (different names with the same value count as agreeing) |
   |---|---|---|
   | f. 120r | 81.4% (887 signs, edit distance 165) | 87.7% (edit distance 109) |
@@ -134,15 +147,20 @@ The first transcription was corrected after looking at differences with the vote
 - Why the vote was not made the main transcription: in many places the vote breaks words that read in the first transcription (« plus de dix iours » becomes « de di[?] iour[?] », « cardinal » becomes « mn…nal », the curlo of « auons » and « corps », etc.). So the first transcription remains the main one, and only the places where all three agreed against it were checked on the image and corrected.
 
 ## Independent second transcription (OpenAI's Codex, 20 October 2026)
-- Run after the first transcription had been corrected from the checks above, with OpenAI's Codex CLI (codex-cli 0.163.0-alpha.10.2 bundled with the ChatGPT app, default model; no model name appears in the configuration or the run record). `codex exec --ephemeral -s read-only` was run once from an empty folder, given only 78 line images (each line in left and right halves), Burford's reference sheet and an English prompt (`codex/PROMPT.md`: sign names and shape descriptions only; no values, first reading, key or plaintext). The run record contains only the reply, with no command execution or file reading.
-- Transcription: `codex/transcription_codex_f120r.txt`, `f120v.txt` (`f120_all` combines them). All 39 lines came back.
+- Run after the first transcription had been corrected from the checks above, with OpenAI's Codex CLI (codex-cli 0.163.0-alpha.10.2 bundled with the ChatGPT app, default model; no model name appears in the configuration or the run record). `codex exec --ephemeral -s read-only` was run from an empty folder, given only the line images (each line in left and right halves, 78 images), Burford's reference sheet and an English prompt (`codex/PROMPT.md`: sign names and shape descriptions only; no values, first reading, key or plaintext).
+- **First run** (`codex/run1_misaligned/`): in lines 6–9 and others, the right halves of the images were one line off (the right side of the lines slopes down, but the right halves were cut at the left half's baseline). The run record contains only the reply, with no command execution or file reading.
+- **Second run** (`codex/transcription_codex_*`): each line was straightened by following its baseline every 200 pixels and shifting columns up or down, then cut into left and right halves again. All 39 strips were checked by eye; the end of verso line 7 that showed at the right of verso line 8 was blanked. Besides the reply, the run record has one command execution (`ls ../img3`, listing the image folder). The folder holds only images; no other file was read.
 - Agreement with the (revised) first transcription:
-  | Page | Sign names | Values (same-value names count as agreeing) |
-  |---|---|---|
-  | f. 120r | 89.9% (885 signs, edit distance 89) | 93.2% (edit distance 60) |
-  | f. 120v | 88.0% (216 signs, edit distance 26) | 90.7% (edit distance 20) |
-- The first transcription was not corrected from this comparison (that would make it no longer independent). The differences are mostly look-alike pairs, as in the records of checks; checking them is left as future work in [OPEN.en.md](OPEN.en.md).
-- Decoded with the same key, the Codex transcription also gave 0 / 1000 in the control (table above). Its sign count (1,143) is higher than the first's because descriptions in <…> are split into words.
+  | Run | Page | Sign names | Values (same-value names count as agreeing) |
+  |---|---|---|---|
+  | second | f. 120r | 89.7% (885 signs, edit distance 91) | 92.9% (edit distance 63) |
+  | second | f. 120v | 88.4% (216 signs, edit distance 25) | 92.1% (edit distance 17) |
+  | first (shifted images) | f. 120r | 89.6% (edit distance 92) | 92.9% (edit distance 63) |
+  | first (shifted images) | f. 120v | 88.0% (edit distance 26) | 90.7% (edit distance 20) |
+
+  The lowest value over both runs (values 90.7%, names 88.0%) is used for the judgement. (Compared before the three-loop sign was named ooo, the first run gave 93.2% recto and 90.7% verso.)
+- The first transcription was not corrected from this comparison (that would make it no longer independent). Checking the differences is left in [OPEN.en.md](OPEN.en.md).
+- Decoded with the same key, the Codex transcription also gave 0 / 1000 in the control (table above). Its sign count is higher than the first's because descriptions in <…> are split into words.
 
 ## Use of AI
 - The image transcription, the inferred values, the decipherment, the scripts and the documents were made by Anthropic's Claude (Claude Code, model Claude Opus 5.5). A person (the repository's maintainer) chose the target, saved the images and decided to publish.
@@ -150,7 +168,7 @@ The first transcription was corrected after looking at differences with the vote
 - While transcribing, lines already written were read with the key. Some look-alike signs were chosen by context (e.g. the second sign of r c04 read as r rather than x, giving desseing; written `r?` in the transcription).
 
 ## Limits
-- The calibration covers only seven lines of f. 104r (181 signs), from one transcription. Results are under "Calibration" (blind measurement: 70.6% character agreement, 62.9% with table signs only). In the work that read f. 120, part of the contemporary decipherment came into view when a reduced image of f. 103v was opened while preparing, so the calibration was done in a separate piece of work (another Claude Code session) that had not seen the margin.
+- The calibration covers only seven lines of f. 104r. The measurement by the same way of reading as the published transcription was made once (sign accuracy 90.5%, letter agreement 79.4%). The first, shape-only calibration gave 70.6% letter agreement in the blind measurement (62.9% with table signs only). In the work that read f. 120, part of the contemporary decipherment came into view when a reduced image of f. 103v was opened while preparing, so the calibration was done in a separate piece of work (another Claude Code session) that had not seen the margin.
 - Look-alike signs (r and x, 8 and 8s, S and ls and hs, f and f2, th and 4t, # and 4t and tt, 2o and "a 0") are easily confused. In the calibration, # / 4t and 2o were actually confused. The choices made by context favour the real key in the control.
 - Most inferred values are checked in only one to five places in this letter.
 - Signs with no value and unread stretches are in [OPEN.en.md](OPEN.en.md).

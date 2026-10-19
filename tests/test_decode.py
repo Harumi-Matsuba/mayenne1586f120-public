@@ -51,7 +51,7 @@ class TestDecode(unittest.TestCase):
         # README・docs/METHOD.md に書いた割合
         self.assertIn('974 個（88.5%）', run_decode('f120_all', '--table-only'))
         self.assertIn('1067 個（96.9%）', run_decode('f120_all', '--no-inferred'))
-        self.assertIn('1082 個（98.3%）', run_decode('f120_all'))
+        self.assertIn('1085 個（98.5%）', run_decode('f120_all'))
 
     def test_revised_values(self):
         # 較正と2回目の書き起こしを受けて直した値
@@ -72,7 +72,7 @@ class TestDecode(unittest.TestCase):
 class TestSecond(unittest.TestCase):
     def test_agreement_numbers(self):
         # docs/METHOD.md の「2回目の書き起こし」に書いた一致率
-        for page, names, values in [('f120r', '81.7%', '88.0%'), ('f120v', '79.2%', '87.5%')]:
+        for page, names, values in [('f120r', '81.4%', '87.7%'), ('f120v', '79.2%', '87.5%')]:
             out = subprocess.run(
                 [sys.executable, os.path.join(ROOT, 'src', 'compare2.py'),
                  os.path.join(ROOT, 'data', f'transcription_{page}.txt'),
@@ -101,7 +101,7 @@ class TestCodex(unittest.TestCase):
         vote = importlib.util.module_from_spec(spec); spec.loader.exec_module(vote)
         key, _ = load_key(KEY)
         V = lambda t: key.get(t, '[' + t + ']')
-        for page, want in [('f120r', 0.932), ('f120v', 0.907)]:
+        for page, want in [('f120r', 0.929), ('f120v', 0.921)]:
             A = vote.load(os.path.join(ROOT, 'data', f'transcription_{page}.txt'))
             B = vote.load(os.path.join(ROOT, 'codex', f'transcription_codex_{page}.txt'))
             tot = dist = 0
@@ -131,6 +131,15 @@ class TestVote(unittest.TestCase):
         args = [KEY, 'third/f104r_vote.txt', 'calib/ref_signs_f104r_burford.txt', '1']
         self.assertIn('= 90.5%', run('--lenient', '--no-alias', *args))
         self.assertIn('= 95.6%', run('--lenient', *args))
+
+    def test_context_calibration(self):
+        # 公開と同じ読み方での較正（docs/METHOD.md の「較正」）
+        run = lambda *a: subprocess.run([sys.executable, os.path.join(ROOT, 'src', 'calib.py'), *a],
+                                        capture_output=True, text=True, check=True, cwd=ROOT).stdout
+        args = [KEY, 'calib/transcription_f104r_l18-24_context.txt', 'calib/ref_signs_f104r_burford.txt', '1']
+        self.assertIn('= 90.5%', run('--lenient', '--no-alias', *args))
+        self.assertIn('= 95.6%', run('--lenient', *args))
+        self.assertIn('= 79.4%', run(KEY, 'calib/transcription_f104r_l18-24_context.txt', 'calib/ref_f104r_l18-24.txt'))
 
     def test_vote_example(self):
         sys.path.insert(0, os.path.join(ROOT, 'src'))

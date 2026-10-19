@@ -3,18 +3,18 @@
 [English](READING.en.md)
 
 - 綴りは、解読したままの16世紀の綴りに近づけて残した（u と v、i と j は区別しない）。句読点と大文字は読みやすさのために補った。
-- ［ ］は補った文字や語。［?］は値が分からない記号。［?語］は形や文脈から推した読みで、確かめていないもの。［∞］は mil の後などに出る値の分からない ∞ 形の記号（escus と読むと3か所は通るが、確かめていない）。
+- ［ ］は補った文字や語。［?］は値が分からない記号。［?語］は形や文脈から推した読みで、確かめていないもの。［escus］は輪3つの記号（ooo）を推定で escus と読んだもの（mil の後の3か所とも通る）。［∞］は値の分からない輪2つの記号（oo）。
 - 行ごとの機械的な解読は `data/decoded_*.txt`、記号ごとの書き起こしは `data/transcription_*.txt` にある。行番号（c01 など）はそのファイルの番号。
 - 1回目の書き起こし（`data/`。照合に使った書き起こしとの食い違いを画像で見て、7か所を直したもの）を元にした。人は書き起こしを確かめていない。細部に誤りを含みうる（[METHOD.md](METHOD.md)）。語の区切りは、解読した文字列に後から入れた。
 
 ## f. 120r（全面が暗号、31行）
 > c01–c05：[?][a][?][u][?] Je vous asseure que ce prince est plus ennuyé et fasché que jamais, et n'y a ordre de le dissuader de croire que la necessité qu'il souffre ne soit a desseing ; car c'est considéré que les effects ne se ra[p]portent [?30] aux advis que l'on de[?]a donne[?s].
 
-> c05–c08：Le tresorier Bilart escrivit par la derniere depesche du vingt un du passé qu'il y avoit plus de dix jours qu'il avoit trente mil [∞] en or,
+> c05–c08：Le tresorier Bilart escrivit par la derniere depesche du vingt un du passé qu'il y avoit plus de dix jours qu'il avoit trente mil [escus] en or,
 
-> c09–c12：et qu'il n'y en doit qu'un[?e] [?n de ment] pour les [∞]voyer[?]. Le cardinal de Guise escrit du deux que ces jours [?partoient] cinq mil [∞] pour venir icy, et toutesfois il n'en est encore aucune no[uvelle].
+> c09–c12：et qu'il n'y en doit qu'un[?e] [?n de ment] pour les [∞]voyer[?]. Le cardinal de Guise escrit du deux que ces jours [?partoient] cinq mil [escus] pour venir icy, et toutesfois il n'en est encore aucune no[uvelle].
 
-> c12–c15：Mais je vous puis dire que nous sommes en tel estat que non pas cinq mil, mais [?cent] cinq mil [∞] ne [?] sauroient relever.
+> c12–c15：Mais je vous puis dire que nous sommes en tel estat que non pas cinq mil, mais [?cent] cinq mil [escus] ne [?] sauroient relever.
 
 > c15–c19：Et au reste, que [?E] est tout resolu, que quelque [?…]ment et conjuration que vous s[?] puis [?…] faire de s[?en] aler, et partir si [?] qu'il saura ce que doivent devenir les estrangers ; qu'il ne fault plus aussi esperer de pouvoir retenir le mar[eschal] de Biron ;
 

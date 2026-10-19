@@ -1,22 +1,23 @@
-# BnF fr. 15573 f. 120, a cipher letter in Mayenne–Forget's Cipher-2 (1586): a partial reading
+# BnF fr. 15573 f. 120, a cipher letter in Mayenne–Forget's Cipher-2 (1586): a reading
 
 [日本語 README](README.md)
 
 A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 120, with Mayenne–Forget's Cipher-2 as reconstructed by Satoshi Tomokiyo and the key that Brett Burford built for another Cipher-2 letter in the same volume.
 
 ## Status (20 October 2026)
-- **A partial reading.** Many lines read as French sentences, but 13 kinds of signs (19 places) have no value and some short stretches are not read ([docs/READING.en.md](docs/READING.en.md), [docs/OPEN.en.md](docs/OPEN.en.md)). The sender and the date are not known.
-- **Relation to prior work**: Tomokiyo lists f. 120 as a Cipher-2 letter, « Endorsement illegible (to me). Undeciphered. » ([Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm), last modified 2023-09-23). In what we checked on 19–20 October 2026, no reading of this letter was found (see [SOURCES.en.md](SOURCES.en.md)). The key is prior work (Tomokiyo's table, Brett Burford's key); the transcription and the reading were made in this repository. The check for prior work ([docs/PRIOR_CHECK.en.md](docs/PRIOR_CHECK.en.md), 20 October 2026) found nothing ("not found"). That check was made by the same session that read the letter; no check by a separate session has been made. Not finding something does not prove that nobody has read it.
+- **A reading of the whole letter** (meeting all the numerical conditions under "Basis" below). Thirteen kinds of signs (16 places) have no value, and some short stretches are not read ([docs/READING.en.md](docs/READING.en.md), [docs/OPEN.en.md](docs/OPEN.en.md)). The sender and the date are not known.
+  - Basis (the conditions under our publishing rules for calling a reading "whole"): control 0 / 1000. Agreement of values between the first transcription and the independent second (Codex, two runs): the lower is 90.7% (condition: 85% or more). Share of signs with a value, including inferred: 98.5% (95% or more). Sign accuracy in the calibration, by the same way of reading as the published transcription (one Opus reader decoding with the key while reading): 90.5% (90% or more).
+- **Relation to prior work**: Tomokiyo lists f. 120 as a Cipher-2 letter, « Endorsement illegible (to me). Undeciphered. » ([Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm), last modified 2023-09-23). The key is prior work (Tomokiyo's table, Brett Burford's key); the transcription and the reading were made in this repository. The check for prior work ([docs/PRIOR_CHECK.en.md](docs/PRIOR_CHECK.en.md), 20 October 2026) found nothing ("not found"). That check was made by the same session that read the letter; no check by a separate session has been made. Not finding something does not prove that nobody has read it.
 - **No person has checked the transcription.** It was read from the images by AI. Agreement between AI readings is not a substitute for a human check.
 - **Figures** (details in [docs/METHOD.en.md](docs/METHOD.en.md)):
   | Item | Result |
   |---|---|
   | Control with the letter values of the key shuffled (1,000 times, three conditions) | no shuffled key reached the real key |
-  | Calibration: sign accuracy on seven lines of f. 104r (with a contemporary decipherment), read without seeing the answer | 90.5% for the vote of three Claude Opus readers (95.6% counting same-value names as matches); 86.9% (89.1%) for the first calibration (one reader, one pass). Burford on the same lines: 91.1–93.5% single passes, 92.9% vote |
-  | Calibration: letter agreement (first calibration, blind) | 70.6% (62.9% with table signs only) |
-  | **Independent second transcription**: agreement of values between a reading by OpenAI's Codex (codex-cli 0.163.0-alpha.10.2, default model), made without seeing the first, and the first | 93.2% recto, 90.7% verso (the first was not corrected from this comparison) |
-  | Record of checks: agreement of values between the first and the Claude Sonnet transcription / the vote of three Claude Opus readers | Sonnet 88.0% recto, 87.5% verso; vote 93.1% recto, 87.0% verso (the first was corrected after looking at differences with these on the image, so these are not independent comparisons) |
-- **Use of AI**: the transcription, the inferred values, the decipherment, the scripts and the documents were made by Anthropic's Claude (Claude Code, Claude Opus 5.5); the independent second transcription by OpenAI's Codex; the transcriptions used for checking by Claude Sonnet and three Claude Opus readers. A person chose the target, saved the images and decided to publish ("Use of AI" in [docs/METHOD.en.md](docs/METHOD.en.md)).
+  | **Independent second transcription**: agreement of values between readings by OpenAI's Codex (codex-cli 0.163.0-alpha.10.2, default model), made without seeing the first, and the first | second run (straightened line images): 92.9% recto, 92.1% verso. First run (right halves one line off): 92.9% recto, 90.7% verso. By name: 89.7% / 88.4% and 89.6% / 88.0%. The first was not corrected from this comparison |
+  | Calibration: sign accuracy on seven lines of f. 104r (with a contemporary decipherment), read without seeing the answer (as Burford counts; in brackets, also counting same-value names) | same way of reading as the published transcription (one Opus reader, decoding with the key): 90.5% (95.6%). One pass by shape only: 86.9% (89.1%). Vote of three Opus readers: 90.5% (95.6%). Burford on the same lines: 91.1–93.5% single passes, 92.9% vote |
+  | Calibration: letter agreement | 79.4% by the same way of reading as the published transcription (current key); 70.6% for the blind shape-only pass |
+  | Record of checks: agreement of values between the first and the Claude Sonnet transcription / the vote of three Claude Opus readers | Sonnet 87.7% recto, 87.5% verso; vote 93.1% recto, 87.0% verso (the first was corrected after looking at differences with these on the image, so these are not independent comparisons) |
+- **Use of AI**: the transcription, the inferred values, the decipherment, the scripts and the documents were made by Anthropic's Claude (Claude Code, Claude Opus 5.5); the independent second transcription by OpenAI's Codex; the transcriptions used for checking and calibration by Claude Sonnet and Claude Opus readers. A person chose the target, saved the images and decided to publish ("Use of AI" in [docs/METHOD.en.md](docs/METHOD.en.md)).
 
 ## Source
 - BnF Français 15573 (letters of 1586; in Tomokiyo's list, ff. 7–8 are a letter of August 1586), Gallica ark:/12148/btv1b90618780, view 246 (f. 120r, 31 lines of cipher) and view 247 (f. 120v, 8 lines of cipher). There is no plaintext on these two pages.
@@ -24,11 +25,15 @@ A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 
 ## Share of signs with a value
 | Page | Signs | Tomokiyo's table only | Table + Burford's alignments | Also inferred in this letter |
 |---|---|---|---|---|
-| f. 120r | 885 | 89.2% | 96.7% | 98.2% |
+| f. 120r | 885 | 89.2% | 96.7% | 98.5% |
 | f. 120v | 216 | 85.6% | 97.7% | 98.6% |
-| Total | 1,101 | 88.5% | 96.9% | 98.3% |
+| Total | 1,101 | 88.5% | 96.9% | 98.5% |
 
 ## History
+- 20 October 2026 (revision to meet the conditions for a "whole" reading)
+  - The right halves of the line images given to Codex were one line off in lines 6–9 and others (the right side of the lines slopes down). Straightened line images were made by following the baseline of each line, all lines were checked by eye, and Codex was run again. Agreement of values with the first: 92.9% recto, 92.1% verso (the run on the shifted images: 92.9%, 90.7%).
+  - The calibration was taken again by the same way of reading as the published transcription (one Opus reader decoding with the key), on the seven lines of f. 104r, without the answer. Sign accuracy: 90.5%.
+  - The sign after mil has three loops (ooo) and is a different sign from the two-loop sign (oo) in r l. 9, as seen on the image. ooo is read as escus by inference. Signs with no value: 13 kinds, 19 places → 13 kinds, 16 places; share with a value (also inferred): 98.3% → 98.5%.
 - 20 October 2026 (check for prior work)
   - docs/PRIOR_CHECK.en.md (and Japanese) added. Category: not found. Made by the same session that read the letter.
 - 20 October 2026 (revision for the amended publishing rules)
@@ -78,6 +83,7 @@ python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref
 python3 src/calib.py --signs calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # calibration (signs, strict)
 python3 src/calib.py --lenient data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # calibration (signs, counted as Burford does)
 python3 src/compare2.py data/transcription_f120r.txt second/transcription2_f120r.txt --key data/key.tsv  # first vs the Sonnet transcription
+python3 src/calib.py --lenient --no-alias data/key.tsv calib/transcription_f104r_l18-24_context.txt calib/ref_signs_f104r_burford.txt 1  # calibration, same way of reading as the published transcription
 python3 src/vote.py third/f104r_vote.txt third/f104r_pass1.txt third/f104r_pass2.txt third/f104r_pass3.txt  # three-reader vote
 python3 src/calib.py --lenient --no-alias data/key.tsv third/f104r_vote.txt calib/ref_signs_f104r_burford.txt 1  # accuracy of the vote
 python3 -m unittest discover -s tests
@@ -95,7 +101,8 @@ See "Status" above and "Use of AI" in [docs/METHOD.en.md](docs/METHOD.en.md). No
 | data/decoded_*.txt | output of `src/decode.py` |
 | docs/READING.en.md, METHOD.en.md, OPEN.en.md | reading, method and figures, open points (Japanese versions without .en) |
 | calib/ | calibration on f. 104r lines 18–24 (transcription and references, CC BY 4.0 for the references) |
-| codex/ | independent second transcription (OpenAI's Codex, by shape only), the prompt given, and its decoding |
+| codex/ | independent second transcription (OpenAI's Codex, by shape only), the prompt given, and its decoding; run1_misaligned/ is the first run, on images whose right halves were shifted |
+| calib/transcription_f104r_l18-24_context.txt | calibration transcription by the same way of reading as the published one (decoding with the key) |
 | second/ | transcription used for checking (Claude Sonnet, by shape only) and its decoding |
 | third/ | transcriptions by three Claude Opus readers (f. 104r lines 18–24 and f. 120) and their vote |
 | src/ | decoding, control, calibration, comparison, vote, image preparation |

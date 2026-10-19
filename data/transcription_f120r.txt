@@ -10,13 +10,13 @@ c04: f r? f 6 tri .26. w S : 6 g n z9 # delta Q tt delta box r S a g 6 r rC delt
 c05: ls a delta 6 8 .30. 4 th xd 4 9 x n g Q q+ // 6 z9 4 9 : L delta rC q+ delta 8 ls delta
 c06: g : # f r hs pi n H 4 ls 8 delta g S # f th n a gg Ee z9 # 6 f delta hs r
 c07: z9 zk r g S F delta 9 th x f 6 tri a T f2 ^(8 delta) 9 T .31. g r 2o q+ dbar 4 th : f a
-c08: Tl? z9 9 n xd f : T # f 2o q+ 4 th : n a 8 # ooC alpha r 2 n y oo ooC : #
+c08: Tl? z9 9 n xd f : T # f 2o q+ 4 th : n a 8 # ooC alpha r 2 n y ooo ooC : #
 c09: % 2o q+ 6 4 dbar ooC 9 : n a lambda th 6 r 6 z9 eps curl tt oo th : dbar r ls q+ delta
 c10: .26. 9 f f2 + y 9 d th Lp g 4t r g S # n a 9 T 9 r th xd ^(8 delta) Q S r rC
-c11: f // th # gg a : n r 6 8 S f 6 xo ^(a r) 8s n q+ oo curl th delta 6 n # rect %
+c11: f // th # gg a : n r 6 8 S f 6 xo ^(a r) 8s n q+ ooo curl th delta 6 n # rect %
 c12: hb .16. w2 6 phi w yy 4 th S T 6 r f2 // ^(H r) .20. .10. Gamma pdot 9 n ls delta Q nous?
 c13: g // 40 r g ooC a r q+ w 4 a Q 6 // f2 .31. S n 6 xo ^(a r) 8s f y .20. S r
-c14: 6 8 dsi+ f 6 xo 8s n q+ oo 6 r hsb g 4 th # : n r f2 a # r q+ delta th #
+c14: 6 8 dsi+ f 6 xo 8s n q+ ooo 6 r hsb g 4 th # : n r f2 a # r q+ delta th #
 c15: hs % 4 th hs w delta Q Esign w hb # r g : q+ T Q q+ Q r 6 z9 eps % S : f2 n th
 c16: ls 4 a f : 6 Q Gamma g pdot f n delta g m + f ls r z9 rC ooC 4 H r # %
 c17: gg a n ls dsi Om 2o q+ g 4 th # 4 S r Q 9 // f th delta 6 a z9 T delta 6 n ls

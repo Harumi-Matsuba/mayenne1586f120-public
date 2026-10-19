@@ -2,12 +2,12 @@
 
 [English](OPEN.en.md)
 
-## 値が分からない記号（13種19か所、2ページの記号1,103個のうち）
-`src/decode.py` で値が付かない記号。行番号は `data/transcription_f120_all.txt` の番号（c1NN＝f. 120r の NN 行、c2NN＝f. 120v の NN 行）。「2回目」は Claude Sonnet による独立の書き起こし（`second/`）の読み。
+## 値が分からない記号（13種16か所、2ページの記号1,101個のうち）
+`src/decode.py` で値が付かない記号。行番号は `data/transcription_f120_all.txt` の番号（c1NN＝f. 120r の NN 行、c2NN＝f. 120v の NN 行）。「2回目」は Claude Sonnet による書き起こし（`second/`）の読み。
 
 | 記号 | 回数 | 場所 | 文脈・候補 |
 |---|---|---|---|
-| oo（∞ 形） | 6 | c108、c109、c111、c114、c208（2） | trente mil [∞] en or、cinq mil [∞] pour venir icy、cinq mil [∞] ne [?] sauroient relever。escus と読むと3か所は通る。c109 の pour les [∞]voyer では en（envoyer）と読みたくなり、合わない。c208 は末尾の2つ（2回目は1つを 2o＝qui と読んだ） |
+| oo（∞ 形、輪2つ） | 3 | c109、c208（2） | c109 は pour les [∞]voyer（en と読みたくなる）。c208 は末尾の2つ。mil の後の輪3つの記号（ooo）とは別の形で、ooo は推定で escus とした |
 | hsb（ʃ に横線と点） | 2 | c114、c124 | ne [?] sauroient relever、ce que l'on en dira [?] |
 | thb・7・Sbar | 各1 | c101 | 冒頭 « [thb] a [7] u [Sbar] je vous asseure »。呼びかけ（Monsieur の類）か。2回目は thb を tt（les）と読んだ |
 | 30 | 1 | c105 | ne se ra[p]portent [30] aux advis |
@@ -40,11 +40,11 @@
 - curl（＼ の下に o）と curlo（縦線の下が右に巻く形）：最初の書き起こしでは、＼ 形を bslash、巻く形を curl と名付けていた。較正で、＼ 形が Burford 氏の curl（pour）だと分かり、付け直した。巻く形（o）は Burford 氏の見本にない記号とみているが、見本と比べ直してはいない。
 - lambda（λ）：友清氏の表では q、Burford 氏の鍵と較正では x。この書簡では q（qu'une、r c09）と x（d[i]x iours、r c22）の両方に読める。
 - 照合に使った Sonnet の書き起こしとの食い違いが多い組：ls と S（24か所）、r と xbar（18か所）、8s と 8（8か所）。1回目はどれも文脈で選んだ。
-- 独立の2回目（Codex）との食い違い（値で表60・裏20の編集距離）は、まだ画像で見ていない。
+- 独立の2回目（Codex）との食い違い（2回目の実行で、値の編集距離が表63・裏17）は、まだ画像で見ていない。
 
 ## 確かめていないこと
 - 差出人と日付。内容（Guise 枢機卿の2日付の書簡、Biron、軍の代表、La Marsilière、あと6週間）から、巻の前後の書簡と照らせば絞れる可能性がある。
 - 人名：Bilart、[M]ontablaye、La Marsilière がどの人物か。La Marsilière は、台帳の別の文書でナバール王の使い（« le Sr de Vesin de la Marsilliere »）として出てくる。同じ巻の f. 192 は、目録でナバール王の宮廷の秘書あての横取りされた手紙とされている（[PRIOR_CHECK.md](PRIOR_CHECK.md) の「参考」）。どちらも確かめていない。
 - 友清氏が « Endorsement illegible » と書いた裏書きは、246・247コマには見当たらない（別の葉にある可能性）。
-- 書き起こしの正確さ：f. 104r の7行で、答えを見ていない Opus の読み手3人の多数決は、記号の正確さ90.5%（同じ値の別名も一致なら95.6%）。1回目の較正（別のセッション、1回）は86.9%（89.1%）、文字の一致率70.6%。f. 120 そのものの正確さは測っていない。f. 120 での独立の2回目（Codex）との値の一致率は表93.2%・裏90.7%（[METHOD.md](METHOD.md)）。
+- 書き起こしの正確さ：f. 104r の7行で、公開した書き起こしと同じ読み方（Opus 1人が鍵で解読しながら）の記号の正確さは90.5%（同じ値の別名も一致なら95.6%）。形だけで読んだ1人1回は86.9%（89.1%）、文字の一致率70.6%。f. 120 そのものの正確さは測っていない。f. 120 での独立の2回目（Codex）との値の一致率は、2回の実行で表92.9%・裏92.1%と表92.9%・裏90.7%（[METHOD.md](METHOD.md)）。
 - 較正で見つかった # と 4t、2o と「a 0」の取り違えは、f. 120 の書き起こしでは見直していない。

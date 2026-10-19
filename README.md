@@ -1,22 +1,23 @@
-# BnF fr. 15573 f. 120 の暗号書簡（Mayenne–Forget の Cipher-2、1586年）の読み（部分的）
+# BnF fr. 15573 f. 120 の暗号書簡（Mayenne–Forget の Cipher-2、1586年）の読み
 
 [English README](README.en.md)
 
 フランス国立図書館 BnF Français 15573 f. 120 にある、差出人の分からない暗号書簡を、友清理士氏が復元した Mayenne–Forget の Cipher-2 の表と、Brett Burford 氏が同じ巻の別の書簡で作った鍵を使って読んだ記録です。
 
 ## 状態（2026-10-20）
-- **部分的な読み**です。多くの行がフランス語の文として通りますが、値の分からない記号が13種19か所あり、読めない短い箇所も残っています（[docs/READING.md](docs/READING.md)、[docs/OPEN.md](docs/OPEN.md)）。差出人と日付は分かっていません。
-- **先行との関係**：友清理士氏は f. 120 を Cipher-2 の書簡として挙げ、« Endorsement illegible (to me). Undeciphered. » としています（[Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm)、2023-09-23 更新）。2026-10-19〜20 に調べた範囲では、この書簡の読みは見つかっていません（調べた先は [SOURCES.md](SOURCES.md)）。鍵は先行研究のもの（友清氏の表、Brett Burford 氏の鍵）で、書き起こしと読みはこのリポジトリで作ったものです。先行の確かめ（[docs/PRIOR_CHECK.md](docs/PRIOR_CHECK.md)、2026-10-20）の区分は「見つからない」です。ただしこの確かめは、書簡を読んだのと同じセッションが行ったもので、解いた作業とは別のセッションによる確かめはしていません。見つからないことは、誰も読んでいないことの証明にはなりません。
+- **全文の読み**（下の「判定の根拠」の数字の条件をすべて満たすもの）。ただし、値の分からない記号が13種16か所、読めない短い箇所が残ります（[docs/READING.md](docs/READING.md)、[docs/OPEN.md](docs/OPEN.md)）。差出人と日付は分かっていません。
+  - 判定の根拠（私たちの公開の決まりで「全文の読み」と名乗る条件）：対照実験は0／1000回。独立の2回目（Codex、2回の実行）と1回目の値の一致率は、低いほうで90.7%（85%以上が条件）。値の付いた割合は推定込みで98.5%（95%以上）。較正の記号の正確さは、公開した書き起こしと同じ読み方（Opus 1人が鍵で解読しながら読む）で90.5%（90%以上）。
+- **先行との関係**：友清理士氏は f. 120 を Cipher-2 の書簡として挙げ、« Endorsement illegible (to me). Undeciphered. » としています（[Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm)、2023-09-23 更新）。鍵は先行研究のもの（友清氏の表、Brett Burford 氏の鍵）で、書き起こしと読みはこのリポジトリで作ったものです。先行の確かめ（[docs/PRIOR_CHECK.md](docs/PRIOR_CHECK.md)、2026-10-20）の区分は「見つからない」です。ただしこの確かめは、書簡を読んだのと同じセッションが行ったもので、解いた作業とは別のセッションによる確かめはしていません。見つからないことは、誰も読んでいないことの証明にはなりません。
 - **人は書き起こしを確かめていません。** 書き起こしは AI が画像から読んだものです。複数の AI の読みどうしの一致は、人の確認の代わりにはなりません。
 - **数字**（詳しくは [docs/METHOD.md](docs/METHOD.md)）：
   | 項目 | 結果 |
   |---|---|
   | 鍵の文字記号の値をかき混ぜた対照実験（1,000回、3条件） | 本物の鍵以上は0回 |
-  | 較正：当時の解読がある f. 104r の7行を、答えを見ずに読んだ記号の正確さ | Opus の読み手3人の多数決で90.5%（同じ値の別名も一致なら95.6%）。最初の較正（1人、1回）は86.9%（89.1%）。Burford 氏の同じ行での値は1回ずつ91.1〜93.5%、多数決92.9% |
-  | 較正：文字の一致率（最初の較正、答えを見ない測定） | 70.6%（表の記号だけで62.9%） |
-  | **独立の2回目**：OpenAI の Codex（codex-cli 0.163.0-alpha.10.2、既定のモデル）が1回目を見ずに読んだものと、1回目の値の一致率 | 表93.2%・裏90.7%（この比較では1回目を直していない） |
-  | 照合の記録：Claude Sonnet の書き起こし、Claude Opus の読み手3人の多数決と、1回目の値の一致率 | Sonnet 表88.0%・裏87.5%、多数決 表93.1%・裏87.0%（これらとの食い違いを画像で見て1回目を直したので、独立の比較ではない） |
-- **AI の使用**：書き起こし・鍵の補い・解読・スクリプト・文書は Anthropic の Claude（Claude Code、Claude Opus 5.5）、独立の2回目の書き起こしは OpenAI の Codex、照合に使った書き起こしは Claude Sonnet と Claude Opus の読み手3人が行いました。人は、対象の選定、画像の保存、公開の判断をしました（[docs/METHOD.md](docs/METHOD.md) の「AI の使用」）。
+  | **独立の2回目**：OpenAI の Codex（codex-cli 0.163.0-alpha.10.2、既定のモデル）が1回目を見ずに読んだものと、1回目の値の一致率 | 2回目の実行（行をまっすぐにした画像）：表92.9%・裏92.1%。1回目の実行（右半分が1行ずれた画像）：表92.9%・裏90.7%。名前どおりの一致率は 89.7%・88.4%／89.6%・88.0%。この比較では1回目を直していない |
+  | 較正：当時の解読がある f. 104r の7行を、答えを見ずに読んだ記号の正確さ（Burford 氏の数え方。カッコ内は同じ値の別名も一致とした値） | 公開した書き起こしと同じ読み方（Opus 1人、鍵で解読しながら）：90.5%（95.6%）。形だけで読んだ1人1回：86.9%（89.1%）。Opus 3人の多数決：90.5%（95.6%）。Burford 氏の同じ行での値は1回ずつ91.1〜93.5%、多数決92.9% |
+  | 較正：文字の一致率 | 公開した書き起こしと同じ読み方で79.4%（いまの鍵）。形だけで読んだ1人1回は、答えを見ない測定で70.6% |
+  | 照合の記録：Claude Sonnet の書き起こし、Claude Opus の読み手3人の多数決と、1回目の値の一致率 | Sonnet 表87.7%・裏87.5%、多数決 表93.1%・裏87.0%（これらとの食い違いを画像で見て1回目を直したので、独立の比較ではない） |
+- **AI の使用**：書き起こし・鍵の補い・解読・スクリプト・文書は Anthropic の Claude（Claude Code、Claude Opus 5.5）、独立の2回目の書き起こしは OpenAI の Codex、照合と較正に使った書き起こしは Claude Sonnet と Claude Opus の読み手が行いました。人は、対象の選定、画像の保存、公開の判断をしました（[docs/METHOD.md](docs/METHOD.md) の「AI の使用」）。
 
 ## 資料
 - BnF Français 15573（1586年の書簡集。友清氏の一覧では f. 7–8 が1586年8月の書簡）、Gallica ark:/12148/btv1b90618780 の246コマ（f. 120r、全面が暗号31行）と247コマ（f. 120v、暗号8行）。平文の部分はありません。
@@ -24,11 +25,15 @@
 ## 値が付いた記号の割合
 | ページ | 記号の数 | 表の記号だけ | 表＋Burford 氏の照合 | この書簡での推定も合わせる |
 |---|---|---|---|---|
-| f. 120r | 885 | 89.2% | 96.7% | 98.2% |
+| f. 120r | 885 | 89.2% | 96.7% | 98.5% |
 | f. 120v | 216 | 85.6% | 97.7% | 98.6% |
-| 計 | 1,101 | 88.5% | 96.9% | 98.3% |
+| 計 | 1,101 | 88.5% | 96.9% | 98.5% |
 
 ## 更新履歴
+- 2026-10-20（「全文の読み」の条件を満たすための見直し）
+  - Codex に渡した画像の右半分が、6〜9行目などで1行ずれていたことが分かった（行の右側が下がっていたため）。行ごとに基線をたどってまっすぐにした画像を作り、全行を目で確かめて、Codex を走らせ直した。1回目との値の一致率は表92.9%・裏92.1%（ずれた画像の回は表92.9%・裏90.7%）。
+  - 公開した書き起こしと同じ読み方（Opus 1人が鍵で解読しながら読む）で、答えを見ずに f. 104r の7行を読ませて較正を取り直した。記号の正確さは90.5%。
+  - mil の後の記号は、輪3つの形（ooo）で、r 9行の輪2つ（oo）とは別の記号だと画像で分かった。ooo を推定で escus とした。値の分からない記号は13種19か所から13種16か所に、値が付いた割合（推定込み）は98.3%から98.5%になった。
 - 2026-10-20（先行の確かめ）
   - docs/PRIOR_CHECK.md（日英）を足した。区分は「見つからない」。書簡を読んだのと同じセッションが行った。
 - 2026-10-20（公開の決まりの改定に合わせた見直し）
@@ -78,6 +83,7 @@ python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref
 python3 src/calib.py --signs calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # 較正（記号、厳密）
 python3 src/calib.py --lenient data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # 較正（記号、Burford 氏にそろえた数え方）
 python3 src/compare2.py data/transcription_f120r.txt second/transcription2_f120r.txt --key data/key.tsv  # 1回目と Sonnet の書き起こしの突き合わせ
+python3 src/calib.py --lenient --no-alias data/key.tsv calib/transcription_f104r_l18-24_context.txt calib/ref_signs_f104r_burford.txt 1  # 公開と同じ読み方での較正
 python3 src/vote.py third/f104r_vote.txt third/f104r_pass1.txt third/f104r_pass2.txt third/f104r_pass3.txt  # 3人の多数決
 python3 src/calib.py --lenient --no-alias data/key.tsv third/f104r_vote.txt calib/ref_signs_f104r_burford.txt 1  # 多数決の正確さ
 python3 -m unittest discover -s tests
@@ -100,7 +106,8 @@ python3 -m unittest discover -s tests
 | calib/transcription_f104r_l18-24.txt | 較正用の f. 104r 18〜24行目の書き起こし |
 | calib/ref_f104r_l18-24.txt・ref_signs_f104r_burford.txt | 較正の参照（当時の解読の文字、Burford 氏の記号の書き起こし。CC BY 4.0） |
 | src/calib.py | 較正の一致率の計算 |
-| codex/ | 独立の2回目の書き起こし（OpenAI の Codex、形だけで読んだもの）と、渡したプロンプト・その解読 |
+| codex/ | 独立の2回目の書き起こし（OpenAI の Codex、形だけで読んだもの）と、渡したプロンプト・その解読。run1_misaligned/ は右半分がずれた画像で読んだ1回目の実行 |
+| calib/transcription_f104r_l18-24_context.txt | 公開と同じ読み方（鍵で解読しながら）での較正の書き起こし |
 | second/ | 照合に使った書き起こし（Claude Sonnet、形だけで読んだもの）と、その解読 |
 | src/compare2.py | 1回目と2回目の書き起こしの突き合わせ |
 | third/ | Claude Opus の読み手3人の書き起こし（f. 104r の18〜24行目と f. 120）と多数決 |
