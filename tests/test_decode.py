@@ -105,6 +105,9 @@ class TestCalib(unittest.TestCase):
         self.assertIn('= 65.7%', self.run_calib(*args, '--table-only'))
         out = self.run_calib('--signs', 'calib/transcription_f104r_l18-24.txt', 'calib/ref_signs_f104r_burford.txt', '1')
         self.assertIn('参照の記号 137、書き起こしの記号 154、編集距離 30', out)
+        args2 = [KEY, 'calib/transcription_f104r_l18-24.txt', 'calib/ref_signs_f104r_burford.txt', '1']
+        self.assertIn('= 89.1%', self.run_calib('--lenient', *args2))
+        self.assertIn('= 86.9%', self.run_calib('--lenient', '--no-alias', *args2))
 
     def test_slash_and_interlinear_skipped(self):
         # 区切りの / と行間の書き込み ^(2.) は、解読の文字にも ? にもならない

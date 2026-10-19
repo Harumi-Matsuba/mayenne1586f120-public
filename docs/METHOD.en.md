@@ -68,7 +68,15 @@ Signs also named from Tomokiyo's table: dsi+ (ꝺ with a cross) = c, xd (u-shape
   | Key revised after the calibration (backslash sign = curl = pour; see "Kinds of difference") | 73.4% (edit distance 66) | 65.7% (edit distance 85) |
 
   The revised values were decided after seeing the answer (by following Burford's key), so the first row (70.6%) is the blind measurement; `src/calib.py --key-at-calibration` reproduces it. Before the reference was corrected on the image, the figure was 69.5% (62.6% with table signs only). Signs with two values (`a|n` etc.) count with their first value; signs with no value count as mismatches.
-  - Sign agreement (lines 19–24, `src/calib.py --signs`): 78.1% (edit distance 30 against 137 reference signs; 77.4%, distance 31, before the renaming). Eleven of the differences are places where the reference lacks a line-initial sign (as counted in the calibration work; due to the line-band fitting mentioned in his note).
+  - Sign agreement (lines 19–24, 137 reference signs):
+    | Counting | Agreement |
+    |---|---|
+    | Strict (edit distance; line-initial signs missing from the reference count as errors; `src/calib.py --signs`) | 78.1% (edit distance 30; 77.4%, distance 31, before the renaming) |
+    | As Burford counts: a match if equal to any of the reference's alternatives (a｜b); the 12 transcribed line-initial signs missing from the reference are not counted (`--lenient --no-alias`) | 86.9% (18 errors) |
+    | As above, also counting different names with the same value (dots and :, ooC and phi) as matches (`--lenient`) | 89.1% (15 errors) |
+
+    Burford's reader accuracy on the same lines of f. 104r was 91.1–93.5% for single passes and 92.9% for a vote of three passes (either name accepted for look-alikes; his README, "Measured numbers"). The details of the counting are not the same, so this is not a strict comparison.
+    The remaining 15 errors: 2o read as "a 0" and "a" (two places), .24. read as "2 q+", # read as 4t (two places), w read as w2, z9 read as 9, rC read as Lp and :, unreadable (?) or extra signs, etc. Searching the transcription of f. 120 for these types: all five places of 4t are where the context requires e (prince, fasché, Guise, le mar[eschal], etc.), both places of w2 are il, and there is no "a 0" or "2 q+".
 - Kinds of difference (classified by eye; one place may count more than once):
   - One sign read as two: 2o (qui) read as "a 0" and "a a" (twice); the number sign .24. (peu) read as "2 q+".
   - Look-alike signs confused: # (r) read as 4t (e) twice (« desgarnie », « resoluant »). The start of line 18 (« pour plu[sieurs] » in the decipherment) read as Gamma, 2u (vous de). The start of line 22 (« tout des[garnie] ») read as Qh, .12. (armée des). The humps of ϖ counted as two (w2) instead of three.

@@ -16,7 +16,7 @@
 
 - 鍵の文字記号の値をかき混ぜた対照実験（1,000回）では、3つの条件とも、本物の鍵以上にフランス語らしくなったことは1回もありませんでした（[docs/METHOD.md](docs/METHOD.md)）。
 - 多くの行がフランス語の文として通ります（[docs/READING.md](docs/READING.md)）。値の分からない記号は13種19か所あり、読めない短い箇所も残っています（[docs/OPEN.md](docs/OPEN.md)）。
-- **較正：** 同じ暗号で当時の解読がある f. 104r の7行を、答えを見ずに同じ方法で書き起こして測ると、文字の一致率は70.6%（表の記号だけで62.9%）でした。参照の文字は画像で照らしました。較正で見つかった記号の取り違え（＼ 形の記号は pour）を直した鍵では73.4%ですが、これは答えを見た後の値です。
+- **較正：** 同じ暗号で当時の解読がある f. 104r の7行を、答えを見ずに同じ方法で書き起こして測ると、文字の一致率は70.6%（表の記号だけで62.9%）でした。参照の文字は画像で照らしました。記号の正確さは、Burford 氏の数え方にそろえると86.9〜89.1%（同氏の1回ずつの読みは91.1〜93.5%）です。較正で見つかった記号の取り違え（＼ 形の記号は pour）を直した鍵では73.4%ですが、これは答えを見た後の値です。
 - **2回目の書き起こし：** 別の AI（Claude Sonnet）が、1回目を見ずに形だけで読み直しました。1回目との値の一致率は表87.7%・裏87.0%で、食い違いの大半は似た形の3組（ls と S、r と xbar、8s と 8）でした。2回目の書き起こしでも、対照実験は0／1000回でした。
 - 書き起こしは細部に誤りを含む前提で使ってください。詳しくは [docs/METHOD.md](docs/METHOD.md) の「較正」「2回目の書き起こし」にあります。
 
@@ -48,7 +48,8 @@ python3 src/decode.py data/key.tsv data/transcription_f120r.txt --no-inferred  #
 python3 src/decode.py data/key.tsv data/transcription_f120r.txt --table-only   # 表の記号だけ
 python3 src/control.py data/key.tsv data/transcription_f120_all.txt 1000       # 対照実験（wordfreq が必要）
 python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_f104r_l18-24.txt --key-at-calibration  # 較正（文字、較正のときの鍵）
-python3 src/calib.py --signs calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # 較正（記号）
+python3 src/calib.py --signs calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # 較正（記号、厳密）
+python3 src/calib.py --lenient data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # 較正（記号、Burford 氏にそろえた数え方）
 python3 src/compare2.py data/transcription_f120r.txt second/transcription2_f120r.txt --key data/key.tsv  # 1回目と2回目の突き合わせ
 python3 -m unittest discover -s tests
 ```

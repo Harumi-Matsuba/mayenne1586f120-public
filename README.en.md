@@ -16,7 +16,7 @@ A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 
 
 - In a control with the letter values of the key shuffled (1,000 times), no shuffled key scored as French-like as the real key, in all three conditions ([docs/METHOD.en.md](docs/METHOD.en.md)).
 - Many lines read as French sentences ([docs/READING.en.md](docs/READING.en.md)). 13 kinds of signs (19 places) have no value, and some short stretches are not read ([docs/OPEN.en.md](docs/OPEN.en.md)).
-- **Calibration:** seven lines of f. 104r, a Cipher-2 letter with a contemporary decipherment, were transcribed by the same method without looking at the decipherment. Character agreement with the decipherment was 70.6% (62.9% with table signs only); the character reference was checked on the image. With the key revised after the calibration (the backslash-with-o sign is *pour*), it is 73.4%, but that figure comes after seeing the answer.
+- **Calibration:** seven lines of f. 104r, a Cipher-2 letter with a contemporary decipherment, were transcribed by the same method without looking at the decipherment. Character agreement with the decipherment was 70.6% (62.9% with table signs only); the character reference was checked on the image. Sign accuracy, counted as Burford counts, is 86.9–89.1% (his single passes: 91.1–93.5%). With the key revised after the calibration (the backslash-with-o sign is *pour*), it is 73.4%, but that figure comes after seeing the answer.
 - **Second transcription:** another AI (Claude Sonnet) re-read both pages by shape only, without seeing the first transcription. Agreement of values with the first is 87.7% (recto) and 87.0% (verso); most differences fall in three look-alike pairs (ls/S, r/xbar, 8s/8). Decoded with the same key, the second transcription also gave 0 / 1000 in the control.
 - Please use the transcription on the assumption that details may be wrong. See "Calibration" and "Second transcription" in [docs/METHOD.en.md](docs/METHOD.en.md).
 
@@ -48,7 +48,8 @@ python3 src/decode.py data/key.tsv data/transcription_f120r.txt --no-inferred  #
 python3 src/decode.py data/key.tsv data/transcription_f120r.txt --table-only   # table only
 python3 src/control.py data/key.tsv data/transcription_f120_all.txt 1000       # control (needs wordfreq)
 python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_f104r_l18-24.txt --key-at-calibration  # calibration (characters, key at the time)
-python3 src/calib.py --signs calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # calibration (signs)
+python3 src/calib.py --signs calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # calibration (signs, strict)
+python3 src/calib.py --lenient data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # calibration (signs, counted as Burford does)
 python3 src/compare2.py data/transcription_f120r.txt second/transcription2_f120r.txt --key data/key.tsv  # first vs second transcription
 python3 -m unittest discover -s tests
 ```

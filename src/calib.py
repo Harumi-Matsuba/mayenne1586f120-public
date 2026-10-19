@@ -81,6 +81,55 @@ def compare_signs(hyp_path, ref_path, offset):
             ops.append(('-', b[j-1])); j -= 1
     return la, lb, d[la][lb], ops[::-1]
 
+def compare_signs_lenient(hyp_path, ref_path, offset, key, alias=True):
+    # Burford 氏の数え方にそろえた記号の正確さ：参照の候補（a|b）のどれかと同じか、同じ値の別名なら一致。
+    # 参照の行頭に無い書き起こしの記号（参照の帯の切れ）は数えない。参照の行のうち、書き起こしに無い行は外す
+    hyp = {int(lab[1:]): [norm(t) for t in toks if t not in ('|', '/')] for lab, toks in load_lines(hyp_path)}
+    ref = sign_lines(ref_path)
+    def same(h, alts):
+        if h in alts: return True
+        if not alias: return False
+        v = key.get(h)
+        return v is not None and v != '?' and any(key.get(x) == v for x in alts)
+    tot = err = skipped = 0; errs = []
+    for n in sorted(ref):
+        if n + offset not in hyp: continue
+        line_errs = []
+        a, b = ref[n], hyp[n + offset]
+        la, lb = len(a), len(b)
+        d = [[0] * (lb + 1) for _ in range(la + 1)]
+        for i in range(la + 1): d[i][0] = i
+        for i in range(1, la + 1):
+            for j in range(1, lb + 1):
+                d[i][j] = min(d[i-1][j] + 1, d[i][j-1] + 1, d[i-1][j-1] + (not same(b[j-1], a[i-1])))
+        tot += la; err += d[la][lb]
+        i, j = la, lb
+        while i > 0 or j > 0:
+            if i > 0 and j > 0 and d[i][j] == d[i-1][j-1] + (not same(b[j-1], a[i-1])):
+                if not same(b[j-1], a[i-1]): line_errs.append((n + offset, '|'.join(a[i-1]), b[j-1]))
+                i, j = i - 1, j - 1
+            elif i > 0 and d[i][j] == d[i-1][j] + 1:
+                line_errs.append((n + offset, '|'.join(a[i-1]), '-')); i -= 1
+            elif i == 0:
+                skipped += 1; j -= 1
+            else:
+                line_errs.append((n + offset, '-', b[j-1])); j -= 1
+        errs += line_errs[::-1]
+    return tot, err, skipped, errs
+
+if __name__ == '__main__' and '--lenient' in sys.argv:
+    # 使い方: python3 src/calib.py --lenient [--no-alias] data/key.tsv 書き起こし 参照の記号 行のずれ
+    #   --no-alias : 同じ値の別名（dots と : など）を一致とみなさない（参照の候補 a|b だけを認める）
+    args = [x for x in sys.argv[1:] if not x.startswith('--')]
+    key, _ = load_key(args[0])
+    alias = '--no-alias' not in sys.argv
+    tot, err, skipped, errs = compare_signs_lenient(args[1], args[2], int(args[3]), key, alias)
+    print(f'参照の記号 {tot}、誤り {err}（行頭で参照に無い書き起こしの記号 {skipped} は数えない）')
+    print(f'記号の正確さ（Burford 氏の数え方にそろえたもの{"、同じ値の別名も一致" if alias else "、参照の候補だけ"}） = {1 - err/tot:.1%}')
+    print('誤り（行、参照、書き起こし）:', ' '.join(f'{n}:{r}>{h}' for n, r, h in errs))
+    print(f'EN: reference {tot} signs, errors {err} (not counting {skipped} line-initial signs missing from the reference); sign accuracy counted as Burford does = {1 - err/tot:.1%}')
+    sys.exit(0)
+
 if __name__ == '__main__' and '--signs' in sys.argv:
     # 使い方: python3 src/calib.py --signs 書き起こし 参照の記号 行のずれ（参照の n 行 = 書き起こしの n+ずれ 行）
     args = [x for x in sys.argv[1:] if not x.startswith('--')]
