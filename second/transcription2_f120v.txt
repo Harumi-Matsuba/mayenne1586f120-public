@@ -1,0 +1,9 @@
+# 2回目の書き起こし（Claude Sonnet、2026-10-20、形だけで読んだ）
+c01: + z9 B? // 6 z9 <点> eps <点> g th # thb zk? 2x? Id hs? delta a r <点> Q g th # Ee T delta 6 x r {w?}
+c02: q+ r th # g w # 2x? 6 d r hs? f 2o q+ 9 n S a w hs? delta {yy?} <点> # r 8 n g r
+c03: {<太い斜線で消された大きな記号>} thb? a r 2c? zk? f q+ dots 6 f2? r <点> rC 2x? th S dots n a <点> S dots 8 f # ooC? 9 hs? delta q+ lambda
+c04: a dots # 8 Q Ee # th Lbar? 8 T ls? r dots z9 S w delta Qh m 2x? n S a L th g r #
+c05: f S? delta 9 th <点> I 2 6 tt? w S? r # a 2x? n 6 Q dsi r H r? g th pi dsi n g a dots
+c06: n 8 yy g n xd f r th? 8s? 2x? n 6 r g Q H r zk? // I dots n a B 2x? n # delta rect
+c07: z9? tri ls? 2x? 6 9 g r box delta S a f 2 6 tt? r L delta 8s? f g 6 x m th S r 6?
+c08: f 2x? 2o? dsi w // L r g xbar dbar oo 2o? Dsign d? 4t? .u. R

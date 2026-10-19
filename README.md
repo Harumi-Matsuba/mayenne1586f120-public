@@ -7,20 +7,22 @@
 - 資料：BnF Français 15573（1586年の書簡集。友清氏の一覧では f. 7–8 が1586年8月の書簡）、Gallica ark:/12148/btv1b90618780 の246コマ（f. 120r、全面が暗号31行）と247コマ（f. 120v、暗号8行）。平文の部分はありません。
 - 先行：友清理士氏は f. 120 を Cipher-2 の書簡として挙げ、« Endorsement illegible (to me). Undeciphered. » としている（[Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm)、2023-09-23 更新）。2026-10-19〜20 に調べた範囲では、この書簡の読みは見つかっていない（調べた先は [SOURCES.md](SOURCES.md)）。
 
-## 現状（v0.1、部分的）
+## 現状（v0.2、部分的）
 | ページ | 記号の数 | 表の記号だけで値が付いた割合 | 表＋Burford 氏の照合 | この書簡での推定も合わせる |
 |---|---|---|---|---|
-| f. 120r | 887 | 88.6% | 96.3% | 98.0% |
-| f. 120v | 216 | 85.2% | 97.2% | 98.6% |
-| 計 | 1,103 | 87.9% | 96.5% | 98.1% |
+| f. 120r | 887 | 89.1% | 96.7% | 98.2% |
+| f. 120v | 216 | 85.6% | 97.7% | 98.6% |
+| 計 | 1,103 | 88.4% | 96.9% | 98.3% |
 
 - 鍵の文字記号の値をかき混ぜた対照実験（1,000回）では、3つの条件とも、本物の鍵以上にフランス語らしくなったことは1回もありませんでした（[docs/METHOD.md](docs/METHOD.md)）。
-- 多くの行がフランス語の文として通ります（[docs/READING.md](docs/READING.md)）。値の分からない記号は14種21か所あり、読めない短い箇所も残っています（[docs/OPEN.md](docs/OPEN.md)）。
-- **較正：** 同じ暗号で当時の解読がある f. 104r の7行を、答えを見ずに同じ方法で書き起こして測ると、文字の一致率は69.5%（表の記号だけで62.6%）でした。記号の一致率は86.1%（参照側が欠く行頭の記号を除く）。書き起こしは1回の目視なので、細部には誤りを含む前提で使ってください。違いの中身と、f. 120 の読みに関わる点（＼ 形の記号が pour かもしれないことなど）は [docs/METHOD.md](docs/METHOD.md) の「較正」にあります。
+- 多くの行がフランス語の文として通ります（[docs/READING.md](docs/READING.md)）。値の分からない記号は13種19か所あり、読めない短い箇所も残っています（[docs/OPEN.md](docs/OPEN.md)）。
+- **較正：** 同じ暗号で当時の解読がある f. 104r の7行を、答えを見ずに同じ方法で書き起こして測ると、文字の一致率は70.6%（表の記号だけで62.9%）でした。参照の文字は画像で照らしました。較正で見つかった記号の取り違え（＼ 形の記号は pour）を直した鍵では73.4%ですが、これは答えを見た後の値です。
+- **2回目の書き起こし：** 別の AI（Claude Sonnet）が、1回目を見ずに形だけで読み直しました。1回目との値の一致率は表87.7%・裏87.0%で、食い違いの大半は似た形の3組（ls と S、r と xbar、8s と 8）でした。2回目の書き起こしでも、対照実験は0／1000回でした。
+- 書き起こしは細部に誤りを含む前提で使ってください。詳しくは [docs/METHOD.md](docs/METHOD.md) の「較正」「2回目の書き起こし」にあります。
 
 ## 内容（要約。読めた範囲から。主語や語の切れ目が不確かな箇所は、そう書いた）
 - 「この君主（ce prince）」は、これまでになく不機嫌で腹を立てており、思いとどまらせる手立てがない。
-- 金の話：会計官（tresorier）Bilart は、前月21日付の最後の便で、10日以上前に « trente mil [?] en or » があったと書いた。Guise 枢機卿は2日付の書簡で、« cinq mil [?] » がこちらへ向けて出たと書いた（partoient の読みは不確か）が、まだ知らせ（nouvelle と推定）はない。« 5千どころか10万5千 [?] でも立て直せない » ほどの状態にある（cent の読みは不確か）。
+- 金の話：会計官（tresorier）Bilart は、前月21日付の最後の便で、10日以上前に « trente mil [?] en or » があったと書いた。Guise 枢機卿は2日付の書簡で、« cinq mil [?] pour venir icy » が出たと書いた（partoient の読みは不確か）が、まだ知らせ（nouvelle と推定）はない。« 5千どころか10万5千 [?] でも立て直せない » ほどの状態にある（cent の読みは不確か）。
 - Biron 元帥を引き留める望みは、もうない。Biron の側からは、退く途中で通りがけに会うのはたやすいだろう、という趣旨の便りがあった（主語と « chez » の後は不確か）。
 - 今夜、軍の代表（deputés de l'armée）がここに来ている。こちらは何もできないほど弱った集まりである。秘書 La Marsilière の [?]（手紙の類か）が手に入り、事情（finances など）が詳しく分かる。
 - この軍の解体は損である。あと6週間保てば大きな成果が出せたはずで、敵がこれほど驚いたことはなかった。
@@ -35,8 +37,9 @@
 
 **この読みで加えたこと**
 1. 2ページの記号を、Burford 氏の記号名で行ごとに書き起こした（`data/transcription_*.txt`）。見本にない記号には名前を足した。
-2. この書簡の文脈から、いくつかの記号の値を補った（ℓ 形＝i、＼ 形＝a、gg に横線＝nous など。`data/key.tsv` の inferred）。また、Burford 氏の鍵と違う値で読んだ記号が2つある（curl を pour でなく o、λ を x でなく q）。
-3. 書簡の内容（上の要約）。
+2. この書簡の文脈から、いくつかの記号の値を補った（ℓ 形＝i、縦線の下が右に巻く形（curlo）＝o、gg に横線＝nous など。`data/key.tsv` の inferred）。縦線に輪の形を友清氏の表の puis と同定した。λ は、友清氏の表の q と Burford 氏の鍵の x の両方に使われているとみた。
+3. 較正（f. 104r の7行）と、別の AI による独立の2回目の書き起こし（`calib/`、`second/`）。
+4. 書簡の内容（上の要約）。
 
 ## 使い方
 ```
@@ -44,28 +47,31 @@ python3 src/decode.py data/key.tsv data/transcription_f120r.txt                #
 python3 src/decode.py data/key.tsv data/transcription_f120r.txt --no-inferred  # 表と Burford 氏の照合だけ
 python3 src/decode.py data/key.tsv data/transcription_f120r.txt --table-only   # 表の記号だけ
 python3 src/control.py data/key.tsv data/transcription_f120_all.txt 1000       # 対照実験（wordfreq が必要）
-python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_f104r_l18-24.txt   # 較正（文字）
+python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_f104r_l18-24.txt --key-at-calibration  # 較正（文字、較正のときの鍵）
 python3 src/calib.py --signs calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # 較正（記号）
+python3 src/compare2.py data/transcription_f120r.txt second/transcription2_f120r.txt --key data/key.tsv  # 1回目と2回目の突き合わせ
 python3 -m unittest discover -s tests
 ```
 
 ## AI の使用
-書き起こし・鍵の補い・解読・スクリプト・文書は、Anthropic の Claude（Claude Code、Claude Opus 5.5）が行いました。対象の選定、画像の保存、公開の判断は人が行いました。人による書き起こしの照合はしていません。詳しくは [docs/METHOD.md](docs/METHOD.md)。
+書き起こし・鍵の補い・解読・スクリプト・文書は、Anthropic の Claude（Claude Code、Claude Opus 5.5）が行いました。2回目の書き起こしは Claude Sonnet が行いました。対象の選定、画像の保存、公開の判断は人が行いました。人による書き起こしの照合はしていません。詳しくは [docs/METHOD.md](docs/METHOD.md)。
 
 ## ファイル
 | 場所 | 中身 |
 |---|---|
 | data/transcription_f120r.txt・f120v.txt | 記号名での書き起こし（行ごと） |
 | data/transcription_f120_all.txt | 2ページをまとめたもの（表は c101〜、裏は c201〜） |
-| data/key.tsv | 記号名→値。出典を table（友清氏の表）・burford（Burford 氏の照合）・inferred（この書簡での推定）・unknown で区別 |
+| data/key.tsv | 記号名→値。出典を table（友清氏の表）・burford（Burford 氏の照合）・inferred（この書簡での推定）・unknown で区別。注は日本語と英語 |
 | data/decoded_*.txt | `src/decode.py` の出力 |
-| docs/READING.md | 読み（句読点を補ったもの） |
-| docs/METHOD.md | 方法、数字、AI の使用、限界 |
-| docs/OPEN.md | 値の分からない記号、読めない箇所、確かめていないこと |
+| docs/READING.md（英語版 READING.en.md） | 読み（句読点を補ったもの） |
+| docs/METHOD.md（英語版 METHOD.en.md） | 方法、数字、較正、2回目の書き起こし、AI の使用、限界 |
+| docs/OPEN.md（英語版 OPEN.en.md） | 値の分からない記号、読めない箇所、確かめていないこと |
 | src/angle.py・deskew.py・tiles.py | 画像の傾きの推定・補正、行の切り出し |
 | calib/transcription_f104r_l18-24.txt | 較正用の f. 104r 18〜24行目の書き起こし |
 | calib/ref_f104r_l18-24.txt・ref_signs_f104r_burford.txt | 較正の参照（当時の解読の文字、Burford 氏の記号の書き起こし。CC BY 4.0） |
 | src/calib.py | 較正の一致率の計算 |
-| SOURCES.md | 出典と、先行の確かめ |
+| second/ | 2回目の書き起こし（Claude Sonnet、形だけで読んだもの）と、その解読 |
+| src/compare2.py | 1回目と2回目の書き起こしの突き合わせ |
+| SOURCES.md（英語版 SOURCES.en.md） | 出典と、先行の確かめ |
 
 ライセンス：コードは MIT、自作の文書とデータは CC BY 4.0（[LICENSE](LICENSE)）。

@@ -1,5 +1,7 @@
 # 出典
 
+[English](SOURCES.en.md)
+
 ## 一次資料（リポジトリには含めていない）
 - **BnF, Français 15573**
   - Gallica ark:/12148/btv1b90618780
@@ -18,8 +20,11 @@
   - https://github.com/BravoBravoIX/mayenne-forget-1586-cipher-reading （コミット cc0daf749aecebae0e7eb163035abe9ba679a9d3、2026-10-19、文書とデータは CC BY 4.0）
   - `data/key-cipher2.json`：`data/key.tsv` の table・burford の行は、この鍵の値と出どころの印を写したもの（4列目に原文の印を残した）。
   - `method/sheet-v3.png`：記号の名前の見本。画像はこのリポジトリに含めていない。
-  - `data/known-text/f104r-decipherment.txt`（コミット cc0daf74）：f. 104r の当時の解読を同氏の側で目読みしたもの。その一部を `calib/ref_f104r_l18-24.txt` に写した（較正の参照）。
+  - `data/known-text/f104r-decipherment.txt`（コミット cc0daf74）：f. 104r の当時の解読を同氏の側で目読みしたもの。その一部を `calib/ref_f104r_l18-24.txt` に写した（較正の参照）。写した後、213コマの画像と照らし、« qui reste icy » を « qui restent icy » に直した（2026-10-20）。
   - `data/known-text/ref-104r-l18-24.txt`（コミット 22ab58c39dbd98a853044349d98294af93124e30、2026-10-19）：f. 104r の暗号の記号の書き起こし。`calib/ref_signs_f104r_burford.txt` にそのまま写した（較正の参照）。
+
+## 2回目の書き起こし
+- `second/transcription2_f120r.txt`・`f120v.txt`：Anthropic の Claude Sonnet が、1回目の書き起こしを見ずに、画像の切り出しと Burford 氏の見本表、記号の名前と形の説明だけから読んだもの（2026-10-20）。読み手を変えた独立の読みとして、1回目と突き合わせた（[docs/METHOD.md](docs/METHOD.md)）。
 
 ## 方法の手本
 - Harumi-Matsuba, *matignon1586-public*（同じ Cipher-2 の書簡 BnF fr. 15572 ff. 218–219 の読み）

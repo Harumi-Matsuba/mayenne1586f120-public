@@ -4,7 +4,12 @@
 # 範囲：« emporter » の « ter » から « qu'il en fallu[st] » の « fallu » まで。始まりは書き起こしの18行目の頭（8 delta ls = t e r）、
 #   終わりは24行目の末尾（4 q+ th = a l u）に合わせた。同氏の記号の参照（ref_signs_f104r_burford.txt）の23行目の末尾とも同じ位置
 # 略記は同氏の展開のまま。句読点・アクセント・大文字小文字は比べない
+# 画像（213コマの左余白と下端）で照らした（2026-10-20、f. 120 を読んだ側の作業で。較正の書き起こしの後）：
+#   同氏の « qui reste icy » は、画像では res の後に4文字ほどある（tent と読める。2文字目は o にも見える）ので « restent » に直した。
+#   ほかの語（emporter、Pour plusieurs bonnes raisons、Mays ie y faictz deux principalles difficultez、l'une que y menant ce peu de forces、
+#   la guienne en demoureroit du tout desgarnie、l'aultre que y estantz campez、se resoluant la tresue dont il se parle pour les prouinces de
+#   Xaintonge & Poitou、qu'il en fallut）は、画像の文字と合っていた。« & » は et と書いた
 ter pour plusieurs bonnes raisons. Mays ie y f
-aictz deux principalles difficultez, l'une que y menant ce peu de forces qui reste icy, la Guienne en
+aictz deux principalles difficultez, l'une que y menant ce peu de forces qui restent icy, la Guienne en
 demoureroit du tout desgarnie, l'aultre que y estantz campez, se resoluant la tresue dont il se parle pour
 les prouinces de Xaintonge et Poitou, qu'il en fallu

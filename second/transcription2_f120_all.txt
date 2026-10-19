@@ -1,0 +1,40 @@
+# 2回目の書き起こし（Claude Sonnet）を、1回目の改名（bslash→curl、curl→curlo）に合わせ、<…> の書き込み（孤立した点など）を除いて、表と裏をまとめたもの。src/compare2.py・src/control.py 用。表は c101〜、裏は c201〜
+c101: tt? 4? 7 I Sbar .10. Gamma 4 xbar delta th S r Q S delta zk? # n 6 dsi+ 4t? w? / Tl? r L T dbar delta
+c102: % m + rC? S R 4t Q f 4 2o % 6 R 4 // S 9 # delta z9 q+ r 9 n xbar th 4? z9 # 9 delta
+c103: 8? hs? dots f ls? delta Q Ee 6 r S delta xbar n a r 2o q+ g curlo th box hs? r 6 lambda zk? // n a 4? .12.
+c104: f? r? f 6 tri 2 6 w? S dots 6 hs? n z9 # delta Q tt? delta box r S a g? 6 r y? delta # 4? Lp curlo
+c105: ls? a delta 6 8 .30. 2x? th xd 4? 9 x n g Q q+ // 6 g? 2x? 9 dots L? delta rC? q+ delta 8 S delta
+c106: g dots # f r? hs? pi n H 4? ls? 8 delta g S # f th n a gg Ee z9? # 6 f delta 3? xbar?
+c107: z9? zk? x g S F delta 9 th x f 6 tri a T f2 ^(8 delta) 9 T .31. hs? xbar? 2o q+ dbar 2x? th dots f a
+c108: zk? z9? 9 n xd f dots T # f2 2o q+ 2x? th dots n a 8 # ooC alpha xbar? 2 n y oo ooC dots? #
+c109: % 2o q+ 6 2x? f2? ooC 9 dots n a x th 6 xbar? 6 z9? eps Dsign? tt oo th dots dbar r hs? q+ delta
+c110: 2 6 9 f f2 + y 9 d th Lp g 4t? r? g S # n a g? T 9 r th xd 8 delta Q S xbar? r
+c111: f // th # gg a dots n r 6 8 S f 6 xo ^(a xbar?) 8 n q+ oo Dsign th delta 6 n # rect %
+c112: hsb? .16. w? 6 phi w? yy 2x? th S T 6 xbar? f2? // ^(H xbar?) .20. .10. Gamma phi 9 n S delta Q gg?
+c113: g // 40 r? g ooC a r q+ w? 2x? a Q 6 // f2? .31. ls? n 6 xo ^(a xbar?) 8 f y .20.? ls? xbar?
+c114: 6 8 dsi+ f 6 xo ^(a d?) 8 n q+ oo 6 xbar? hsb? g 2x? th # dots n xbar? f2? a # r q+ delta th 4t?
+c115: hs? % 2x? th hs? w? delta Q Esign w? hs? # r g dots q+ T Q q+ Q xbar? 6 z9 eps % S dots f n th
+c116: ls? 2x? a f dots 6 Q Gamma g? phi hs? n delta g m + f S xbar? z9? rC? ooC 2x? H r # %
+c117: gg a n S? dsi Om 2o q+ g 2x? th # 4 S x Q 9 // f th delta 6 a z9 T delta 6 n S
+c118: tt w S? 2x? 6 tri r # f2? 2o q+ 6 xbar? m th q+ a Tl 2x? th xbar f delta g xbar? delta S
+c119: r # z9 Lbar // Id dots n # S? r 8 delta 6 n # y 4t? 8 2x? S? ^(+ q+?) z9 pi n S? dots 6 z9? 4?
+c120: delta g S? # n a Q g delta S? r a n # 2x? 6 a S? F xbar? f2? z9? w g delta # dots n a fe
+c121: 2x? dbar g r z9 y delta th r dots n # ooC? .31. f 4 6 8 % w n 2 x Q 9 2x? 6 f?
+c122: 9 lambda f // th # g w q+ g f delta th r 2c? dots 6 a 4? pi q+ 4 dbar xbar? .10. S? S? dots
+c123: dbar Q Tl? 6 r dsi a S? // Id r # 2x? .31. % .10. g th n f yy f 6 S? r S? a 4?
+c124: n 6 dsi .10. n S? 4 Ee? f 2x? dbar? ooC? 9 S? 4 dbar S? r Q q+ dots 6 8 ooC 9 f S? 4 hsb?
+c125: 2x? th curlo 6 g z9 S? r f dots f ls? rect tt z9 T a r g z9 zk? 2o g th n r
+c126: L r 6 a 2x? g delta # % m dots 6 a 8? g curlo box ls? r g .20.? hsb? g // 40 r g
+c127: th 6 S? curlo ls? xbar? f dsi z9 pi n q+ delta 2o 6 r .24. a + m 2x? n # delta z9? tt? dots
+c128: m f a z9? f2? .15. w 2c? w a // 8 pi delta phi? a # delta tt 2c 2x? n 6 g th 6 xbar?
+c129: .u. 9 th g r S? # delta a 4? n # delta Ee 8 4? S? g n q+ f r # xbar? 2o nous? y? delta
+c130: 8s? dots hs? alpha nous a n S? th q+ n r # xbar? eps .12. 2x? box + f S? r g z9 Id? g zk? xbar?
+c131: 2x? 9? r eps .12. d? n 6 4? f2? S? delta g % g r 8 pi q+ r 2o q+ f m + dsi+ r 6 a
+c201: + z9 B? // 6 z9 eps g th # thb zk? 2x? Id hs? delta a r Q g th # Ee T delta 6 x r {w?}
+c202: q+ r th # g w # 2x? 6 d r hs? f 2o q+ 9 n S a w hs? delta {yy?} # r 8 n g r
+c203: { } thb? a r 2c? zk? f q+ dots 6 f2? r rC 2x? th S dots n a S dots 8 f # ooC? 9 hs? delta q+ lambda
+c204: a dots # 8 Q Ee # th Lbar? 8 T ls? r dots z9 S w delta Qh m 2x? n S a L th g r #
+c205: f S? delta 9 th I 2 6 tt? w S? r # a 2x? n 6 Q dsi r H r? g th pi dsi n g a dots
+c206: n 8 yy g n xd f r th? 8s? 2x? n 6 r g Q H r zk? // I dots n a B 2x? n # delta rect
+c207: z9? tri ls? 2x? 6 9 g r box delta S a f 2 6 tt? r L delta 8s? f g 6 x m th S r 6?
+c208: f 2x? 2o? dsi w // L r g xbar dbar oo 2o? Dsign d? 4t? .u. R

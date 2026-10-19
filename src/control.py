@@ -1,3 +1,4 @@
+# EN: Control: compare the French-likeness (mean letter-trigram log-likelihood from wordfreq's top 50,000 French words) of the text decoded with the real key and with keys whose letter values are shuffled. Usage: python3 src/control.py data/key.tsv data/transcription_f120_all.txt [trials] [--table-only|--no-inferred]
 # 対照実験：表の文字記号の値をかき混ぜた鍵と、本物の鍵とで、平文のフランス語らしさを比べる。
 # フランス語らしさ＝文字3連の対数尤度の平均（wordfreq の仏語上位5万語を頻度で重み付けして作る）。
 # 単語記号（=que、.3. など）は採点から外し、1文字の記号の並びだけを採点する。
@@ -67,3 +68,5 @@ if __name__ == '__main__':
     print(f'本物の鍵: {real:.3f}')
     print(f'かき混ぜた鍵 {N} 回: 最小 {sh[0]:.3f} / 中央 {sh[N//2]:.3f} / 最大 {sh[-1]:.3f}')
     print(f'本物以上になった回数: {sum(1 for x in sh if x >= real)} / {N}')
+    print(f'EN: letters scored {sum(len(r) for r in rs)}, letter signs {len(letters)}; real key {real:.3f}; '
+          f'shuffled ({N}) min {sh[0]:.3f} / median {sh[N//2]:.3f} / max {sh[-1]:.3f}; shuffled >= real: {sum(1 for x in sh if x >= real)} / {N}')

@@ -1,5 +1,6 @@
+# EN: Calibration: compare, letter by letter, the text from the transcription and key with the contemporary decipherment (or, with --signs, the sign transcription with a reference sign transcription). Usage: python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_f104r_l18-24.txt [--table-only] [--key-at-calibration]
 # 較正：当時の解読がある行で、書き起こし＋鍵から出した文字列と、当時の解読を文字の単位で突き合わせる。
-# 使い方: python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_f104r_l18-24.txt [--table-only]
+# 使い方: python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_f104r_l18-24.txt [--table-only] [--key-at-calibration]
 # 参照の平文は、書き起こしの最初の行から最後の行までに当たる当時の解読（# で始まる行は読まない）。
 # 文字は小文字にし、アクセントを外し、j→i、v→u に寄せ、文字以外を除いて比べる。
 # 区切りの斜線（/ と |）は飛ばす。行間の書き込み ^(…) と消した記号 {…} は decode.load_lines が除く。
@@ -87,13 +88,21 @@ if __name__ == '__main__' and '--signs' in sys.argv:
     print(f'参照の記号 {la}、書き起こしの記号 {lb}、編集距離 {dist}')
     print(f'記号の一致率 1−距離/参照 = {1 - dist/la:.1%}')
     print('違い（参照>書き起こし）:', ' '.join(f'{r}>{h}' for r, h in ops))
+    print(f'EN: reference {la} signs, transcription {lb}; edit distance {dist}; sign agreement {1 - dist/la:.1%}')
 elif __name__ == '__main__':
     args = [x for x in sys.argv[1:] if not x.startswith('--')]
     key, _ = load_key(args[0], '--table-only' in sys.argv)
+    if '--key-at-calibration' in sys.argv:
+        # 較正のときの鍵に戻す：＼ 形（いまの curl）は a（推定。表の記号だけの条件では使わない）、λ は q だけ
+        key.pop('curl', None)
+        if '--table-only' not in sys.argv:
+            key['curl'] = 'a'
+        key['lambda'] = 'q'
     hyp = decoded_stream(load_lines(args[1]), key)
     ref = letters(''.join(l for l in open(args[2], encoding='utf-8') if not l.startswith('#')))
     dist, sub, dele, ins, ops = align(ref, hyp)
     print(f'参照の文字数 {len(ref)}、解読の文字数 {len(hyp)}')
     print(f'編集距離 {dist}（置換 {sub}、解読側の脱落 {dele}、解読側の余分 {ins}）')
     print(f'文字の一致率 1−距離/参照 = {1 - dist/len(ref):.1%}')
+    print(f'EN: reference {len(ref)} letters, decoded {len(hyp)}; edit distance {dist} (substituted {sub}, missing {dele}, extra {ins}); letter agreement {1 - dist/len(ref):.1%}')
     print('違い（参照の位置、参照、解読）:', ' '.join(f'{p}:{r}>{h}' for p, r, h in ops))
