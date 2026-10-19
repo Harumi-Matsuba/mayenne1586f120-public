@@ -101,7 +101,7 @@ class TestCodex(unittest.TestCase):
         vote = importlib.util.module_from_spec(spec); spec.loader.exec_module(vote)
         key, _ = load_key(KEY)
         V = lambda t: key.get(t, '[' + t + ']')
-        for page, want in [('f120r', 0.929), ('f120v', 0.921)]:
+        for page, want in [('f120r', 0.937), ('f120v', 0.903)]:
             A = vote.load(os.path.join(ROOT, 'data', f'transcription_{page}.txt'))
             B = vote.load(os.path.join(ROOT, 'codex', f'transcription_codex_{page}.txt'))
             tot = dist = 0

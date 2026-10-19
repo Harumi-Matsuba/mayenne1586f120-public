@@ -27,15 +27,9 @@ The same transcription was decoded with keys in which the values of the letter s
 | First (revised) | Table signs only | 751 | −2.752 | −5.611 / −4.834 / −3.910 | 0 / 1000 |
 | First (revised) | Table + Burford | 830 | −2.761 | −5.663 / −4.974 / −4.109 | 0 / 1000 |
 | First (revised) | Also inferred | 841 | −2.775 | −5.698 / −4.992 / −4.235 | 0 / 1000 |
-| Independent second (Codex, second run; see "Independent second transcription") | Table signs only | 734 | −2.702 | −5.664 / −4.800 / −3.856 | 0 / 1000 |
-| Independent second (Codex, second run) | Table + Burford | 816 | −2.752 | −5.652 / −4.956 / −4.179 | 0 / 1000 |
-| Independent second (Codex, second run) | Also inferred | 819 | −2.752 | −5.623 / −4.941 / −3.944 | 0 / 1000 |
-| Independent second (Codex, first run, shifted images) | Table signs only | 736 | −2.680 | −5.675 / −4.798 / −3.877 | 0 / 1000 |
-| Independent second (Codex, first run) | Also inferred | 826 | −2.785 | −5.649 / −4.945 / −3.983 | 0 / 1000 |
-| Three-reader vote (see below) | Table signs only | 742 | −2.762 | −5.622 / −4.827 / −3.890 | 0 / 1000 |
-| Three-reader vote | Also inferred | 832 | −2.786 | −5.697 / −4.975 / −3.979 | 0 / 1000 |
-| Second (see "Second transcription") | Table signs only | 717 | −3.079 | −5.493 / −4.767 / −3.948 | 0 / 1000 |
-| Second | Also inferred | 835 | −3.011 | −5.687 / −4.952 / −4.186 | 0 / 1000 |
+| Independent second (Codex, third run; see "Independent second transcription") | Table signs only | 700 | −2.851 | −5.675 / −4.732 / −3.805 | 0 / 1000 |
+| Independent second (Codex, third run) | Table + Burford | 829 | −2.808 | −5.623 / −4.953 / −4.170 | 0 / 1000 |
+| Independent second (Codex, third run) | Also inferred | 835 | −2.819 | −5.618 / −4.950 / −4.093 | 0 / 1000 |
 
 This shows only that the key's values produce text far closer to French than chance assignments do; it does not show that each sign is read correctly. In the first transcription some look-alike signs were chosen by context, which favours the real key. The second transcription (Sonnet) and the three-reader vote (Opus) were read by shape only and have no context bias. The vote's real-key score is about the same as that of the context-chosen first transcription.
 
@@ -148,17 +142,21 @@ The first transcription was corrected after looking at differences with the vote
 
 ## Independent second transcription (OpenAI's Codex, 20 October 2026)
 - Run after the first transcription had been corrected from the checks above, with OpenAI's Codex CLI (codex-cli 0.163.0-alpha.10.2 bundled with the ChatGPT app, default model; no model name appears in the configuration or the run record). `codex exec --ephemeral -s read-only` was run from an empty folder, given only the line images (each line in left and right halves, 78 images), Burford's reference sheet and an English prompt (`codex/PROMPT.md`: sign names and shape descriptions only; no values, first reading, key or plaintext).
-- **First run** (`codex/run1_misaligned/`): in lines 6–9 and others, the right halves of the images were one line off (the right side of the lines slopes down, but the right halves were cut at the left half's baseline). The run record contains only the reply, with no command execution or file reading.
-- **Second run** (`codex/transcription_codex_*`): each line was straightened by following its baseline every 200 pixels and shifting columns up or down, then cut into left and right halves again. All 39 strips were checked by eye; the end of verso line 7 that showed at the right of verso line 8 was blanked. Besides the reply, the run record has one command execution (`ls ../img3`, listing the image folder). The folder holds only images; no other file was read.
+- **Run used for the judgement (third run, `codex/transcription_codex_*`)**: each line was straightened by following its baseline every 200 pixels and shifting columns up or down, then cut into left and right halves (all 39 strips checked by eye; the end of verso line 7 showing at the right of verso line 8 blanked). The images were passed one by one, each with `-i`. The run record contains only reconnection notices and the reply, with no command execution or file reading. Input was about 50,000 tokens, fewer than in the earlier two runs (about 270,000–300,000); the images may have been passed at a lower resolution (inference).
+- **Runs not used**:
+  - First run (`codex/run1_misaligned/`): some right halves were one line off, and the list of images was passed as a single string, so the images may not have been passed one by one.
+  - Second run (`codex/run2_ls/`): straightened images, but passed in the same way as the first run; the run record has a listing of the image folder (`ls`). Whether Codex opened images itself is not recorded, so it cannot be said that the images were passed correctly.
 - Agreement with the (revised) first transcription:
   | Run | Page | Sign names | Values (same-value names count as agreeing) |
   |---|---|---|---|
-  | second | f. 120r | 89.7% (885 signs, edit distance 91) | 92.9% (edit distance 63) |
-  | second | f. 120v | 88.4% (216 signs, edit distance 25) | 92.1% (edit distance 17) |
-  | first (shifted images) | f. 120r | 89.6% (edit distance 92) | 92.9% (edit distance 63) |
-  | first (shifted images) | f. 120v | 88.0% (edit distance 26) | 90.7% (edit distance 20) |
+  | third (used) | f. 120r | 86.2% (885 signs, edit distance 122) | 93.7% (edit distance 56) |
+  | third (used) | f. 120v | 83.3% (216 signs, edit distance 36) | 90.3% (edit distance 21) |
+  | second (not used) | f. 120r | 89.7% (edit distance 91) | 92.9% (edit distance 63) |
+  | second (not used) | f. 120v | 88.4% (edit distance 25) | 92.1% (edit distance 17) |
+  | first (not used) | f. 120r | 89.6% (edit distance 92) | 92.9% (edit distance 63) |
+  | first (not used) | f. 120v | 88.0% (edit distance 26) | 90.7% (edit distance 20) |
 
-  The lowest value over both runs (values 90.7%, names 88.0%) is used for the judgement. (Compared before the three-loop sign was named ooo, the first run gave 93.2% recto and 90.7% verso.)
+  The judgement uses the lower value of the third run (values 90.3%). Including the two unused runs, the lowest value is still 90.3%. By name the third run is lower (83.3–86.2%), with many differences in the naming of look-alike signs.
 - The first transcription was not corrected from this comparison (that would make it no longer independent). Checking the differences is left in [OPEN.en.md](OPEN.en.md).
 - Decoded with the same key, the Codex transcription also gave 0 / 1000 in the control (table above). Its sign count is higher than the first's because descriptions in <…> are split into words.
 

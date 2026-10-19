@@ -6,14 +6,14 @@ A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 
 
 ## Status (20 October 2026)
 - **A reading of the whole letter** (meeting all the numerical conditions under "Basis" below). Thirteen kinds of signs (16 places) have no value, and some short stretches are not read ([docs/READING.en.md](docs/READING.en.md), [docs/OPEN.en.md](docs/OPEN.en.md)). The sender and the date are not known.
-  - Basis (in brackets, the conditions set for calling a reading "whole"): control 0 / 1000. Agreement of values between the first transcription and the independent second (Codex, two runs): the lower is 90.7% (condition: 85% or more). Share of signs with a value, including inferred: 98.5% (95% or more). Sign accuracy in the calibration, by the same way of reading as the published transcription (one Opus reader decoding with the key while reading): 90.5% (90% or more).
+  - Basis (in brackets, the conditions set for calling a reading "whole"): control 0 / 1000. Agreement of values between the first transcription and the independent second (Codex, the run with the images passed correctly one by one): the lower is 90.3% (85% or more). Share of signs with a value, including inferred: 98.5% (95% or more). Sign accuracy in the calibration, by the same way of reading as the published transcription (one Opus reader decoding with the key while reading): 90.5% (90% or more).
 - **Relation to prior work**: Tomokiyo lists f. 120 as a Cipher-2 letter, « Endorsement illegible (to me). Undeciphered. » ([Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm), last modified 2023-09-23). The key is prior work (Tomokiyo's table, Brett Burford's key); the transcription and the reading were made in this repository. The check for prior work ([docs/PRIOR_CHECK.en.md](docs/PRIOR_CHECK.en.md), 20 October 2026) found nothing ("not found"). That check was made by the same reader that read the letter (Claude Opus 5.5); no check by a separate reader who has not seen the reading has been made. Not finding something does not prove that nobody has read it.
 - **No person has checked the transcription.** It was read from the images by AI. Agreement between AI readings is not a substitute for a human check.
 - **Figures** (details in [docs/METHOD.en.md](docs/METHOD.en.md)):
   | Item | Result |
   |---|---|
   | Control with the letter values of the key shuffled (1,000 times, three conditions) | no shuffled key reached the real key |
-  | **Independent second transcription**: agreement of values between readings by OpenAI's Codex (codex-cli 0.163.0-alpha.10.2, default model), made without seeing the first, and the first | second run (straightened line images): 92.9% recto, 92.1% verso. First run (right halves one line off): 92.9% recto, 90.7% verso. By name: 89.7% / 88.4% and 89.6% / 88.0%. The first was not corrected from this comparison |
+  | **Independent second transcription**: agreement of values between a reading by OpenAI's Codex (codex-cli 0.163.0-alpha.10.2, default model), made without seeing the first, and the first | run with the images passed correctly one by one: 93.7% recto, 90.3% verso (by name 86.2%, 83.3%). The first was not corrected from this comparison. Two earlier runs with a defect in passing the images (92.9% / 92.1% and 92.9% / 90.7%) are not used for the judgement |
   | Calibration: sign accuracy on seven lines of f. 104r (with a contemporary decipherment), read without seeing the answer (as Burford counts; in brackets, also counting same-value names) | same way of reading as the published transcription (one Opus reader, decoding with the key): 90.5% (95.6%). One pass by shape only: 86.9% (89.1%). Vote of three Opus readers: 90.5% (95.6%). Burford on the same lines: 91.1–93.5% single passes, 92.9% vote |
   | Calibration: letter agreement | 79.4% by the same way of reading as the published transcription (current key); 70.6% for the blind shape-only pass |
   | Record of checks: agreement of values between the first and the Claude Sonnet transcription / the vote of three Claude Opus readers | Sonnet 87.7% recto, 87.5% verso; vote 93.1% recto, 87.0% verso (the first was corrected after looking at differences with these on the image, so these are not independent comparisons) |
@@ -30,6 +30,8 @@ A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 
 | Total | 1,101 | 88.5% | 96.9% | 98.5% |
 
 ## History
+- 20 October 2026 (Codex reading taken again)
+  - The two earlier Codex runs had a defect in how the images were passed (the list of images went in as a single argument), and in one of them Codex listed the image folder itself. Codex was run again with each image passed separately, and the run record was checked to contain no command execution. Agreement of values with the first: 93.7% recto, 90.3% verso. The earlier two runs are kept in `codex/run1_misaligned/` and `codex/run2_ls/` and are not used for the judgement.
 - 20 October 2026 (revision to meet the conditions for a "whole" reading)
   - The right halves of the line images given to Codex were one line off in lines 6–9 and others (the right side of the lines slopes down). Straightened line images were made by following the baseline of each line, all lines were checked by eye, and Codex was run again. Agreement of values with the first: 92.9% recto, 92.1% verso (the run on the shifted images: 92.9%, 90.7%).
   - The calibration was taken again by the same way of reading as the published transcription (one Opus reader decoding with the key), on the seven lines of f. 104r, without the answer. Sign accuracy: 90.5%.
@@ -101,7 +103,7 @@ See "Status" above and "Use of AI" in [docs/METHOD.en.md](docs/METHOD.en.md). No
 | data/decoded_*.txt | output of `src/decode.py` |
 | docs/READING.en.md, METHOD.en.md, OPEN.en.md | reading, method and figures, open points (Japanese versions without .en) |
 | calib/ | calibration on f. 104r lines 18–24 (transcription and references, CC BY 4.0 for the references) |
-| codex/ | independent second transcription (OpenAI's Codex, by shape only), the prompt given, and its decoding; run1_misaligned/ is the first run, on images whose right halves were shifted |
+| codex/ | independent second transcription (OpenAI's Codex, by shape only), the prompt given, and its decoding; run1_misaligned/ and run2_ls/ are runs with a defect in passing the images, not used for the judgement |
 | calib/transcription_f104r_l18-24_context.txt | calibration transcription by the same way of reading as the published one (decoding with the key) |
 | second/ | transcription used for checking (Claude Sonnet, by shape only) and its decoding |
 | third/ | transcriptions by three Claude Opus readers (f. 104r lines 18–24 and f. 120) and their vote |

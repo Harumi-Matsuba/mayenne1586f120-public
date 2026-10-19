@@ -1,9 +1,9 @@
-# Codex（OpenAI、codex-cli 0.163.0-alpha.10.2、既定のモデル。実行記録にモデル名は出ない）による独立の書き起こし（2026-10-20、2回目の実行。行をまっすぐにした画像 codex 用）。1回目・鍵・平文は渡していない。f. 120v
-c01: Tl z9 B // 6 z9 eps g th # 0 zk 4 Id hs delta a r Q g th # Ee T delta 6 x r {rect}
-c02: qx th # g w # 4 6 d r hs f? 2o q+ 9 n S a w hs delta {yy} # r 8s n g r
-c03: <crossed curved stroke> thb a r 2u zk f? q+ dots 6 f2 r rC 4 th ls dots n a S dots 8s f? # ooC 9 hs delta q+ lambda
-c04: a dots # 8 Q Ee # th Lbar 8 T ls r z9 S w delta Qh m 4 n S a L th g r #
-c05: f S delta 9 th invT .26. w2 w S r # a 4 n 6 Q dsi r H r g th pi dsi n g a dots
-c06: n 8 yy g n xd f? r zk 8s 4 n 6 r g Q H r zk // I dots n a B 4 n # delta rect
-c07: z9 tri ls 4 6 9 g r box delta S a f? .20. thb r L delta 8s f g 6 r m th ls r 6?
-c08: f 4 .20. dsi w // L r g <crossed dotted curves> dbar oo <two linked loops> Dsign delta 4t <V with slash> R
+# Codex（OpenAI、codex-cli 0.163.0-alpha.10.2、既定のモデル。実行記録にモデル名は出ない）による独立の書き起こし（2026-10-20、3回目の実行。行をまっすぐにした画像を1枚ずつ -i で渡した。実行記録にコマンドの実行はない）。1回目・鍵・平文は渡していない。f. 120v
+c01: Tl z9 B // 6 z9 eps g th # 0 zk 2x Id hs delta a r Q g th # Ee T delta 6 x r {rect}
+c02: q+ r th # g w # 2x 6 d r hs f 2o q+ 9 n S a w hs delta {yy} # r 8s n g r
+c03: <diagonal crossed loop> th a r 2u zk f q+ dots 6 f2 r <small x> 2x th ls dots n a S dots 8s Lbar # phi 9 hs delta q+ lambda
+c04: a dots # 8 Q Ee # th Lbar 8 T ls r z9 S w delta Qh m 2x n S a L th g r #
+c05: f S delta 9 th I 2 6 w2 w S r # a 2x n 6 Q dsi r H r g th pi dsi n g a dots
+c06: n 8 yy g n xd f r zk 8s 2x n 6 r g Q H r zk // I dots n a B 4 n # delta rect
+c07: z9 tri ls 2x 6 d g r box delta S a f 2 6 tt r L delta 8s f g 6 r m th ls r 6
+c08: f 2x .20. dsi w // L r g {<diagonal crossed loop>} dbar oo <two joined loops> Dsign delta 4t <v with dot> R

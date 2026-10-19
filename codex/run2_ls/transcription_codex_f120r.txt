@@ -1,0 +1,32 @@
+# Codex（OpenAI、codex-cli 0.163.0-alpha.10.2、既定のモデル。実行記録にモデル名は出ない）による独立の書き起こし（2026-10-20、2回目の実行。行をまっすぐにした画像 codex 用）。1回目・鍵・平文は渡していない。f. 120r
+c01: thb + 7 I Sbar .10. Gamma 4 xbar delta th ls r Q S delta zk # n 6 dsi+ 4t w / Tl r L T dbar delta
+c02: % m + rC S lambda 4t Q f 4 2o % 6 Lp 4 // ls 9 # delta z9 q+ r 9 n xbar th 4 z9 # 9 delta
+c03: < S with cap > hs dots f ls delta Q Ee 6 r S delta xbar n a r 2o q+ g curl th box hs r 6 delta rC // n a 4 .12.
+c04: f? r f 6 tri 2 6 w2 S dots 6 g n z9 # delta Q tt delta box r S a g 6 r rC delta # 4 Lbar curl
+c05: ls a delta 6 8 .30. 4 th xd 4 9 x n g Q q+ // 6 z9 4 9 dots L delta rC q+ delta 8 ls delta
+c06: g dots # f r hs pi n H 4 ls 8 delta g S # f th n a nous Ee z9 # 6 f delta hs r
+c07: z9 zk r g S F delta 9 th x f 6 tri a T f2 ^(8 delta) 9 + .31. g r 2o q+ dbar 4 th dots f a
+c08: <angular loop on stem> z9 9 n xd f dots T # f? 2o q+ 4 th dots n a 8 # ooC alpha r 2u n y oo ooC # 
+c09: % 2o q+ 6 4 <forked upright> ooC 9 dots n a lambda th 6 r 6 z9 eps <crossed curved stroke> tt oo th dots dbar r ls q+ delta
+c10: .26. 9 f f + y 9 d th Lp g 4t r g S # n a 9 T 9 r th xd ^(8 delta) Q S r rC
+c11: f // th # nous a dots n r 6 8 S f 6 xo ^(a r) 8s n q+ oo <crossed curved stroke> th delta 6 n # rect %
+c12: hb .16. w2 6 phi w yy 4 th S T 6 r f2 // ^(H r) .20. .10. Gamma pdot 9 n ls delta Q th
+c13: g // 40 r g phi a r q+ w 4 a Q 6 // f2 .31. S n 6 xo ^(a r) 8s f y .20. S r
+c14: 6 8 dsi+ f 6 xo ^(a delta) 8s n q+ oo 6 r hb g 4 th # dots n r f2 a # r q+ delta th 4t
+c15: hs % 4 th hs w delta Q Esign w hb # r g dots q+ T Q q+ Q r 6 z9 eps % S dots f2 n th
+c16: ls 4 a f dots 6 Q Gamma z9 pdot f? n delta g m + f ls r z9 rC phi 4 H r # %
+c17: nous a n ls dsi Om 2o q+ g 4 th # 4 S r Q 9 // f th delta 6 a z9 T delta 6 n ls
+c18: thb w ls 4 6 tri r # f? 2o q+ 6 r m + th q+ a Tl 4 th xbar f delta g zk delta ls
+c19: r # z9 Lbar // Id dots n # ls r 8 delta 6 n # y 4t 8s 4 ls ^(+ q+) z9 pi n ls dots 6 z9 4
+c20: delta g S # n a Q g delta ls r a n # 4 6 a S F r f? z9 w2 g delta # dots n a f2 rC
+c21: 4 dbar g r z9 y delta th r dots n # ooC .31. f? 4 6 8 % w n 2u r Q 9 4 6 f?
+c22: 9 lambda f // th # g w2 q+ g f? delta th r 2u dots 6 a 4 pi q+ 4 dbar r .20. S ls dots
+c23: dbar Q invTl 6 r dsi a ls // Id r # 4 .31. % .10. g th n f? yy f 6 S r ls a 4
+c24: n 6 dsi .10. n ls 4 Lp f 4 <forked upright> ooC 9 ls 4 dbar S r Q q+ dots 6 8s ooC 9 f ls 4 hb
+c25: 4 th curl 6 g z9 S r f? dots f ls rect thb z9 <cross with four dots> T a r <barred g> z9 <T with curved foot> 2o hb th n r
+c26: L r 6 a 4 <cross with four dots> q+ delta # % m dots 6 a thb g curl box ls r g 2o thb g // 40 r g
+c27: invT th 6 S curl ls zk f? dsi z9 pi n q+ delta 2o 6 r .24. a + m 4 n # delta zk # dots
+c28: m f a z9 <f with three bars> .15. w2 2u w a // 8s pi delta ooC a # delta tt 2u 4 n 6 g th 6 r
+c29: .u. 9 th g r S # delta a 4 n # delta Ee 8s 4 ls g n q+ f r # r 2o {nous} y delta
+c30: B dots hs alpha nous a n S th q+ n r # r eps .12. 4 box + f ls r g z9 Id g zk r
+c31: 4 q+ r eps .12. B n 6 4 f2 S delta g % g r 8s pi q+ r 2o q+ f? m + dsi+ r 6 a
