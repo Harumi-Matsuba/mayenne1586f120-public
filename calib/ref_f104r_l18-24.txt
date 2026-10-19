@@ -1,0 +1,10 @@
+# 参照：BnF fr. 15573 f. 104r の暗号18〜24行目に当たる、当時の解読（左余白と下端）の文字
+# 出典：Brett Burford 氏の BravoBravoIX/mayenne-forget-1586-cipher-reading、data/known-text/f104r-decipherment.txt
+#   （コミット cc0daf74、2026-10-19。CC BY 4.0。同氏の注記では、Claude が Gallica の212・213コマから目で読んだもの）
+# 範囲：« emporter » の « ter » から « qu'il en fallu[st] » の « fallu » まで。始まりは書き起こしの18行目の頭（8 delta ls = t e r）、
+#   終わりは24行目の末尾（4 q+ th = a l u）に合わせた。同氏の記号の参照（ref_signs_f104r_burford.txt）の23行目の末尾とも同じ位置
+# 略記は同氏の展開のまま。句読点・アクセント・大文字小文字は比べない
+ter pour plusieurs bonnes raisons. Mays ie y f
+aictz deux principalles difficultez, l'une que y menant ce peu de forces qui reste icy, la Guienne en
+demoureroit du tout desgarnie, l'aultre que y estantz campez, se resoluant la tresue dont il se parle pour
+les prouinces de Xaintonge et Poitou, qu'il en fallu

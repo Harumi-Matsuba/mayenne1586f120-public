@@ -16,7 +16,7 @@ A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 
 
 - In a control with the letter values of the key shuffled (1,000 times), no shuffled key scored as French-like as the real key, in all three conditions ([docs/METHOD.md](docs/METHOD.md)).
 - Many lines read as French sentences ([docs/READING.md](docs/READING.md)). 14 kinds of signs (21 places) have no value, and some short stretches are not read ([docs/OPEN.md](docs/OPEN.md)).
-- **No calibration was done.** The transcription is one visual pass, and its accuracy was not measured on a letter with a contemporary decipherment; see "Limits" in [docs/METHOD.md](docs/METHOD.md). Please use it on the assumption that details may be wrong.
+- **Calibration:** seven lines of f. 104r, a Cipher-2 letter with a contemporary decipherment, were transcribed by the same method without looking at the decipherment. Character agreement with the decipherment was 69.5% (62.6% with table signs only); sign agreement with Burford's reference transcription was 86.1% (leaving out line-initial signs missing from the reference). The transcription is one visual pass, so please use it on the assumption that details may be wrong. The kinds of error, and what they imply for f. 120 (e.g. the backslash-with-o sign may be *pour*), are in "Calibration" in [docs/METHOD.md](docs/METHOD.md) (Japanese).
 
 ## Content (summary of what is read; uncertain subjects and word divisions are marked)
 - "This prince" (ce prince) is more vexed and angry than ever, and there is no way to dissuade him.
@@ -44,6 +44,8 @@ python3 src/decode.py data/key.tsv data/transcription_f120r.txt                #
 python3 src/decode.py data/key.tsv data/transcription_f120r.txt --no-inferred  # table + Burford only
 python3 src/decode.py data/key.tsv data/transcription_f120r.txt --table-only   # table only
 python3 src/control.py data/key.tsv data/transcription_f120_all.txt 1000       # control (needs wordfreq)
+python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_f104r_l18-24.txt   # calibration (characters)
+python3 src/calib.py --signs calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # calibration (signs)
 python3 -m unittest discover -s tests
 ```
 

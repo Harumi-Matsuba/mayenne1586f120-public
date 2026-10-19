@@ -5,6 +5,7 @@
   - Gallica ark:/12148/btv1b90618780
   - 246コマ：f. 120r（全面が暗号31行）。https://gallica.bnf.fr/ark:/12148/btv1b90618780/f246.item
   - 247コマ：f. 120v（暗号8行）。https://gallica.bnf.fr/ark:/12148/btv1b90618780/f247.item
+  - 213コマ：f. 104r（較正に使った。暗号の18〜24行目）。https://gallica.bnf.fr/ark:/12148/btv1b90618780/f213.item
 
 画像は再配布していません。コマ番号で参照してください。Source gallica.bnf.fr / BnF.
 
@@ -17,11 +18,13 @@
   - https://github.com/BravoBravoIX/mayenne-forget-1586-cipher-reading （コミット cc0daf749aecebae0e7eb163035abe9ba679a9d3、2026-10-19、文書とデータは CC BY 4.0）
   - `data/key-cipher2.json`：`data/key.tsv` の table・burford の行は、この鍵の値と出どころの印を写したもの（4列目に原文の印を残した）。
   - `method/sheet-v3.png`：記号の名前の見本。画像はこのリポジトリに含めていない。
+  - `data/known-text/f104r-decipherment.txt`（コミット cc0daf74）：f. 104r の当時の解読を同氏の側で目読みしたもの。その一部を `calib/ref_f104r_l18-24.txt` に写した（較正の参照）。
+  - `data/known-text/ref-104r-l18-24.txt`（コミット 22ab58c39dbd98a853044349d98294af93124e30、2026-10-19）：f. 104r の暗号の記号の書き起こし。`calib/ref_signs_f104r_burford.txt` にそのまま写した（較正の参照）。
 
 ## 方法の手本
 - Harumi-Matsuba, *matignon1586-public*（同じ Cipher-2 の書簡 BnF fr. 15572 ff. 218–219 の読み）
   - https://github.com/Harumi-Matsuba/matignon1586-public
-  - スクリプト（`src/decode.py`・`src/control.py`）を元にした。較正の一致率74.8% は同リポジトリの `docs/METHOD.md` による。
+  - スクリプト（`src/decode.py`・`src/control.py`・`src/calib.py`）を元にした。較正のやり方も同リポジトリの `docs/METHOD.md` に合わせた（同リポジトリの f. 103v での一致率は74.8%）。
 
 ## 先行の確かめ
 見つからないことは、手を付けた人がいないことの証明にはなりません。

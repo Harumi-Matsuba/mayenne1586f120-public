@@ -1,0 +1,19 @@
+# 参照：Brett Burford 氏による f. 104r の暗号の記号の書き起こし（見本表 v3 の名前）。同氏の行番号は0行目から数えるので、同氏の18〜23行目が、このリポジトリの書き起こしの19〜24行目に当たる
+# 出典：BravoBravoIX/mayenne-forget-1586-cipher-reading、data/known-text/ref-104r-l18-24.txt（コミット 22ab58c3、2026-10-19。CC BY 4.0）。以下は原文のまま
+# Reference sign transcription of BnF fr. 15573 f. 104r cipher lines 18-24 (held-out lines of the
+# calibration letter; no sheet example comes from lines 18 onward), names of sheet v3
+# (x? = a sign on no row; / = word divider). Read by eye by Claude at about 0.85x native
+# size, sign by sign, 19 Oct 2026, before any reader pass with sheet v2/v3 was made on these lines.
+# Checked by decoding against the contemporary decipherment (f. 104r margin and foot: "...deux
+# principalles difficultez, l'une que y menant ce peu de forces qui reste icy, la Guienne en
+# demoureroit du tout desgarnie, l'aultre que y estantz campez, se resoluant la tresue dont il se
+# parle pour les prouinces de Xaintonge et Poitou, qu'il en fallust leuer le siege qui seroit
+# beaucoup de temps..."). a|b = either name is accepted. Single small dots between signs are not
+# counted as signs. Line 25 is left out: its band was cut by the line fit.
+18 g 9 lambda zk ls n 6 S n Lbar 4 H r g 9 n box f S th q+ a delta g /
+19 6 r Q dbar 8s r 6 4 f2|dbar 8 S r / 24 z9 m : ls S delta f 2o
+20 r 6 a / rect|box Ee tri th dbar r L r ooC z9 8s|8 : th ls r hs|x? : n a 9 th
+21 tri 4 # 6 rC|x?|L r / q+ 4 th r Q dbar w 4 6 g / S 4 8s|8 zk r g
+22 # r g : q+ th + 6 a Ee 8 ls r B T delta 9 : 6 a w g delta
+23 delta curl tt|#|x? zk ls dots th n 6 S r g / z9 rC % x?|uC|y 2o q+ ooC m 4 q+ th
+24 q+ delta th 4t # q+ delta dsi r tri delta 2o g delta ls // n a 21 z9 a r 8s|8 zk g

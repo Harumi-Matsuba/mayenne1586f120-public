@@ -1,0 +1,14 @@
+# BnF fr.15573 f.104r 暗号の18〜24行目の書き起こし（2026-10-20、目視1回。較正用）
+# 画像：Gallica ark:/12148/btv1b90618780 の213コマ（f. 104r）。画像はこのリポジトリに含めていない
+# 記号名は data/key.tsv（Brett Burford 氏の見本表 v3 の名前）。当時の解読（左余白）を見ずに、記号の形だけで読んだ。文脈で記号を選んでいない
+# 手順：画像の濃い画素の列ごとの量と行の周期（余白の解読は約119px、暗号は約150px）で本文の範囲を決め、行ごとに左の余白側を白く塗ってから、−1.6度の補正で1行ずつ切り出した
+# ? は読めない記号（行頭で切れたもの、見本表にない形）。末尾の ? は形の読みに自信がないもの。/ は原本の区切りの斜線。^(…) は行間の書き込み
+# 19・20・23行目の先頭の記号は、余白側を塗った境目で切れている（19行目は 4 か 2x の右半分に見える。どちらも a）
+# 23行目の左端に、薄い灰色の筆跡（余白の解読の端と思われる、2文字ほどの断片）が写った。語としては読んでいない。23・24行目の左端は、濃い画素だけを残した二値画像で読み直した
+c18: 8 delta ls bslash / Gamma 2u? n r th hs g pi : L r g hs 4 n g : 6 f 2o / .10. dbar m
+c19: 4? n g 9 lambda zk ls n 6 S n Lbar 4 H r g 9 n box f S th q+ a delta g /
+c20: ? th 6 r Q dbar 8s r 6 4 f2 8 S r / 2 q+ z9? m : ls S delta? f a 0?
+c21: ls w r 6 a / rect Ee tri th dbar r L r phi 9? 8s : th ls r hs : n a 9 th
+c22: Qh .12. tri 4 4t 6 Lp r / q+ 4 th ^(2.) r Q dbar w 4 6 g / S 4 8s zk r g
+c23: ? delta? 4t r g : q+ th + 6 a Ee 8 ls r B T delta 9 : 6 a w2 g delta
+c24: q+ q+ delta bslash tt zk ls : th n 6 S r g ? z9? ? : % 9 a a? q+ phi m 4 q+ th

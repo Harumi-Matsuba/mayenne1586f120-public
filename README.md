@@ -16,7 +16,7 @@
 
 - 鍵の文字記号の値をかき混ぜた対照実験（1,000回）では、3つの条件とも、本物の鍵以上にフランス語らしくなったことは1回もありませんでした（[docs/METHOD.md](docs/METHOD.md)）。
 - 多くの行がフランス語の文として通ります（[docs/READING.md](docs/READING.md)）。値の分からない記号は14種21か所あり、読めない短い箇所も残っています（[docs/OPEN.md](docs/OPEN.md)）。
-- **較正はしていません。** 書き起こしは1回の目視で、当時の解読がある書簡で正確さを測っていません。理由は [docs/METHOD.md](docs/METHOD.md) の「限界」にあります。細部には誤りを含む前提で使ってください。
+- **較正：** 同じ暗号で当時の解読がある f. 104r の7行を、答えを見ずに同じ方法で書き起こして測ると、文字の一致率は69.5%（表の記号だけで62.6%）でした。記号の一致率は86.1%（参照側が欠く行頭の記号を除く）。書き起こしは1回の目視なので、細部には誤りを含む前提で使ってください。違いの中身と、f. 120 の読みに関わる点（＼ 形の記号が pour かもしれないことなど）は [docs/METHOD.md](docs/METHOD.md) の「較正」にあります。
 
 ## 内容（要約。読めた範囲から。主語や語の切れ目が不確かな箇所は、そう書いた）
 - 「この君主（ce prince）」は、これまでになく不機嫌で腹を立てており、思いとどまらせる手立てがない。
@@ -44,6 +44,8 @@ python3 src/decode.py data/key.tsv data/transcription_f120r.txt                #
 python3 src/decode.py data/key.tsv data/transcription_f120r.txt --no-inferred  # 表と Burford 氏の照合だけ
 python3 src/decode.py data/key.tsv data/transcription_f120r.txt --table-only   # 表の記号だけ
 python3 src/control.py data/key.tsv data/transcription_f120_all.txt 1000       # 対照実験（wordfreq が必要）
+python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_f104r_l18-24.txt   # 較正（文字）
+python3 src/calib.py --signs calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # 較正（記号）
 python3 -m unittest discover -s tests
 ```
 
@@ -61,6 +63,9 @@ python3 -m unittest discover -s tests
 | docs/METHOD.md | 方法、数字、AI の使用、限界 |
 | docs/OPEN.md | 値の分からない記号、読めない箇所、確かめていないこと |
 | src/angle.py・deskew.py・tiles.py | 画像の傾きの推定・補正、行の切り出し |
+| calib/transcription_f104r_l18-24.txt | 較正用の f. 104r 18〜24行目の書き起こし |
+| calib/ref_f104r_l18-24.txt・ref_signs_f104r_burford.txt | 較正の参照（当時の解読の文字、Burford 氏の記号の書き起こし。CC BY 4.0） |
+| src/calib.py | 較正の一致率の計算 |
 | SOURCES.md | 出典と、先行の確かめ |
 
 ライセンス：コードは MIT、自作の文書とデータは CC BY 4.0（[LICENSE](LICENSE)）。

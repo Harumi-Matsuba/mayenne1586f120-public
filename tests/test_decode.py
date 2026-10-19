@@ -61,5 +61,29 @@ class TestDecode(unittest.TestCase):
             self.assertIn(w, text)
 
 
+class TestCalib(unittest.TestCase):
+    def run_calib(self, *args):
+        return subprocess.run([sys.executable, os.path.join(ROOT, 'src', 'calib.py'), *args],
+                              capture_output=True, text=True, check=True, cwd=ROOT).stdout
+
+    def test_calib_numbers(self):
+        # docs/METHOD.md の「較正」に書いた数字
+        args = [KEY, 'calib/transcription_f104r_l18-24.txt', 'calib/ref_f104r_l18-24.txt']
+        self.assertIn('= 69.5%', self.run_calib(*args))
+        self.assertIn('= 62.6%', self.run_calib(*args, '--table-only'))
+        out = self.run_calib('--signs', 'calib/transcription_f104r_l18-24.txt', 'calib/ref_signs_f104r_burford.txt', '1')
+        self.assertIn('参照の記号 137、書き起こしの記号 154、編集距離 31', out)
+
+    def test_slash_and_interlinear_skipped(self):
+        # 区切りの / と行間の書き込み ^(2.) は、解読の文字にも ? にもならない
+        sys.path.insert(0, os.path.join(ROOT, 'src'))
+        from calib import decoded_stream
+        key, _ = load_key(KEY)
+        lines = load_lines(os.path.join(ROOT, 'calib', 'transcription_f104r_l18-24.txt'))
+        s = decoded_stream(lines, key)
+        self.assertTrue(s.startswith('tera'))
+        self.assertEqual(len(s), 214)
+        self.assertEqual(s.count('?'), 4)  # 読めない記号（書き起こしの単独の ?）の数
+
 if __name__ == '__main__':
     unittest.main()
