@@ -1,0 +1,116 @@
+# 記号名	平文	出典（table＝Tomokiyo の表、burford＝Burford の照合 E/F、inferred＝この書簡の文脈、unknown）	注（行番号の r は f. 120r、v は f. 120v）
+a	t	table	Burford key-cipher2.json: T+E-eye
+alpha	t	table	Burford key-cipher2.json: T+E-eye
+8	t	table	Burford key-cipher2.json: T+E-eye
+6	n	table	Burford key-cipher2.json: T
+dbar	y	table	Burford key-cipher2.json: T (Tomokiyo y, row 3) + E: 9 places
+n	i	table	Burford key-cipher2.json: T+E-eye
+f2	n	table	Burford key-cipher2.json: T (Tomokiyo n, f with two bars) + E (held-out f. 104r l. 19 'menant')
+r	e	table	Burford key-cipher2.json: T+E-eye
+delta	e	table	Burford key-cipher2.json: T+E-eye
+4t	e	table	Burford key-cipher2.json: T+E-eye
+box	f	table	Burford key-cipher2.json: T (row 5, between e and f) + E: 'difficulté' f. 103v l. 8
+phi	en	table	Burford key-cipher2.json: T (form of Tomokiyo's 'en' sign) + E: 2 calibration places
+ls	r	table	Burford key-cipher2.json: T+E-eye
+#	r	table	Burford key-cipher2.json: T+E-eye
+S	c	table	Burford key-cipher2.json: T+E-eye
+9	d	table	Burford key-cipher2.json: T
+g	s	burford	Burford key-cipher2.json: E-eye
++	a	table	Burford key-cipher2.json: T
+4	a	table	Burford key-cipher2.json: T+E-eye
+L	a|n	table	Burford key-cipher2.json: T a + E: n 4 places
+th	u	table	Burford key-cipher2.json: T+E-eye
+x	u	table	Burford key-cipher2.json: T
+T	u	table	Burford key-cipher2.json: T+E-eye
+Id	u	table	Burford key-cipher2.json: T?
+I	u	table	Burford key-cipher2.json: T?
+zk	p	burford	Burford key-cipher2.json: E-eye
+Lbar	p	burford	Burford: E-eye?。pouoir（r 19行）で一致
+q+	l	table	Burford key-cipher2.json: T+E-eye
+f	i|s	table	Burford: T+E。i と s の両方に使う
+//	o	table	Burford key-cipher2.json: T+E-eye
+dots	o	table	Burford key-cipher2.json: T
+:	o	table	Burford key-cipher2.json: T?
+tri	g	table	Burford key-cipher2.json: T
+lambda	q	table	Tomokiyo の q（λ）。Burford は x（Xaintonge）。qu'une（r 9行）で q
+xo	q	table	Burford key-cipher2.json: T
+pi	b	table	Burford key-cipher2.json: T
+F	h	table	Burford key-cipher2.json: T
+m	f	table	Burford key-cipher2.json: T
+2	m	table	Burford key-cipher2.json: T
+H	l	burford	Burford key-cipher2.json: E: 5 places
+40	m	table	Burford key-cipher2.json: T?
+xbar	s|ss	table	Burford key-cipher2.json: T (s, row 5) + E: 'ss' 3 calibration places
+Q	que	table	Burford key-cipher2.json: T
+w	est	table	Burford key-cipher2.json: T
+%	et	table	Burford key-cipher2.json: T
+z9	de	table	Burford key-cipher2.json: T?
+2u	de	burford	Burford key-cipher2.json: E-eye
+curl	o	inferred	Burford は pour（T+E-eye）。この書簡では auons（r 25行）、corps（r 27行）、offres（r 26行）、rapportent（r 4〜5行）で o と読むと合う
+Ee	la	table	Burford key-cipher2.json: T
+eps	ment	table	Burford key-cipher2.json: T?
+8s	m	burford	Burford key-cipher2.json: E: 3 places ending in m (mesmes, Xaintonge m'ont, emporter), plus held-out lines
+2o	qui	table	Burford key-cipher2.json: T?
+A	monsieur	table	Burford key-cipher2.json: T
+.10.	ie	table	Burford key-cipher2.json: T
+.12.	des	table	Burford key-cipher2.json: T+E-eye
+.16.	fois	table	Burford key-cipher2.json: T
+.18.	quant	table	Burford key-cipher2.json: T
+.20.	mais	table	Burford key-cipher2.json: T
+.21.	beaucoup	table	Burford key-cipher2.json: T
+.23.	apres	table	Burford key-cipher2.json: T
+.24.	peu	table	Burford key-cipher2.json: T
+.25.	parceque	table	Burford key-cipher2.json: T
+.26.	car	table	Burford key-cipher2.json: T
+.31.	pas	table	Burford key-cipher2.json: T
+.32.	sans	table	Burford key-cipher2.json: T
+hs	r	table	Burford key-cipher2.json: T (Tomokiyo r, row 2) + E: 6 places
+ooC	en	table	Burford key-cipher2.json: T (Tomokiyo 'en' code sign; our name ooC) + E: 5 calibration places
+dsi	si	table	Burford key-cipher2.json: T (Tomokiyo 'si')
+B	s	burford	Burford key-cipher2.json: E?: 1-2 places
+2x	a	burford	Burford key-cipher2.json: E?: 3 places
+gg	par	table	Burford key-cipher2.json: T? (Tomokiyo 'par' ff; our name gg)
+tt	les	table	Burford key-cipher2.json: T (Tomokiyo tt)
+rect	icy	burford	Burford key-cipher2.json: E-eye? (qui reste icy, f. 104r l. 20, held-out)
+3	de	table	Burford key-cipher2.json: T (Tomokiyo de = 3)
+Gamma	vous	table	Burford key-cipher2.json: T
+fe	bien	table	Burford key-cipher2.json: T
+0	i	burford	Burford key-cipher2.json: E?: 2 places
+y	l	table	Burford key-cipher2.json: T (Tomokiyo l, row 2: a y-shape; our name y)
+d	g	table	Burford key-cipher2.json: T (Tomokiyo g, row 2: a round d / delta-like sign; our name d)
+uC	moy	table	Burford key-cipher2.json: T? (Tomokiyo 'moy' code: an M over e; our name uC)
+rC	s|z	burford	Burford key-cipher2.json: E?: z 3 places, s 1 (calibration); doubtful
+Tl	plus	table	Burford key-cipher2.json: T (code 'plus')
+ud	u	table	Burford key-cipher2.json: T (u, row 4)
+pdots	p	table	Burford key-cipher2.json: T (p, row 5)
+Qh	armee	burford	Burford key-cipher2.json: F: 3 places (ff. 150r, 7v, 33r margins)
+hb	tout	burford	Burford key-cipher2.json: F: 2 places (f. 150r margin)
+N	ee	burford	Burford key-cipher2.json: F: 2 places (f. 150r margin; f. 97r clear decipherment)
+.17.	tant	burford	Burford key-cipher2.json: F: 2 places (f. 97r and f. 150r margins)
+.13.	tre	burford	Burford key-cipher2.json: F?: 1 place (f. 32v margin, 'entreprendre')
+ub	droit	burford	Burford key-cipher2.json: F?: 1 place (f. 33r margin, 'faudroit'); f. 97r fits
+thb	?	unknown	th に縦線を足した形（r 1行目の先頭だけ）
+7	?	unknown	数字の7（r 1行目）。Burford の見本表にあるが値なし
+Sbar	?	unknown	S に斜線（r 1行目）
+dsi+	c	table	ꝺ の上に十字。Tomokiyo の c（Burford の dsi＝si とは別の記号として扱う）
+Lp	i	inferred	ℓ 形。n'y a（r 2行）、Guise（r 10行）、iray（r 24行）で i。Tomokiyo の表では p の位置にある形に似る
+xd	x	table	点のある u 形（ꝍ）。Tomokiyo の x（1段目）。aux aduis（r 5行）、dix iours（r 8行）、deux（r 10行）、six（v 6行）
+w2	il	table	ϖ の山2つ。Tomokiyo の il
+6b	f	table	б 形。Tomokiyo の f（2段目）。fondement（v 1行）、faire（v 6行）。Burford の B（s?）とは別扱い
+R	h	table	R 形。Tomokiyo の h（2段目）。fasché（r 2行）
+oo	?	unknown	∞ 形。mil の後に3回（r 8・11・14行）、les [∞]voyer に1回（r 9行）、末尾に2回（v 8行）。escus と読むと mil の後の3回は通るが未確定
+bslash	a	inferred	＼ に o の形。a venir（r 11行）、au temps（v 3行）、ment a les（r 9行）
+Esign	?	unknown	E 形（r 15行「que [E] est tout resolu」）。人名か称号の記号か
+pdot	?	unknown	縦線に輪と点（r 12行「je vous [?] dice」、r 16行）
+nous	nous	inferred	gg に横線を通した形。que nous somes（r 12〜13行）、qui nous le（r 29行）。Tomokiyo の nous と同じ記号かは未確定
+hsb	?	unknown	ʃ に横線と点（r 14行・r 24行末）
+Om	?	unknown	平たい Ω 形（r 17行「partir si [?] qu'il」）
+invTl	?	unknown	⊏ 形（r 23行「je croy que [?] ne s'y trouuera pas」）
+2c	m	inferred	2 に渦（r 22行の人名の頭、[M]ontablaye?）。Tomokiyo の m（2）の変形とみた
+4d	?	unknown	4 に点（r 30行）
+.u.	?	unknown	点で挟んだ u（r 29行の頭）
+qx	le	inferred	q に x（v 2行「[le]urs estrangers」）。1か所だけ
+Dsign	?	unknown	大きな D に点（v 8行末）
+.30.	?	unknown	数字30（r 5行）
+.15.	?	unknown	数字15（r 28行）
+yy	encore	table	Tomokiyo の encore（yy）

@@ -1,0 +1,65 @@
+import os
+import subprocess
+import sys
+import unittest
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, 'src'))
+
+from decode import load_key, load_lines, decode  # noqa: E402
+
+PAGES = ['f120r', 'f120v', 'f120_all']
+KEY = os.path.join(ROOT, 'data', 'key.tsv')
+
+
+def run_decode(page, *opts):
+    return subprocess.run(
+        [sys.executable, os.path.join(ROOT, 'src', 'decode.py'), KEY,
+         os.path.join(ROOT, 'data', f'transcription_{page}.txt'), *opts],
+        capture_output=True, text=True, check=True).stdout
+
+
+class TestDecode(unittest.TestCase):
+    def setUp(self):
+        self.key, self.src = load_key(KEY)
+
+    def test_key_sources(self):
+        # 出典は table・burford・inferred・unknown のどれか
+        self.assertTrue(set(self.src.values()) <= {'table', 'burford', 'inferred', 'unknown'})
+
+    def test_table_only_drops_others(self):
+        key_t, _ = load_key(KEY, table_only=True)
+        self.assertEqual(key_t['9'], 'd')
+        self.assertNotIn('g', key_t)       # burford
+        self.assertNotIn('bslash', key_t)  # inferred
+        self.assertNotIn('oo', key_t)      # unknown
+
+    def test_decoded_files_are_current(self):
+        # data/decoded_*.txt が、いまの鍵と書き起こしから作り直したものと一致する
+        for p in PAGES:
+            with open(os.path.join(ROOT, 'data', f'decoded_{p}.txt'), encoding='utf-8') as f:
+                self.assertEqual(run_decode(p), f.read(), p)
+
+    def test_all_is_both_pages(self):
+        # まとめたファイルの記号の並びは、表と裏の書き起こしをつないだものと同じ
+        r = [t for _, ts in load_lines(os.path.join(ROOT, 'data', 'transcription_f120r.txt')) for t in ts]
+        v = [t for _, ts in load_lines(os.path.join(ROOT, 'data', 'transcription_f120v.txt')) for t in ts]
+        a = [t for _, ts in load_lines(os.path.join(ROOT, 'data', 'transcription_f120_all.txt')) for t in ts]
+        self.assertEqual(r + v, a)
+
+    def test_coverage_numbers(self):
+        # README・docs/METHOD.md に書いた割合
+        self.assertIn('970 個（87.9%）', run_decode('f120_all', '--table-only'))
+        self.assertIn('1064 個（96.5%）', run_decode('f120_all', '--no-inferred'))
+        self.assertIn('1082 個（98.1%）', run_decode('f120_all'))
+
+    def test_known_words(self):
+        # 文脈で確かめた語が出ること（鍵の取り違えの検出用）
+        lines = load_lines(os.path.join(ROOT, 'data', 'transcription_f120_all.txt'))
+        text = ' '.join(s for _, s in decode(lines, self.key)).lower()
+        for w in ['ceprince', 'guise', 'biron', 'marsil', 'secretaire', 'tombe', 'epmaines', 'ranger', 'rupture']:
+            self.assertIn(w, text)
+
+
+if __name__ == '__main__':
+    unittest.main()
