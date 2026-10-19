@@ -1,4 +1,4 @@
-# BnF fr. 15573 f. 120 の暗号書簡（Mayenne–Forget の Cipher-2、1586年）の第一の読み
+# BnF fr. 15573 f. 120 の暗号書簡（Mayenne–Forget の Cipher-2、1586年）の読み（部分的）
 
 [English README](README.en.md)
 
@@ -6,7 +6,7 @@
 
 ## 状態（2026-10-20）
 - **部分的な読み**です。多くの行がフランス語の文として通りますが、値の分からない記号が13種19か所あり、読めない短い箇所も残っています（[docs/READING.md](docs/READING.md)、[docs/OPEN.md](docs/OPEN.md)）。差出人と日付は分かっていません。
-- **先行との関係**：友清理士氏は f. 120 を Cipher-2 の書簡として挙げ、« Endorsement illegible (to me). Undeciphered. » としています（[Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm)、2023-09-23 更新）。2026-10-19〜20 に調べた範囲では、この書簡の読みは見つかっていません（調べた先は [SOURCES.md](SOURCES.md)）。鍵は先行研究のもの（友清氏の表、Brett Burford 氏の鍵）で、書き起こしと読みがこのリポジトリの新しい点です。
+- **先行との関係**：友清理士氏は f. 120 を Cipher-2 の書簡として挙げ、« Endorsement illegible (to me). Undeciphered. » としています（[Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm)、2023-09-23 更新）。2026-10-19〜20 に調べた範囲では、この書簡の読みは見つかっていません（調べた先は [SOURCES.md](SOURCES.md)）。鍵は先行研究のもの（友清氏の表、Brett Burford 氏の鍵）で、書き起こしと読みはこのリポジトリで作ったものです。この書簡を前に読んだ人がいないかは、上の範囲で探しただけで、解いた作業とは別の確かめはまだしていません。
 - **人は書き起こしを確かめていません。** 書き起こしは AI が画像から読んだものです。複数の AI の読みどうしの一致は、人の確認の代わりにはなりません。
 - **数字**（詳しくは [docs/METHOD.md](docs/METHOD.md)）：
   | 項目 | 結果 |
@@ -14,9 +14,9 @@
   | 鍵の文字記号の値をかき混ぜた対照実験（1,000回、3条件） | 本物の鍵以上は0回 |
   | 較正：当時の解読がある f. 104r の7行を、答えを見ずに読んだ記号の正確さ | Opus の読み手3人の多数決で90.5%（同じ値の別名も一致なら95.6%）。最初の較正（1人、1回）は86.9%（89.1%）。Burford 氏の同じ行での値は1回ずつ91.1〜93.5%、多数決92.9% |
   | 較正：文字の一致率（最初の較正、答えを見ない測定） | 70.6%（表の記号だけで62.9%） |
-  | 2回目の書き起こし（Claude Sonnet、独立）と1回目の値の一致率 | 表88.0%・裏88.4% |
-  | 3人の多数決（Claude Opus、独立）と1回目の値の一致率 | 表93.1%・裏88.0% |
-- **AI の使用**：書き起こし・鍵の補い・解読・スクリプト・文書は Anthropic の Claude（Claude Code、Claude Opus 5.5）、2回目の書き起こしは Claude Sonnet、3人の多数決の読みは Claude Opus が行いました。人は、対象の選定、画像の保存、公開の判断をしました（[docs/METHOD.md](docs/METHOD.md) の「AI の使用」）。
+  | **独立の2回目**：OpenAI の Codex（codex-cli 0.163.0-alpha.10.2、既定のモデル）が1回目を見ずに読んだものと、1回目の値の一致率 | 表93.2%・裏90.7%（この比較では1回目を直していない） |
+  | 照合の記録：Claude Sonnet の書き起こし、Claude Opus の読み手3人の多数決と、1回目の値の一致率 | Sonnet 表88.0%・裏87.5%、多数決 表93.1%・裏87.0%（これらとの食い違いを画像で見て1回目を直したので、独立の比較ではない） |
+- **AI の使用**：書き起こし・鍵の補い・解読・スクリプト・文書は Anthropic の Claude（Claude Code、Claude Opus 5.5）、独立の2回目の書き起こしは OpenAI の Codex、照合に使った書き起こしは Claude Sonnet と Claude Opus の読み手3人が行いました。人は、対象の選定、画像の保存、公開の判断をしました（[docs/METHOD.md](docs/METHOD.md) の「AI の使用」）。
 
 ## 資料
 - BnF Français 15573（1586年の書簡集。友清氏の一覧では f. 7–8 が1586年8月の書簡）、Gallica ark:/12148/btv1b90618780 の246コマ（f. 120r、全面が暗号31行）と247コマ（f. 120v、暗号8行）。平文の部分はありません。
@@ -29,9 +29,13 @@
 | 計 | 1,101 | 88.5% | 96.9% | 98.3% |
 
 ## 更新履歴
+- 2026-10-20（公開の決まりの改定に合わせた見直し）
+  - 「画像で確かめられたときだけ直す」に合わせ、多数決を見て直した9か所を画像で確かめ直した。7か所は画像で確かめられ、2か所（v c05、v c07）は確かめられなかったので1回目の読みに戻した。値が付いた割合は変わらない（表の記号だけで88.5%、推定も合わせて98.3%）。
+  - そのあとで、OpenAI の Codex に、1回目を見せずに独立に読ませた（`codex/`）。1回目との値の一致率は表93.2%・裏90.7%。この比較では1回目を直していない。
+  - 版番号と CITATION.cff を外した。
 - 2026-10-20（3人の多数決を受けた見直し、コミット 8f35df6）
   - 答えを見ていない Claude Opus の読み手3人に、f. 104r の18〜24行目と f. 120 を別々に読ませ、多数決をとった（`third/`、`src/vote.py`）。f. 104r での記号の正確さは、最初の較正の86.9%（同じ値の別名も一致で89.1%）から、多数決で90.5%（95.6%）。
-  - 3人全員がそろって1回目と違う値を読んだ23か所を画像と文脈で見て、9か所を直した（« qu'il souffre ne soit a desseing »、« les efects »、« je vous puis dire »、« s[en] aler »、« qu'il saura ce que »、« de grands efects » など）。記号の数は1,103から1,101、値が付いた割合（推定も合わせる）は98.3%のまま。
+  - 3人全員がそろって1回目と違う値を読んだ23か所を画像と文脈で見て、9か所を直した（« qu'il souffre ne soit a desseing »、« les efects »、« je vous puis dire »、« s[en] aler »、« qu'il saura ce que » など。うち2か所は、後で画像で確かめられず戻した）。記号の数は1,103から1,101、値が付いた割合（推定も合わせる）は98.3%のまま。
   - 記号の正確さを Burford 氏の数え方にそろえて出せるようにした（`src/calib.py --lenient`）。
 - 2026-10-20（較正と2回目の書き起こしを受けた見直し、コミット 441b3e9）
   - 較正（別のセッション、f. 104r の7行）を足し、参照の文字を画像で照らした（« qui reste icy » を « qui restent icy » に）。答えを見ない文字の一致率は70.6%。
@@ -59,7 +63,7 @@
 **この読みで加えたこと**
 1. 2ページの記号を、Burford 氏の記号名で行ごとに書き起こした（`data/transcription_*.txt`）。見本にない記号には名前を足した。
 2. この書簡の文脈から、いくつかの記号の値を補った（ℓ 形＝i、縦線の下が右に巻く形（curlo）＝o、gg に横線＝nous など。`data/key.tsv` の inferred）。縦線に輪の形を友清氏の表の puis と同定した。λ は、友清氏の表の q と Burford 氏の鍵の x の両方に使われているとみた。
-3. 較正（f. 104r の7行）、別の AI による独立の2回目の書き起こし、答えを見ていない読み手3人の多数決（`calib/`、`second/`、`third/`）。
+3. 較正（f. 104r の7行）、OpenAI の Codex による独立の2回目の書き起こし、照合に使った Claude Sonnet の書き起こしと Claude Opus の読み手3人の多数決（`calib/`、`codex/`、`second/`、`third/`）。
 4. 書簡の内容（上の要約）。
 
 ## 使い方
@@ -71,7 +75,7 @@ python3 src/control.py data/key.tsv data/transcription_f120_all.txt 1000       #
 python3 src/calib.py data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_f104r_l18-24.txt --key-at-calibration  # 較正（文字、較正のときの鍵）
 python3 src/calib.py --signs calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # 較正（記号、厳密）
 python3 src/calib.py --lenient data/key.tsv calib/transcription_f104r_l18-24.txt calib/ref_signs_f104r_burford.txt 1  # 較正（記号、Burford 氏にそろえた数え方）
-python3 src/compare2.py data/transcription_f120r.txt second/transcription2_f120r.txt --key data/key.tsv  # 1回目と2回目の突き合わせ
+python3 src/compare2.py data/transcription_f120r.txt second/transcription2_f120r.txt --key data/key.tsv  # 1回目と Sonnet の書き起こしの突き合わせ
 python3 src/vote.py third/f104r_vote.txt third/f104r_pass1.txt third/f104r_pass2.txt third/f104r_pass3.txt  # 3人の多数決
 python3 src/calib.py --lenient --no-alias data/key.tsv third/f104r_vote.txt calib/ref_signs_f104r_burford.txt 1  # 多数決の正確さ
 python3 -m unittest discover -s tests
@@ -94,7 +98,8 @@ python3 -m unittest discover -s tests
 | calib/transcription_f104r_l18-24.txt | 較正用の f. 104r 18〜24行目の書き起こし |
 | calib/ref_f104r_l18-24.txt・ref_signs_f104r_burford.txt | 較正の参照（当時の解読の文字、Burford 氏の記号の書き起こし。CC BY 4.0） |
 | src/calib.py | 較正の一致率の計算 |
-| second/ | 2回目の書き起こし（Claude Sonnet、形だけで読んだもの）と、その解読 |
+| codex/ | 独立の2回目の書き起こし（OpenAI の Codex、形だけで読んだもの）と、渡したプロンプト・その解読 |
+| second/ | 照合に使った書き起こし（Claude Sonnet、形だけで読んだもの）と、その解読 |
 | src/compare2.py | 1回目と2回目の書き起こしの突き合わせ |
 | third/ | Claude Opus の読み手3人の書き起こし（f. 104r の18〜24行目と f. 120）と多数決 |
 | src/vote.py | 書き起こしの多数決 |

@@ -39,11 +39,12 @@ Signs that get no value in `src/decode.py`. Line numbers are those of `data/tran
 - f (i|s), f2 (n), long f: conjuration in r c15–c16 was read with f2.
 - curl (backslash with o) and curlo (stroke whose foot curls right): in the first transcription the backslash-shape was named bslash and the curling shape curl. The calibration showed the backslash-shape to be Burford's curl (pour), and the names were changed. The curling shape (o) is taken to be a sign not on Burford's sheet, but it was not compared with the sheet again.
 - lambda (λ): q in Tomokiyo's table; x in Burford's key and in the calibration. In this letter it can be read both q (qu'une, r c09) and x (d[i]x iours, r c22).
-- Pairs on which the second transcription differs most: ls and S (24 places), r and xbar (18), 8s and 8 (8). The first transcription chose by context in all of them.
+- Pairs on which the Sonnet transcription used for checking differs most: ls and S (24 places), r and xbar (18), 8s and 8 (8). The first transcription chose by context in all of them.
+- Differences from the independent second transcription (Codex; edit distance of values 60 recto, 20 verso) have not yet been looked at on the image.
 
 ## Not checked
 - Sender and date. From the content (the Cardinal of Guise's letter of the 2nd, Biron, the deputies of the army, La Marsilière, six more weeks), comparison with the neighbouring letters of the volume may narrow them down.
 - Persons: who Bilart, [M]ontablaye and La Marsilière are.
 - The endorsement that Tomokiyo calls « illegible » is not on views 246–247 (perhaps on another leaf).
-- Accuracy of the transcription: on seven lines of f. 104r, the vote of three blind Claude Opus readers reached 90.5% sign accuracy (95.6% counting same-value names as matches); the first calibration (another session, one pass) gave 86.9% (89.1%) and 70.6% character agreement. The accuracy on f. 120 itself was not measured. On f. 120, agreement of values with the vote is 93.1% (recto) and 88.0% (verso) ("Three-reader vote" in [METHOD.en.md](METHOD.en.md)).
+- Accuracy of the transcription: on seven lines of f. 104r, the vote of three blind Claude Opus readers reached 90.5% sign accuracy (95.6% counting same-value names as matches); the first calibration (another session, one pass) gave 86.9% (89.1%) and 70.6% character agreement. The accuracy on f. 120 itself was not measured. Agreement of values with the independent second transcription (Codex) is 93.2% recto and 90.7% verso ([METHOD.en.md](METHOD.en.md)).
 - The confusions of # and 4t, and of 2o and "a 0", found in the calibration were not re-examined in the transcription of f. 120.

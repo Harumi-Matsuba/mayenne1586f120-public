@@ -23,8 +23,11 @@
   - `data/known-text/f104r-decipherment.txt`（コミット cc0daf74）：f. 104r の当時の解読を同氏の側で目読みしたもの。その一部を `calib/ref_f104r_l18-24.txt` に写した（較正の参照）。写した後、213コマの画像と照らし、« qui reste icy » を « qui restent icy » に直した（2026-10-20）。
   - `data/known-text/ref-104r-l18-24.txt`（コミット 22ab58c39dbd98a853044349d98294af93124e30、2026-10-19）：f. 104r の暗号の記号の書き起こし。`calib/ref_signs_f104r_burford.txt` にそのまま写した（較正の参照）。
 
-## 2回目の書き起こし
+## 照合に使った書き起こし（Sonnet）
 - `second/transcription2_f120r.txt`・`f120v.txt`：Anthropic の Claude Sonnet が、1回目の書き起こしを見ずに、画像の切り出しと Burford 氏の見本表、記号の名前と形の説明だけから読んだもの（2026-10-20）。読み手を変えた独立の読みとして、1回目と突き合わせた（[docs/METHOD.md](docs/METHOD.md)）。
+
+## 独立の2回目の書き起こし（Codex）
+- `codex/transcription_codex_f120*.txt`：OpenAI の Codex CLI（codex-cli 0.163.0-alpha.10.2、既定のモデル）が、行の画像・Burford 氏の見本表・`codex/PROMPT.md`（記号の名前と形の説明だけ）から読んだもの（2026-10-20）。1回目を直し終えた後に読ませ、この比較では1回目を直していない。
 
 ## 3人の読み手の書き起こし
 - `third/*_pass1〜3.txt`：答えを見ていない Claude Opus の読み手3人（サブエージェント）が、f. 104r の18〜24行目と f. 120 を、行の画像・Burford 氏の見本表・記号の名前と形の説明だけから別々に読んだもの（2026-10-20）。多数決は `third/*_vote.txt`（[docs/METHOD.md](docs/METHOD.md) の「3人の読み手の多数決」）。

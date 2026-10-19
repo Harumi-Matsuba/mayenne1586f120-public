@@ -23,8 +23,11 @@ The images are not redistributed; please refer to them by view number. Source ga
   - `data/known-text/f104r-decipherment.txt` (commit cc0daf74): his eye-reading of the contemporary decipherment of f. 104r. Part of it was copied into `calib/ref_f104r_l18-24.txt` (calibration reference). After copying, it was checked against the image of view 213, and « qui reste icy » was changed to « qui restent icy » (20 October 2026).
   - `data/known-text/ref-104r-l18-24.txt` (commit 22ab58c39dbd98a853044349d98294af93124e30, 19 October 2026): sign transcription of the cipher of f. 104r, copied unchanged into `calib/ref_signs_f104r_burford.txt` (calibration reference).
 
-## Second transcription
+## Transcription used for checking (Sonnet)
 - `second/transcription2_f120r.txt`, `f120v.txt`: read by Anthropic's Claude Sonnet from the image tiles, Burford's reference sheet and a list of sign names with shape descriptions only, without seeing the first transcription (20 October 2026). Compared with the first as an independent reading by a different reader ([docs/METHOD.en.md](docs/METHOD.en.md)).
+
+## Independent second transcription (Codex)
+- `codex/transcription_codex_f120*.txt`: read by OpenAI's Codex CLI (codex-cli 0.163.0-alpha.10.2, default model) from the line images, Burford's reference sheet and `codex/PROMPT.md` (sign names and shape descriptions only) (20 October 2026). Run after the first transcription had been corrected; the first was not corrected from this comparison.
 
 ## Transcriptions by three readers
 - `third/*_pass1–3.txt`: f. 104r lines 18–24 and f. 120, read separately by three blind Claude Opus readers (subagents) from the line images, Burford's reference sheet and a list of sign names with shape descriptions only (20 October 2026). The vote is in `third/*_vote.txt` ("Three-reader vote" in [docs/METHOD.en.md](docs/METHOD.en.md)).

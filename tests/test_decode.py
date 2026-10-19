@@ -72,7 +72,7 @@ class TestDecode(unittest.TestCase):
 class TestSecond(unittest.TestCase):
     def test_agreement_numbers(self):
         # docs/METHOD.md の「2回目の書き起こし」に書いた一致率
-        for page, names, values in [('f120r', '81.7%', '88.0%'), ('f120v', '80.1%', '88.4%')]:
+        for page, names, values in [('f120r', '81.7%', '88.0%'), ('f120v', '79.2%', '87.5%')]:
             out = subprocess.run(
                 [sys.executable, os.path.join(ROOT, 'src', 'compare2.py'),
                  os.path.join(ROOT, 'data', f'transcription_{page}.txt'),
@@ -89,6 +89,26 @@ class TestSecond(unittest.TestCase):
             capture_output=True, text=True, check=True).stdout
         with open(os.path.join(ROOT, 'second', 'decoded2_f120_all.txt'), encoding='utf-8') as f:
             self.assertEqual(out, f.read())
+
+
+class TestCodex(unittest.TestCase):
+    def test_codex_agreement(self):
+        # docs/METHOD.md の「独立の2回目」に書いた値の一致率（同じ値の別名は一致とみなす）
+        sys.path.insert(0, os.path.join(ROOT, 'src'))
+        from decode import load_key
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('vote', os.path.join(ROOT, 'src', 'vote.py'))
+        vote = importlib.util.module_from_spec(spec); spec.loader.exec_module(vote)
+        key, _ = load_key(KEY)
+        V = lambda t: key.get(t, '[' + t + ']')
+        for page, want in [('f120r', 0.932), ('f120v', 0.907)]:
+            A = vote.load(os.path.join(ROOT, 'data', f'transcription_{page}.txt'))
+            B = vote.load(os.path.join(ROOT, 'codex', f'transcription_codex_{page}.txt'))
+            tot = dist = 0
+            for lab in A:
+                a = [V(t) for t in A[lab]]; b = [V(t) for t in B.get(lab, [])]
+                tot += len(a); dist += vote.align(a, b)[2]
+            self.assertAlmostEqual(1 - dist / tot, want, places=3)
 
 
 class TestVote(unittest.TestCase):

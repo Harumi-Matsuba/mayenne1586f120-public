@@ -24,9 +24,11 @@ The same transcription was decoded with keys in which the values of the letter s
 
 | Transcription | Condition | Signs scored | Real key | Shuffled keys (min / median / max) | Shuffled ≥ real |
 |---|---|---|---|---|---|
-| First (revised) | Table signs only | 751 | −2.738 | −5.607 / −4.831 / −3.911 | 0 / 1000 |
-| First (revised) | Table + Burford | 830 | −2.755 | −5.660 / −4.973 / −4.117 | 0 / 1000 |
-| First (revised) | Also inferred | 841 | −2.769 | −5.709 / −4.988 / −4.234 | 0 / 1000 |
+| First (revised) | Table signs only | 751 | −2.752 | −5.611 / −4.834 / −3.910 | 0 / 1000 |
+| First (revised) | Table + Burford | 830 | −2.761 | −5.663 / −4.974 / −4.109 | 0 / 1000 |
+| First (revised) | Also inferred | 841 | −2.775 | −5.698 / −4.992 / −4.235 | 0 / 1000 |
+| Independent second (Codex; see "Independent second transcription") | Table signs only | 736 | −2.680 | −5.675 / −4.798 / −3.877 | 0 / 1000 |
+| Independent second (Codex) | Also inferred | 826 | −2.785 | −5.649 / −4.945 / −3.983 | 0 / 1000 |
 | Three-reader vote (see below) | Table signs only | 742 | −2.762 | −5.622 / −4.827 / −3.890 | 0 / 1000 |
 | Three-reader vote | Also inferred | 832 | −2.786 | −5.697 / −4.975 / −3.979 | 0 / 1000 |
 | Second (see "Second transcription") | Table signs only | 717 | −3.079 | −5.493 / −4.767 / −3.948 | 0 / 1000 |
@@ -88,10 +90,11 @@ Signs also named from Tomokiyo's table: dsi+ (ꝺ with a cross) = c, xd (u-shape
 - Following the calibration, bslash in the key of f. 120 was renamed curl (pour), the former curl renamed curlo, and λ given q or x (see "Values revised"). The confusions of # and 4t, and of 2o and "a 0", were not re-examined in the transcription of f. 120.
 - Meaning: a transcription read once by shape, combined with the key, may contain about 30% character errors. In f. 120 signs were chosen by context, so fewer errors are expected, but this was not checked. This is of the same order as the calibration of matignon1586-public on f. 103v (74.8%).
 
-## Second transcription (an independent reading, 20 October 2026)
+## Record of checks 1: Claude Sonnet transcription (20 October 2026)
+A key value of the first (pdot = puis) was revised after looking at differences with this transcription, so this comparison is not called independent. The independent second transcription is "Independent second transcription (Codex)" below.
 - Another AI (Anthropic's Claude Sonnet) was given the same image tiles (two lines, left and right halves), Burford's reference sheet, and a list of sign names with descriptions of shape only (no values, plaintext or evidence words), and transcribed by shape only, without seeing the first transcription, the key, the decoded text or the notes (`second/transcription2_f120r.txt`, `f120v.txt`). Turning signs into plaintext was forbidden. Its list of names was the one before renaming, so for comparison bslash→curl and curl→curlo were applied (`second/transcription2_f120_all.txt`).
 - The second reader's own report: only two places were enlarged; the rest was read on the tiles at their own size. About a fifth of the signs (226) were marked as uncertain.
-- Comparison with the first (`src/compare2.py`; against the first transcription before the three-reader vote. Against the revised one: recto 81.7% / 88.0%, verso 80.1% / 88.4%):
+- Comparison with the first (`src/compare2.py`; against the first transcription before the three-reader vote. Against the revised one: recto 81.7% / 88.0%, verso 79.2% / 87.5%):
   | Page | Agreement of sign names | Agreement of values (different names with the same value count as agreeing) |
   |---|---|---|
   | f. 120r | 81.4% (887 signs, edit distance 165) | 87.7% (edit distance 109) |
@@ -100,7 +103,8 @@ Signs also named from Tomokiyo's table: dsi+ (ꝺ with a cross) = c, xd (u-shape
 - The only revision prompted by the second reading is pdot (puis), one kind of sign in two places (see "Values revised"). The second reader also read the ⊏-shape as ⊣ (plus) (r c23), the first sign as tt (les) (r c01), and qx as r (v c02); all are left as candidates in [OPEN.en.md](OPEN.en.md).
 - Decoded with the same key, the second transcription also gave 0 / 1000 in the control (table above).
 
-## Three-reader vote (independent readings, 20 October 2026)
+## Record of checks 2: vote of three Claude Opus readers (20 October 2026)
+The first transcription was corrected after looking at differences with the vote on the image, so its comparison with the first is not called independent (the accuracy on f. 104r is a blind measurement).
 - Three blind Claude Opus readers (subagents) read the same material separately: f. 104r lines 18–24 (the calibration lines; only the line cuts with the margin side blanked were given) and all 39 lines of f. 120. They were given the line images, Burford's reference sheet, and a list of sign names with shape descriptions only (no values, plaintext or evidence words). They were told not to open the first transcription, the key, the decoded text, the notes, the references or the full page of f. 104r, and all three reported that they did not. Turning signs into plaintext was forbidden. Readings: `third/*_pass1–3.txt`; vote: `src/vote.py` (on each line the reading closest to the others is the pivot, and the majority name is taken at each position) → `third/*_vote.txt`.
 - Share of positions where all three gave the same name (relative to reader 1's signs): f. 104r 94.8% (164/173), f. 120r 89.3% (781/875), f. 120v 84.3% (182/216).
 - **Accuracy on f. 104r lines 18–24** (137 reference signs; `src/calib.py`):
@@ -113,26 +117,36 @@ Signs also named from Tomokiyo's table: dsi+ (ꝺ with a cross) = c, xd (u-shape
   | **Vote of the three** | **90.5%** | **95.6%** | 81.8% | 74.2% |
 
   Burford's figures on the same lines: 91.1–93.5% for single passes, 92.9% for a vote of three (either name accepted for look-alikes). Of the 13 errors left in the vote (reference alternatives only), 8 are differences of naming (the reference's 24 vs .24., : vs dots, ooC vs phi) and 5 are misreadings that change the value (z9→9, rC→Lp, w→w2, rC missing, x?|uC|y→9). Letter agreement is lower than sign accuracy because of code signs with no value (place names etc.) and spelling differences between cipher and decipherment (see "Calibration").
-- **Comparison on f. 120**: agreement of values between the revised first transcription and the vote is 93.1% recto (885 signs, edit distance 61) and 88.0% verso (216 signs, edit distance 26), higher than for the Sonnet second transcription (about 88%).
-- **Places corrected after the vote**: there were 23 places where all three readers agreed on a value different from the first transcription. Each was looked at in context and on the image, and these 9 were changed to the readers' reading:
+- **Comparison on f. 120**: agreement of values between the revised first transcription and the vote is 93.1% recto (885 signs, edit distance 61) and 87.0% verso (216 signs, edit distance 28), higher than for the Sonnet transcription (87–88%).
+- **Places corrected after the vote**: there were 23 places where all three readers agreed on a value different from the first transcription. Each was looked at on the image, and the following 7, confirmed on the image, were changed to the readers' reading (at first 9 were changed, including v c05 and v c07; on re-checking under the rule "correct only where the image confirms it", those two were returned to the first reading):
   | Where | First | Corrected | Reason |
   |---|---|---|---|
-  | r c03 | x (u) | r (e) | qu'il souffre ne soit a desseing (souffr-u-ne does not read) |
-  | r c04 | hs (r) | r (e) | les efects (efrcts does not read) |
-  | r c12 | S (c) | ls (r) | je vous puis dire |
-  | r c16 | H (l) | # (r) | de s[en] aler et partir |
-  | r c17 | 4 (a) | removed | qu'il saura ce que (one 4 too many) |
+  | r c03 | x (u) | r (e) | on the image an x with a dot, the sheet's r. qu'il souffre ne soit a desseing |
+  | r c04 | hs (r) | r (e) | on the image the sign after the box is the dotted r, not ʃ. les efects |
+  | r c12 | S (c) | ls (r) | on the image a thin ʃ. je vous puis dire |
+  | r c16 | H (l) | # (r) | on the image the bar runs beyond the uprights, as in #. de s[en] aler et partir |
+  | r c17 | 4 (a) | removed | the 4 was counted twice in the overlap of the two tiles (one on the image). qu'il saura ce que |
   | r c19 | z9 (de) | removed | on the image there is only one sign (Ee) between 6 and 4 |
-  | v c07 | x (u) | r (e) | de grands efects |
-  | v c03 | ls (r) | S (c) | all three read S by shape; context does not decide |
-  | v c05 | ls (r) | S (c) | the same |
+  | v c03 | ls (r) | S (c) | on the image a round S, unlike the ʃ before it |
 
-  The other 14 were kept: curlo read as curl in two places (taken as caused by our shape descriptions; souffre and rapportent need the value o), w2 in r c20 (two humps on the image; il seroit), hb in r c15 (ʃ with a bar; tout resolu), dbar in r c09 (a separate sign from the 4 on the image), Tl in v c01 (plus de fondement), 6b in v c06 (faire), L and xbar in v c07–c08 (the signs are on the image), r in v c01 (pauureté), f in v c07 (efects), + in r c01 (a run of signs with no value), oo in v c08 (at the end).
+  Sixteen were checked and not changed: x in v c07 (an x with a bar at its foot, no dot of r visible), ls in v c05 (a small 5-shape, neither S nor ls can be decided), curlo read as curl in two places (taken as caused by our shape descriptions; souffre and rapportent need o), w2 in r c20 (two humps on the image; il seroit), hb in r c15 (ʃ with a bar; tout resolu), dbar in r c09 (a separate sign from the 4 on the image), Tl in v c01 (plus de fondement), 6b in v c06 (faire), L and xbar in v c07–c08 (the signs are on the image), r in v c01 (pauureté), f in v c07 (efects), + in r c01 (a run of signs with no value), oo in v c08 (at the end).
+
 - Why the vote was not made the main transcription: in many places the vote breaks words that read in the first transcription (« plus de dix iours » becomes « de di[?] iour[?] », « cardinal » becomes « mn…nal », the curlo of « auons » and « corps », etc.). So the first transcription remains the main one, and only the places where all three agreed against it were checked on the image and corrected.
+
+## Independent second transcription (OpenAI's Codex, 20 October 2026)
+- Run after the first transcription had been corrected from the checks above, with OpenAI's Codex CLI (codex-cli 0.163.0-alpha.10.2 bundled with the ChatGPT app, default model; no model name appears in the configuration or the run record). `codex exec --ephemeral -s read-only` was run once from an empty folder, given only 78 line images (each line in left and right halves), Burford's reference sheet and an English prompt (`codex/PROMPT.md`: sign names and shape descriptions only; no values, first reading, key or plaintext). The run record contains only the reply, with no command execution or file reading.
+- Transcription: `codex/transcription_codex_f120r.txt`, `f120v.txt` (`f120_all` combines them). All 39 lines came back.
+- Agreement with the (revised) first transcription:
+  | Page | Sign names | Values (same-value names count as agreeing) |
+  |---|---|---|
+  | f. 120r | 89.9% (885 signs, edit distance 89) | 93.2% (edit distance 60) |
+  | f. 120v | 88.0% (216 signs, edit distance 26) | 90.7% (edit distance 20) |
+- The first transcription was not corrected from this comparison (that would make it no longer independent). The differences are mostly look-alike pairs, as in the records of checks; checking them is left as future work in [OPEN.en.md](OPEN.en.md).
+- Decoded with the same key, the Codex transcription also gave 0 / 1000 in the control (table above). Its sign count (1,143) is higher than the first's because descriptions in <…> are split into words.
 
 ## Use of AI
 - The image transcription, the inferred values, the decipherment, the scripts and the documents were made by Anthropic's Claude (Claude Code, model Claude Opus 5.5). A person (the repository's maintainer) chose the target, saved the images and decided to publish.
-- The first transcription (`data/`) is one reading of each line by Claude Opus 5.5. The second (`second/`) is an independent reading by Claude Sonnet, and the third to fifth (`third/`) are independent readings by three Claude Opus readers. Differences from the three-reader vote were looked at on the image and in context, and nine places were corrected. No person checked the transcription. Agreement between AI readings is not a substitute for a human check.
+- The first transcription (`data/`) is one reading of each line by Claude Opus 5.5. Differences from the transcriptions used for checking (`second/` by Claude Sonnet, `third/` by three Claude Opus readers) were looked at on the image, and the seven places the image confirmed were corrected. After that, OpenAI's Codex made the independent second reading (`codex/`). No person checked the transcription. Agreement between AI readings is not a substitute for a human check.
 - While transcribing, lines already written were read with the key. Some look-alike signs were chosen by context (e.g. the second sign of r c04 read as r rather than x, giving desseing; written `r?` in the transcription).
 
 ## Limits

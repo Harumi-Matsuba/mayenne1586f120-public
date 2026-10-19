@@ -2,7 +2,7 @@
 
 1. コード（src/ と tests/ の中のファイル）: MIT License
    src/decode.py、src/control.py、src/calib.py は Harumi-Matsuba/matignon1586-public のものを元にした。
-2. 文書とデータの自作部分（README.md、README.en.md、SOURCES.md、SOURCES.en.md、docs/、data/、calib/、second/、third/）:
+2. 文書とデータの自作部分（README.md、README.en.md、SOURCES.md、SOURCES.en.md、docs/、data/、calib/、second/、third/、codex/）:
    Creative Commons Attribution 4.0 International (CC BY 4.0)
    https://creativecommons.org/licenses/by/4.0/
    ただし data/key.tsv の table と burford の行の値と、data/transcription_*.txt の記号の名前は、
