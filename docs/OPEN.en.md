@@ -20,7 +20,7 @@ Signs that get no value in `src/decode.py`. Line numbers are those of `data/tran
 | Dsign (large D with a dot) | 1 | c208 | at the end |
 
 ## Unread stretches and divided readings
-- r c03–c04: « qu'il souffre ne soit a desseing » (revised in v0.3 following the three-reader vote). The division « des seing » is inferred.
+- r c03–c04: « qu'il souffre ne soit a desseing » (revised following the three-reader vote). The division « des seing » is inferred.
 - r c05: « que l'on de[?]a donne[?s] ».
 - r c09: « qu'un[?e] n de ment pour les [∞]voyer ».
 - r c15–c16: « que quelque [?…]ment et conjuration que vous s[?] puis i es faire de s[en] aler ».

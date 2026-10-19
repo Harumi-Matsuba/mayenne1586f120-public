@@ -5,7 +5,7 @@
 - 綴りは、解読したままの16世紀の綴りに近づけて残した（u と v、i と j は区別しない）。句読点と大文字は読みやすさのために補った。
 - ［ ］は補った文字や語。［?］は値が分からない記号。［?語］は形や文脈から推した読みで、確かめていないもの。［∞］は mil の後などに出る値の分からない ∞ 形の記号（escus と読むと3か所は通るが、確かめていない）。
 - 行ごとの機械的な解読は `data/decoded_*.txt`、記号ごとの書き起こしは `data/transcription_*.txt` にある。行番号（c01 など）はそのファイルの番号。
-- 1回目の書き起こし（`data/`。v0.3 で3人の多数決を見て9か所を直したもの）を元にした。人は書き起こしを確かめていない。細部に誤りを含みうる（[METHOD.md](METHOD.md)）。語の区切りは、解読した文字列に後から入れた。
+- 1回目の書き起こし（`data/`。3人の多数決を見て9か所を直したもの）を元にした。人は書き起こしを確かめていない。細部に誤りを含みうる（[METHOD.md](METHOD.md)）。語の区切りは、解読した文字列に後から入れた。
 
 ## f. 120r（全面が暗号、31行）
 > c01–c05：[?][a][?][u][?] Je vous asseure que ce prince est plus ennuyé et fasché que jamais, et n'y a ordre de le dissuader de croire que la necessité qu'il souffre ne soit a desseing ; car c'est considéré que les effects ne se ra[p]portent [?30] aux advis que l'on de[?]a donne[?s].

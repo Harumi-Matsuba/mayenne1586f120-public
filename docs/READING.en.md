@@ -5,7 +5,7 @@
 - The spelling is kept close to the 16th-century spelling as decoded (u and v, i and j are not distinguished). Punctuation and capitals are added for readability.
 - [ ] marks added letters or words. [?] is a sign with no value. [?word] is a reading guessed from form or context and not checked. [∞] is the ∞-shaped sign with no value that follows mil and occurs elsewhere (reading escus fits three places, but is not confirmed).
 - The line-by-line mechanical decoding is in `data/decoded_*.txt`, the sign-by-sign transcription in `data/transcription_*.txt`. Line numbers (c01 etc.) are those of those files.
-- Based on the first transcription (`data/`, corrected in nine places in v0.3 after the three-reader vote). No person has checked the transcription. Details may be wrong ([METHOD.en.md](METHOD.en.md)). Word divisions were added afterwards to the decoded letters.
+- Based on the first transcription (`data/`, corrected in nine places after the three-reader vote). No person has checked the transcription. Details may be wrong ([METHOD.en.md](METHOD.en.md)). Word divisions were added afterwards to the decoded letters.
 
 ## f. 120r (cipher throughout, 31 lines)
 > c01–c05: [?][a][?][u][?] Je vous asseure que ce prince est plus ennuyé et fasché que jamais, et n'y a ordre de le dissuader de croire que la necessité qu'il souffre ne soit a desseing ; car c'est considéré que les effects ne se ra[p]portent [?30] aux advis que l'on de[?]a donne[?s].

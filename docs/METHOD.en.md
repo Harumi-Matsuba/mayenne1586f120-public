@@ -9,7 +9,7 @@
 4. **Key**: `data/key.tsv` was built from Burford's `data/key-cipher2.json` (commit cc0daf74). His origins beginning with T (Tomokiyo's table) are `table`; E and F (alignments with contemporary decipherments) are `burford`. Values added from this letter are `inferred`. The evidence is in column 4 (Japanese) and column 5 (English).
 5. **Decoding**: `src/decode.py` applies the key to the transcription (`data/decoded_*.txt`). The reading ([READING.en.md](READING.en.md)) is that output with word divisions and punctuation added.
 
-## Figures (`src/decode.py`, `src/control.py`, run on 20 October 2026; v0.3, after the revisions following the calibration, the second transcription and the three-reader vote)
+## Figures (`src/decode.py`, `src/control.py`, run on 20 October 2026, after the revisions following the calibration, the second transcription and the three-reader vote)
 ### Share of signs with a value
 | Page | Signs | Table signs only | Table + Burford's alignments | Also inferred |
 |---|---|---|---|---|
@@ -17,16 +17,16 @@
 | f. 120v | 216 | 185 (85.6%) | 211 (97.7%) | 213 (98.6%) |
 | Total | 1,101 | 974 (88.5%) | 1,067 (96.9%) | 1,082 (98.3%) |
 
-Signs with two values, such as f (`i|s`), are counted as having a value. In v0.1 the totals were 970 (87.9%) / 1,064 (96.5%) / 1,082 (98.1%), in v0.2 975 (88.4%) / 1,069 (96.9%) / 1,084 (98.3%) (two signs were removed in v0.3, so the count went from 1,103 to 1,101).
+Signs with two values, such as f (`i|s`), are counted as having a value. In the first reading (commit 6982c5d) the totals were 970 (87.9%) / 1,064 (96.5%) / 1,082 (98.1%), after the revision following the calibration and the second transcription (441b3e9) 975 (88.4%) / 1,069 (96.9%) / 1,084 (98.3%) (two signs were removed in the revision after the three-reader vote, so the count went from 1,103 to 1,101).
 
 ### Control with shuffled keys (both pages, 1,000 times each)
 The same transcription was decoded with keys in which the values of the letter signs were swapped among themselves, and the French-likeness was compared with that of the real key. French-likeness is the mean log-likelihood of letter trigrams (built from the top 50,000 French words of `wordfreq`, with j→i and v→u). Word signs and signs with two values are not scored.
 
 | Transcription | Condition | Signs scored | Real key | Shuffled keys (min / median / max) | Shuffled ≥ real |
 |---|---|---|---|---|---|
-| First (v0.3) | Table signs only | 751 | −2.738 | −5.607 / −4.831 / −3.911 | 0 / 1000 |
-| First (v0.3) | Table + Burford | 830 | −2.755 | −5.660 / −4.973 / −4.117 | 0 / 1000 |
-| First (v0.3) | Also inferred | 841 | −2.769 | −5.709 / −4.988 / −4.234 | 0 / 1000 |
+| First (revised) | Table signs only | 751 | −2.738 | −5.607 / −4.831 / −3.911 | 0 / 1000 |
+| First (revised) | Table + Burford | 830 | −2.755 | −5.660 / −4.973 / −4.117 | 0 / 1000 |
+| First (revised) | Also inferred | 841 | −2.769 | −5.709 / −4.988 / −4.234 | 0 / 1000 |
 | Three-reader vote (see below) | Table signs only | 742 | −2.762 | −5.622 / −4.827 / −3.890 | 0 / 1000 |
 | Three-reader vote | Also inferred | 832 | −2.786 | −5.697 / −4.975 / −3.979 | 0 / 1000 |
 | Second (see "Second transcription") | Table signs only | 717 | −3.079 | −5.493 / −4.767 / −3.948 | 0 / 1000 |
@@ -91,7 +91,7 @@ Signs also named from Tomokiyo's table: dsi+ (ꝺ with a cross) = c, xd (u-shape
 ## Second transcription (an independent reading, 20 October 2026)
 - Another AI (Anthropic's Claude Sonnet) was given the same image tiles (two lines, left and right halves), Burford's reference sheet, and a list of sign names with descriptions of shape only (no values, plaintext or evidence words), and transcribed by shape only, without seeing the first transcription, the key, the decoded text or the notes (`second/transcription2_f120r.txt`, `f120v.txt`). Turning signs into plaintext was forbidden. Its list of names was the one before renaming, so for comparison bslash→curl and curl→curlo were applied (`second/transcription2_f120_all.txt`).
 - The second reader's own report: only two places were enlarged; the rest was read on the tiles at their own size. About a fifth of the signs (226) were marked as uncertain.
-- Comparison with the first (`src/compare2.py`; against the first transcription as of v0.2. Against v0.3: recto 81.7% / 88.0%, verso 80.1% / 88.4%):
+- Comparison with the first (`src/compare2.py`; against the first transcription before the three-reader vote. Against the revised one: recto 81.7% / 88.0%, verso 80.1% / 88.4%):
   | Page | Agreement of sign names | Agreement of values (different names with the same value count as agreeing) |
   |---|---|---|
   | f. 120r | 81.4% (887 signs, edit distance 165) | 87.7% (edit distance 109) |
@@ -100,7 +100,7 @@ Signs also named from Tomokiyo's table: dsi+ (ꝺ with a cross) = c, xd (u-shape
 - The only revision prompted by the second reading is pdot (puis), one kind of sign in two places (see "Values revised"). The second reader also read the ⊏-shape as ⊣ (plus) (r c23), the first sign as tt (les) (r c01), and qx as r (v c02); all are left as candidates in [OPEN.en.md](OPEN.en.md).
 - Decoded with the same key, the second transcription also gave 0 / 1000 in the control (table above).
 
-## Three-reader vote (independent readings, 20 October 2026, v0.3)
+## Three-reader vote (independent readings, 20 October 2026)
 - Three blind Claude Opus readers (subagents) read the same material separately: f. 104r lines 18–24 (the calibration lines; only the line cuts with the margin side blanked were given) and all 39 lines of f. 120. They were given the line images, Burford's reference sheet, and a list of sign names with shape descriptions only (no values, plaintext or evidence words). They were told not to open the first transcription, the key, the decoded text, the notes, the references or the full page of f. 104r, and all three reported that they did not. Turning signs into plaintext was forbidden. Readings: `third/*_pass1–3.txt`; vote: `src/vote.py` (on each line the reading closest to the others is the pivot, and the majority name is taken at each position) → `third/*_vote.txt`.
 - Share of positions where all three gave the same name (relative to reader 1's signs): f. 104r 94.8% (164/173), f. 120r 89.3% (781/875), f. 120v 84.3% (182/216).
 - **Accuracy on f. 104r lines 18–24** (137 reference signs; `src/calib.py`):
@@ -113,8 +113,8 @@ Signs also named from Tomokiyo's table: dsi+ (ꝺ with a cross) = c, xd (u-shape
   | **Vote of the three** | **90.5%** | **95.6%** | 81.8% | 74.2% |
 
   Burford's figures on the same lines: 91.1–93.5% for single passes, 92.9% for a vote of three (either name accepted for look-alikes). Of the 13 errors left in the vote (reference alternatives only), 8 are differences of naming (the reference's 24 vs .24., : vs dots, ooC vs phi) and 5 are misreadings that change the value (z9→9, rC→Lp, w→w2, rC missing, x?|uC|y→9). Letter agreement is lower than sign accuracy because of code signs with no value (place names etc.) and spelling differences between cipher and decipherment (see "Calibration").
-- **Comparison on f. 120**: agreement of values between the v0.3 first transcription and the vote is 93.1% recto (885 signs, edit distance 61) and 88.0% verso (216 signs, edit distance 26), higher than for the Sonnet second transcription (about 88%).
-- **Places corrected after the vote**: there were 23 places where all three readers agreed on a value different from the first transcription. Each was looked at in context and on the image, and these 9 were changed to the readers' reading (all changes from the v0.2 first transcription):
+- **Comparison on f. 120**: agreement of values between the revised first transcription and the vote is 93.1% recto (885 signs, edit distance 61) and 88.0% verso (216 signs, edit distance 26), higher than for the Sonnet second transcription (about 88%).
+- **Places corrected after the vote**: there were 23 places where all three readers agreed on a value different from the first transcription. Each was looked at in context and on the image, and these 9 were changed to the readers' reading:
   | Where | First | Corrected | Reason |
   |---|---|---|---|
   | r c03 | x (u) | r (e) | qu'il souffre ne soit a desseing (souffr-u-ne does not read) |

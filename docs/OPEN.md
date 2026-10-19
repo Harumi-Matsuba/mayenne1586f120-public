@@ -20,7 +20,7 @@
 | Dsign（大きな D に点） | 1 | c208 | 末尾 |
 
 ## 読めない箇所・読みが割れる箇所
-- r c03–c04：« qu'il souffre ne soit a desseing »（v0.3 で3人の多数決に合わせて直した読み）。« des seing » の切れ目は推定。
+- r c03–c04：« qu'il souffre ne soit a desseing »（3人の多数決を見て直した読み）。« des seing » の切れ目は推定。
 - r c05：« que l'on de[?]a donne[?s] »。
 - r c09：« qu'un[?e] n de ment pour les [∞]voyer »。
 - r c15–c16：« que quelque [?…]ment et conjuration que vous s[?] puis i es faire de s[en] aler »。
