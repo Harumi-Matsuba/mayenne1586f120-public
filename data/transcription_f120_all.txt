@@ -1,8 +1,8 @@
 # f.120r と f.120v をまとめたもの（src/control.py・src/decode.py 用）。表は c101〜c131、裏は c201〜c208
 c101: thb + 7 I Sbar .10. Gamma 4 xbar delta th ls r Q S delta zk # n 6 dsi+ 4t w / Tl r L T dbar delta
 c102: % m + rC S R 4t Q f 4 .20. % 6 Lp 4 // ls 9 # delta z9 q+ r 9 n xbar th 4 z9 # 9 delta
-c103: S hs : f ls delta Q Ee 6 r S delta xbar n a r 2o q+ g curlo th box hs x 6 delta rC // n a 4 .12.
-c104: f r? f 6 tri .26. w S : 6 g n z9 # delta Q tt delta box hs S a g 6 r rC delta # 4 Lp curlo
+c103: S hs : f ls delta Q Ee 6 r S delta xbar n a r 2o q+ g curlo th box hs r 6 delta rC // n a 4 .12.
+c104: f r? f 6 tri .26. w S : 6 g n z9 # delta Q tt delta box r S a g 6 r rC delta # 4 Lp curlo
 c105: ls a delta 6 8 .30. 4 th xd 4 9 x n g Q q+ // 6 z9 4 9 : L delta rC q+ delta 8 ls delta
 c106: g : # f r hs pi n H 4 ls 8 delta g S # f th n a gg Ee z9 # 6 f delta hs r
 c107: z9 zk r g S F delta 9 th x f 6 tri a T f2 ^(8 delta) 9 T .31. g r 2o q+ dbar 4 th : f a
@@ -10,14 +10,14 @@ c108: Tl? z9 9 n xd f : T # f 2o q+ 4 th : n a 8 # ooC alpha r 2 n y oo ooC : #
 c109: % 2o q+ 6 4 dbar ooC 9 : n a lambda th 6 r 6 z9 eps curl tt oo th : dbar r ls q+ delta
 c110: .26. 9 f f2 + y 9 d th Lp g 4t r g S # n a 9 T 9 r th xd ^(8 delta) Q S r rC
 c111: f // th # gg a : n r 6 8 S f 6 xo ^(a r) 8s n q+ oo curl th delta 6 n # rect %
-c112: hb .16. w2 6 phi w yy 4 th S T 6 r f2 // ^(H r) .20. .10. Gamma pdot 9 n S delta Q nous?
+c112: hb .16. w2 6 phi w yy 4 th S T 6 r f2 // ^(H r) .20. .10. Gamma pdot 9 n ls delta Q nous?
 c113: g // 40 r g ooC a r q+ w 4 a Q 6 // f2 .31. S n 6 xo ^(a r) 8s f y .20. S r
 c114: 6 8 dsi+ f 6 xo 8s n q+ oo 6 r hsb g 4 th # : n r f2 a # r q+ delta th #
 c115: hs % 4 th hs w delta Q Esign w hb # r g : q+ T Q q+ Q r 6 z9 eps % S : f2 n th
-c116: ls 4 a f : 6 Q Gamma g pdot f n delta g m + f ls r z9 rC ooC 4 H r H %
-c117: gg a n ls dsi Om 2o q+ g 4 th # 4 4 S r Q 9 // f th delta 6 a z9 T delta 6 n ls
+c116: ls 4 a f : 6 Q Gamma g pdot f n delta g m + f ls r z9 rC ooC 4 H r # %
+c117: gg a n ls dsi Om 2o q+ g 4 th # 4 S r Q 9 // f th delta 6 a z9 T delta 6 n ls
 c118: tt w ls 4 6 tri r # f 2o q+ 6 r m + th q+ a Tl 4 th xbar f delta g zk delta ls
-c119: r # z9 Lbar // Id : n # ls r 8 delta 6 n # y 4t 8s 4 ls ^(+ q+) z9 pi n ls : 6 z9 Ee 4
+c119: r # z9 Lbar // Id : n # ls r 8 delta 6 n # y 4t 8s 4 ls ^(+ q+) z9 pi n ls : 6 Ee 4
 c120: delta g S # n a Q g delta ls r a n # 4 6 a S F r f Ee w2 g delta # : n a fe
 c121: 4 dbar g r z9 y delta th r : n # ooC .31. f 4 6 8 % w n 2 r Q 9 4 6 f
 c122: 9 lambda f // th # g w q+ g f delta th r 2c : 6 a 4 pi q+ 4 dbar r .10. S ls :
@@ -32,9 +32,9 @@ c130: 8s? : hs alpha gg a n S th q+ n r # r eps .12. 4 box + f ls r g z9 4d g zk
 c131: 4 9 r eps .12. delta? n 6 4 f2 S delta g % g r 8s pi q+ r 2o q+ f m + dsi+ r 6 a
 c201: Tl z9 6b // 6 z9 eps g th # 0 zk 4 Id hs delta a r Q g th # Ee T delta 6 x r {struck}
 c202: qx th # g w # 4 6 d r f 2o q+ 9 n S a w hs delta {yy} # r 8s n g r
-c203: curl th a r 2 zk f q+ : 6 f2 r rC 4 th ls : n a ls : 8 Lp # phi 9 hs delta q+ lambda
+c203: curl th a r 2 zk f q+ : 6 f2 r rC 4 th ls : n a S : 8 Lp # phi 9 hs delta q+ lambda
 c204: a : # 8 Q Ee # th zk 8 T ls r z9 S w delta Qh m 4 n S a L th g r #
-c205: f ls delta 9 th I .26. {pi} w S r # a 4 n 6 Q dsi r H r g th pi dsi n g a :
+c205: f S delta 9 th I .26. {pi} w S r # a 4 n 6 Q dsi r H r g th pi dsi n g a :
 c206: n 8 yy g n xd f r zk 8s 4 n 6 r g Q H r zk // I : n a 6b 4 n # delta rect
-c207: z9 tri ls 4 6 9 g x box delta S a f .26. tt r L delta 8s f g 6 r m th ls r 6
+c207: z9 tri ls 4 6 9 g r box delta S a f .26. tt r L delta 8s f g 6 r m th ls r 6
 c208: f 4 .20. dsi w // L r g xbar dbar oo oo Dsign delta 4t ud R

@@ -5,8 +5,8 @@
 # 数字の単語記号は .10. の形で書く。末尾の ? は形の読みに自信がないもの。/ は原本の区切りの斜線。
 c01: thb + 7 I Sbar .10. Gamma 4 xbar delta th ls r Q S delta zk # n 6 dsi+ 4t w / Tl r L T dbar delta
 c02: % m + rC S R 4t Q f 4 .20. % 6 Lp 4 // ls 9 # delta z9 q+ r 9 n xbar th 4 z9 # 9 delta
-c03: S hs : f ls delta Q Ee 6 r S delta xbar n a r 2o q+ g curlo th box hs x 6 delta rC // n a 4 .12.
-c04: f r? f 6 tri .26. w S : 6 g n z9 # delta Q tt delta box hs S a g 6 r rC delta # 4 Lp curlo
+c03: S hs : f ls delta Q Ee 6 r S delta xbar n a r 2o q+ g curlo th box hs r 6 delta rC // n a 4 .12.
+c04: f r? f 6 tri .26. w S : 6 g n z9 # delta Q tt delta box r S a g 6 r rC delta # 4 Lp curlo
 c05: ls a delta 6 8 .30. 4 th xd 4 9 x n g Q q+ // 6 z9 4 9 : L delta rC q+ delta 8 ls delta
 c06: g : # f r hs pi n H 4 ls 8 delta g S # f th n a gg Ee z9 # 6 f delta hs r
 c07: z9 zk r g S F delta 9 th x f 6 tri a T f2 ^(8 delta) 9 T .31. g r 2o q+ dbar 4 th : f a
@@ -14,14 +14,14 @@ c08: Tl? z9 9 n xd f : T # f 2o q+ 4 th : n a 8 # ooC alpha r 2 n y oo ooC : #
 c09: % 2o q+ 6 4 dbar ooC 9 : n a lambda th 6 r 6 z9 eps curl tt oo th : dbar r ls q+ delta
 c10: .26. 9 f f2 + y 9 d th Lp g 4t r g S # n a 9 T 9 r th xd ^(8 delta) Q S r rC
 c11: f // th # gg a : n r 6 8 S f 6 xo ^(a r) 8s n q+ oo curl th delta 6 n # rect %
-c12: hb .16. w2 6 phi w yy 4 th S T 6 r f2 // ^(H r) .20. .10. Gamma pdot 9 n S delta Q nous?
+c12: hb .16. w2 6 phi w yy 4 th S T 6 r f2 // ^(H r) .20. .10. Gamma pdot 9 n ls delta Q nous?
 c13: g // 40 r g ooC a r q+ w 4 a Q 6 // f2 .31. S n 6 xo ^(a r) 8s f y .20. S r
 c14: 6 8 dsi+ f 6 xo 8s n q+ oo 6 r hsb g 4 th # : n r f2 a # r q+ delta th #
 c15: hs % 4 th hs w delta Q Esign w hb # r g : q+ T Q q+ Q r 6 z9 eps % S : f2 n th
-c16: ls 4 a f : 6 Q Gamma g pdot f n delta g m + f ls r z9 rC ooC 4 H r H %
-c17: gg a n ls dsi Om 2o q+ g 4 th # 4 4 S r Q 9 // f th delta 6 a z9 T delta 6 n ls
+c16: ls 4 a f : 6 Q Gamma g pdot f n delta g m + f ls r z9 rC ooC 4 H r # %
+c17: gg a n ls dsi Om 2o q+ g 4 th # 4 S r Q 9 // f th delta 6 a z9 T delta 6 n ls
 c18: tt w ls 4 6 tri r # f 2o q+ 6 r m + th q+ a Tl 4 th xbar f delta g zk delta ls
-c19: r # z9 Lbar // Id : n # ls r 8 delta 6 n # y 4t 8s 4 ls ^(+ q+) z9 pi n ls : 6 z9 Ee 4
+c19: r # z9 Lbar // Id : n # ls r 8 delta 6 n # y 4t 8s 4 ls ^(+ q+) z9 pi n ls : 6 Ee 4
 c20: delta g S # n a Q g delta ls r a n # 4 6 a S F r f Ee w2 g delta # : n a fe
 c21: 4 dbar g r z9 y delta th r : n # ooC .31. f 4 6 8 % w n 2 r Q 9 4 6 f
 c22: 9 lambda f // th # g w q+ g f delta th r 2c : 6 a 4 pi q+ 4 dbar r .10. S ls :

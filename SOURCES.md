@@ -26,6 +26,9 @@
 ## 2回目の書き起こし
 - `second/transcription2_f120r.txt`・`f120v.txt`：Anthropic の Claude Sonnet が、1回目の書き起こしを見ずに、画像の切り出しと Burford 氏の見本表、記号の名前と形の説明だけから読んだもの（2026-10-20）。読み手を変えた独立の読みとして、1回目と突き合わせた（[docs/METHOD.md](docs/METHOD.md)）。
 
+## 3人の読み手の書き起こし
+- `third/*_pass1〜3.txt`：答えを見ていない Claude Opus の読み手3人（サブエージェント）が、f. 104r の18〜24行目と f. 120 を、行の画像・Burford 氏の見本表・記号の名前と形の説明だけから別々に読んだもの（2026-10-20）。多数決は `third/*_vote.txt`（[docs/METHOD.md](docs/METHOD.md) の「3人の読み手の多数決」）。
+
 ## 方法の手本
 - Harumi-Matsuba, *matignon1586-public*（同じ Cipher-2 の書簡 BnF fr. 15572 ff. 218–219 の読み）
   - https://github.com/Harumi-Matsuba/matignon1586-public

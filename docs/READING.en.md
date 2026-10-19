@@ -5,20 +5,20 @@
 - The spelling is kept close to the 16th-century spelling as decoded (u and v, i and j are not distinguished). Punctuation and capitals are added for readability.
 - [ ] marks added letters or words. [?] is a sign with no value. [?word] is a reading guessed from form or context and not checked. [∞] is the ∞-shaped sign with no value that follows mil and occurs elsewhere (reading escus fits three places, but is not confirmed).
 - The line-by-line mechanical decoding is in `data/decoded_*.txt`, the sign-by-sign transcription in `data/transcription_*.txt`. Line numbers (c01 etc.) are those of those files.
-- Based on the first transcription (`data/`). In the calibration the character agreement was about 70%, so details may be wrong ([METHOD.en.md](METHOD.en.md)). Word divisions were added afterwards to the decoded letters.
+- Based on the first transcription (`data/`, corrected in nine places in v0.3 after the three-reader vote). No person has checked the transcription. Details may be wrong ([METHOD.en.md](METHOD.en.md)). Word divisions were added afterwards to the decoded letters.
 
 ## f. 120r (cipher throughout, 31 lines)
-> c01–c05: [?][a][?][u][?] Je vous asseure que ce prince est plus ennuyé et fasché que jamais, et n'y a ordre de le dissuader de croire que la necessité qu'il [?]souffr[e] une [?]soit a desseing ; car c'est considéré que les effects ne se ra[p]portent [?30] aux advis que l'on de[?]a donne[?s].
+> c01–c05: [?][a][?][u][?] Je vous asseure que ce prince est plus ennuyé et fasché que jamais, et n'y a ordre de le dissuader de croire que la necessité qu'il souffre ne soit a desseing ; car c'est considéré que les effects ne se ra[p]portent [?30] aux advis que l'on de[?]a donne[?s].
 
 > c05–c08: Le tresorier Bilart escrivit par la derniere depesche du vingt un du passé qu'il y avoit plus de dix jours qu'il avoit trente mil [∞] en or,
 
 > c09–c12: et qu'il n'y en doit qu'un[?e] [?n de ment] pour les [∞]voyer[?]. Le cardinal de Guise escrit du deux que ces jours [?partoient] cinq mil [∞] pour venir icy, et toutesfois il n'en est encore aucune no[uvelle].
 
-> c12–c15: Mais je vous puis di[?r]e que nous sommes en tel estat que non pas cinq mil, mais [?cent] cinq mil [∞] ne [?] sauroient relever.
+> c12–c15: Mais je vous puis dire que nous sommes en tel estat que non pas cinq mil, mais [?cent] cinq mil [∞] ne [?] sauroient relever.
 
-> c15–c19: Et au reste, que [?E] est tout resolu, que quelque [?…]ment et conjuration que vous s[?] puis [?…] faire de s[?en] a l'el[?], et partir si [?] qu'il saura ce que doivent devenir les estrangers ; qu'il ne fault plus aussi esperer de pouvoir retenir le mar[eschal] de Biron.
+> c15–c19: Et au reste, que [?E] est tout resolu, que quelque [?…]ment et conjuration que vous s[?] puis [?…] faire de s[?en] aler, et partir si [?] qu'il saura ce que doivent devenir les estrangers ; qu'il ne fault plus aussi esperer de pouvoir retenir le mar[eschal] de Biron ;
 
-> c19–c22: De là a escrit que, se retirant chez [?la], il seroit bien aysé de le veoir en passant, et estime que dans d[i]x jours est le s[?ieu]r [?M]ontablaye.
+> c19–c22: [?La] a escrit que, se retirant chez [?la], il seroit bien aysé de le veoir en passant, et estime que dans d[i]x jours est le s[?ieu]r [?M]ontablaye.
 
 > c22–c24: Je croy que [?] ne s'y trouvera pas, et je suis encore incertain si je irai[s], [?s'ay en dray], ce que l'on [?t']en dira [?].
 

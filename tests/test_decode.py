@@ -49,9 +49,9 @@ class TestDecode(unittest.TestCase):
 
     def test_coverage_numbers(self):
         # README・docs/METHOD.md に書いた割合
-        self.assertIn('975 個（88.4%）', run_decode('f120_all', '--table-only'))
-        self.assertIn('1069 個（96.9%）', run_decode('f120_all', '--no-inferred'))
-        self.assertIn('1084 個（98.3%）', run_decode('f120_all'))
+        self.assertIn('974 個（88.5%）', run_decode('f120_all', '--table-only'))
+        self.assertIn('1067 個（96.9%）', run_decode('f120_all', '--no-inferred'))
+        self.assertIn('1082 個（98.3%）', run_decode('f120_all'))
 
     def test_revised_values(self):
         # 較正と2回目の書き起こしを受けて直した値
@@ -72,7 +72,7 @@ class TestDecode(unittest.TestCase):
 class TestSecond(unittest.TestCase):
     def test_agreement_numbers(self):
         # docs/METHOD.md の「2回目の書き起こし」に書いた一致率
-        for page, names, values in [('f120r', '81.4%', '87.7%'), ('f120v', '78.7%', '87.0%')]:
+        for page, names, values in [('f120r', '81.7%', '88.0%'), ('f120v', '80.1%', '88.4%')]:
             out = subprocess.run(
                 [sys.executable, os.path.join(ROOT, 'src', 'compare2.py'),
                  os.path.join(ROOT, 'data', f'transcription_{page}.txt'),
@@ -89,6 +89,34 @@ class TestSecond(unittest.TestCase):
             capture_output=True, text=True, check=True).stdout
         with open(os.path.join(ROOT, 'second', 'decoded2_f120_all.txt'), encoding='utf-8') as f:
             self.assertEqual(out, f.read())
+
+
+class TestVote(unittest.TestCase):
+    def test_vote_files_are_current(self):
+        # third/*_vote.txt が、3人の読みから src/vote.py で作り直したものと一致する
+        import tempfile
+        for page in ['f104r', 'f120r', 'f120v']:
+            with tempfile.TemporaryDirectory() as d:
+                out = os.path.join(d, 'v.txt')
+                subprocess.run([sys.executable, os.path.join(ROOT, 'src', 'vote.py'), out] +
+                               [f'third/{page}_pass{k}.txt' for k in (1, 2, 3)],
+                               capture_output=True, text=True, check=True, cwd=ROOT)
+                with open(out, encoding='utf-8') as f1, open(os.path.join(ROOT, 'third', f'{page}_vote.txt'), encoding='utf-8') as f2:
+                    self.assertEqual(f1.read(), f2.read(), page)
+
+    def test_vote_accuracy_on_f104r(self):
+        # docs/METHOD.md の「3人の読み手の多数決」に書いた正確さ
+        run = lambda *a: subprocess.run([sys.executable, os.path.join(ROOT, 'src', 'calib.py'), *a],
+                                        capture_output=True, text=True, check=True, cwd=ROOT).stdout
+        args = [KEY, 'third/f104r_vote.txt', 'calib/ref_signs_f104r_burford.txt', '1']
+        self.assertIn('= 90.5%', run('--lenient', '--no-alias', *args))
+        self.assertIn('= 95.6%', run('--lenient', *args))
+
+    def test_vote_example(self):
+        sys.path.insert(0, os.path.join(ROOT, 'src'))
+        from vote import vote_line
+        self.assertEqual(vote_line([['a', 'b', 'c', 'd'], ['a', 'b', 'q', 'd'], ['a', 'b', 'c', 'd', 'e']])[0], ['a', 'b', 'c', 'd'])
+        self.assertEqual(vote_line([['x', 'y', 'z'], ['x', 'k', 'y', 'z'], ['x', 'k', 'y']])[0], ['x', 'k', 'y', 'z'])
 
 
 class TestCalib(unittest.TestCase):

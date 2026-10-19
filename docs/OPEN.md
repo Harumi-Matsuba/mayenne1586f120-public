@@ -20,11 +20,10 @@
 | Dsign（大きな D に点） | 1 | c208 | 末尾 |
 
 ## 読めない箇所・読みが割れる箇所
-- r c03–c04：« qu'il [?]souffr[e] une [?]soit a desseing »。語の切れ目が定まらない。
+- r c03–c04：« qu'il souffre ne soit a desseing »（v0.3 で3人の多数決に合わせて直した読み）。« des seing » の切れ目は推定。
 - r c05：« que l'on de[?]a donne[?s] »。
 - r c09：« qu'un[?e] n de ment pour les [∞]voyer »。
-- r c12：« je vous puis dice »。dice の c（S）は ls（r）の読み違いで dire の可能性がある。S と ls は2回目との食い違いがいちばん多い組。
-- r c15–c16：« que quelque [?…]ment et conjuration que vous s[?] puis i es faire de s[en] a l'el[?] »。
+- r c15–c16：« que quelque [?…]ment et conjuration que vous s[?] puis i es faire de s[en] aler »。
 - r c22：« est le s[?ieu]r [?M]ontablaye »。記号は w q+ g f delta th r 2c : 6 a 4 pi q+ 4 dbar r。« le sieur » なら最後の r（e）が # か ls（r）のはず。
 - r c24：« si je irai[s], [?s'ay en dray] »。
 - r c25–c26：« qui sui[?vent] [?…] » の L r 6 a 4 pdots 9 delta # の部分。
@@ -46,5 +45,5 @@
 - 差出人と日付。内容（Guise 枢機卿の2日付の書簡、Biron、軍の代表、La Marsilière、あと6週間）から、巻の前後の書簡と照らせば絞れる可能性がある。
 - 人名：Bilart、[M]ontablaye、La Marsilière がどの人物か。
 - 友清氏が « Endorsement illegible » と書いた裏書きは、246・247コマには見当たらない（別の葉にある可能性）。
-- 書き起こしの正確さ：f. 104r の7行での較正では、答えを見ない測定で文字の一致率70.6%（[METHOD.md](METHOD.md) の「較正」）。f. 120 そのものの正確さは測っていない。2回目の書き起こしとの値の一致率は87%台。
+- 書き起こしの正確さ：f. 104r の7行で、答えを見ていない Opus の読み手3人の多数決は、記号の正確さ90.5%（同じ値の別名も一致なら95.6%）。1回目の較正（別のセッション、1回）は86.9%（89.1%）、文字の一致率70.6%。f. 120 そのものの正確さは測っていない。f. 120 での多数決との値の一致率は表93.1%・裏88.0%（[METHOD.md](METHOD.md) の「3人の読み手の多数決」）。
 - 較正で見つかった # と 4t、2o と「a 0」の取り違えは、f. 120 の書き起こしでは見直していない。

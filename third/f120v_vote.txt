@@ -1,0 +1,9 @@
+# 3 つの読み（third/f120v_pass1.txt, third/f120v_pass2.txt, third/f120v_pass3.txt）の多数決（src/vote.py）
+c01: + z9 B // 6 z9 eps g th # thb zk 4 Id hs delta a x Q g th # Ee T delta 6 x r
+c02: qx th # g w # 4 6 d r hs f 2o q+ 9 n S a w hs delta yy # r 8s n g r
+c03: curl th a r 2c zk f q+ dots 6 f2 r x 4 th S dots n a S dots 8s Lbar # ooC 9 hs delta q+ delta
+c04: a dots # 8 Q Ee # th Lp 8 T ls x z9 S w delta m 4 n S a ? th g r #
+c05: f S delta 9 th L .26. w2 w S r # a 4 n 6 Q dsi r H r g th pi dsi n g a dots
+c06: n 8 yy g n xd f r zk 8s 4 n 6 r g Q H r zk // I dots n a B 4 n # delta rect
+c07: z9 tri ls 4 6 dsi g r box delta S a f2 .26. tt r delta 8s f g 6 r m th ls r 6
+c08: f 4 .20. dsi w // r g 2x oo 2o Dsign delta 4t .u. R

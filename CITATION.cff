@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this reading, please cite it as below."
+title: "BnF fr. 15573 f. 120, a cipher letter in Mayenne-Forget's Cipher-2 (1586): a first reading"
+version: "0.3"
+date-released: "2026-10-20"
+authors:
+  - alias: "Harumi-Matsuba"
+repository-code: "https://github.com/Harumi-Matsuba/mayenne1586f120-public"
+license: "CC-BY-4.0"
+abstract: "Transcription, key and partial reading of the undeciphered cipher letter BnF fr. 15573 f. 120r-v, with Satoshi Tomokiyo's reconstruction of Mayenne-Forget's Cipher-2 and Brett Burford's key; shuffled-key control, calibration on f. 104r, an independent second transcription and a vote of three blind readers. Made with Anthropic's Claude; the transcription has not been checked by a person. Code is MIT-licensed (see LICENSE)."
+keywords:
+  - cryptography
+  - historical ciphers
+  - Henri III
+  - Mayenne
+  - BnF Français 15573
+references:
+  - type: software
+    title: "First reading of the whole cipher letter BnF fr. 15573 f. 385 (Mayenne-Forget Cipher-2, 1586)"
+    authors:
+      - family-names: "Burford"
+        given-names: "Brett"
+    repository-code: "https://github.com/BravoBravoIX/mayenne-forget-1586-cipher-reading"
+  - type: webpage
+    title: "French ciphers during the Reigns of Charles IX and Henry III"
+    authors:
+      - family-names: "Tomokiyo"
+        given-names: "Satoshi"
+    url: "https://cryptiana.web.fc2.com/code/henryiii.htm"

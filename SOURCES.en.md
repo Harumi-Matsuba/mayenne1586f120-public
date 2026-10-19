@@ -26,6 +26,9 @@ The images are not redistributed; please refer to them by view number. Source ga
 ## Second transcription
 - `second/transcription2_f120r.txt`, `f120v.txt`: read by Anthropic's Claude Sonnet from the image tiles, Burford's reference sheet and a list of sign names with shape descriptions only, without seeing the first transcription (20 October 2026). Compared with the first as an independent reading by a different reader ([docs/METHOD.en.md](docs/METHOD.en.md)).
 
+## Transcriptions by three readers
+- `third/*_pass1–3.txt`: f. 104r lines 18–24 and f. 120, read separately by three blind Claude Opus readers (subagents) from the line images, Burford's reference sheet and a list of sign names with shape descriptions only (20 October 2026). The vote is in `third/*_vote.txt` ("Three-reader vote" in [docs/METHOD.en.md](docs/METHOD.en.md)).
+
 ## Model for the method
 - Harumi-Matsuba, *matignon1586-public* (a reading of another Cipher-2 letter, BnF fr. 15572 ff. 218–219)
   - https://github.com/Harumi-Matsuba/matignon1586-public

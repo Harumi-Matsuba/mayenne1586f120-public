@@ -1,7 +1,7 @@
 c01 [?]a[?]u[?] IE VOUS a(s|ss)eure QUE ceprince EST PLUS e(a|n)uye
 c02 ET fa(s|z)che QUE (i|s)a MAIS ET niaordre DE ledi(s|ss)ua DE rde
-c03 cro(i|s)re QUE LA nece(s|ss)ite QUI lsoufrune(s|z)oita DES
-c04 (i|s)e(i|s)ng CAR EST consi DE re QUE LES efrctsne(s|z)eraio
+c03 cro(i|s)re QUE LA nece(s|ss)ite QUI lsoufrene(s|z)oita DES
+c04 (i|s)e(i|s)ng CAR EST consi DE re QUE LES efectsne(s|z)eraio
 c05 rtent[?]auxaduis QUE lon DE ado(a|n)e(s|z)letre
 c06 sor(i|s)erbilartescr(i|s)uit PAR LA DE rn(i|s)ere
 c07 DE pescheduu(i|s)ngtundu PAS se QUI lyauo(i|s)t
@@ -9,14 +9,14 @@ c08 PLUS DE dix(i|s)our(i|s) QUI lauoittr EN temil[?] EN or
 c09 ET QUI lnay EN doit(q|x)unen DE MENT POUR LES [?]uoyerle
 c10 CAR d(i|s)naldguiseescritdudeux QUE ce(s|z)
 c11 (i|s)our PAR toientc(i|s)nqmil[?] POUR uenir ICY ET
-c12 TOUT FOIS IL n EN EST ENCORE aucuneno MAIS IE VOUS PUIS dice QUE NOUS
+c12 TOUT FOIS IL n EN EST ENCORE aucuneno MAIS IE VOUS PUIS dire QUE NOUS
 c13 somes EN tel EST at QUE non PAS cinqm(i|s)l MAIS ce
 c14 ntc(i|s)nqmil[?]ne[?]sauroientreleur
 c15 r ET aur EST e QUE [?] EST TOUT resolu QUE l QUE en DE MENT ET coniu
-c16 rat(i|s)on QUE VOUS s PUIS (i|s)iesfa(i|s)re DE (s|z) EN alel ET
-c17 PAR tir SI [?] QUI lsauraace QUE do(i|s)uent DE uenir
+c16 rat(i|s)on QUE VOUS s PUIS (i|s)iesfa(i|s)re DE (s|z) EN aler ET
+c17 PAR tir SI [?] QUI lsaurace QUE do(i|s)uent DE uenir
 c18 LES EST ranger(i|s) QUI lnefault PLUS au(s|ss)(i|s)esper
-c19 er DE pouoirretenirlemar DE biron DE LA a
+c19 er DE pouoirretenirlemar DE biron LA a
 c20 escrit QUE seretirantche(i|s) LA IL seroit BIEN
 c21 ayse DE leueoir EN PAS (i|s)ant ET EST ime QUE dan(i|s)
 c22 d(q|x)(i|s)ours EST ls(i|s)euemontablaye IE cro
@@ -29,5 +29,5 @@ c28 f(i|s)t DE n[?] EST m EST tombe EN tre LES mainsune
 c29 [?]dusecretaire LA marsil(i|s)ere QUI NOUS le
 c30 mort PAR ticuliere MENT DES afa(i|s)res DE [?]spe
 c31 ade MENT DES einances ET semble QUI l(i|s)facent
-# 記号 887 個のうち、表・Burford・推定を合わせて値が付いたもの 871 個（98.2%）
-# 871 of 887 signs (98.2%) given a value by the table, Burford and inferred values
+# 記号 885 個のうち、表・Burford・推定を合わせて値が付いたもの 869 個（98.2%）
+# 869 of 885 signs (98.2%) given a value by the table, Burford and inferred values

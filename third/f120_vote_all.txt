@@ -1,0 +1,40 @@
+# 3人の Opus の読み手の多数決（src/vote.py）。表と裏をまとめたもの。表は c101〜、裏は c201〜
+c101: 4t 4d 7 I Sbar .10. Gamma 4 xbar delta th ls r Q S delta zk # n 6 dsi+ 4t w Tl r L T dbar delta
+c102: % m + rC S R 4t Q f 4 2o % 6 Lp 4 // ls 9 # delta z9 q+ r 9 n xbar th 4 z9 # 9 delta
+c103: 8 hs dots f ls delta Q Ee 6 r S delta xbar n a r 2o q+ g curl th box hs r 6 delta rC // n a 4 .12.
+c104: hsb r f tri 2 6 w2 8 dots 6 g n z9 # delta Q tt delta box r S a g 6 r rC delta # 4 Lp curl
+c105: ls a delta 6 8 .30. 4 th .u. 4 9 x n g Q q+ // 6 g 4 9 dots L delta rC q+ delta 8 ls delta
+c106: g dots # f r hs pi n H 4 ls 8 delta g S # f th n a gg Ee z9 # 6 f delta B r
+c107: z9 zk r g S F delta 9 th x f 6 tri a T f2 9 T .31. g r 2o q+ dbar 4 th dots f a
+c108: z9 9 n .u. f dots T # hsb 2o q+ 4 th dots n a 8 # ooC alpha r 2 n y ooC dots #
+c109: % 2o q+ 6 4 ooC 9 dots n a lambda th 6 r 6 z9 eps curl tt oo th dots dbar r ls q+ delta
+c110: 2 6 9 f f2 + y z9 d th Lp g 4t r g S # n a 9 T 9 x th .u. Q S r rC
+c111: f // th # gg a dots n r 6 8 S f 6 xo 8s n q+ curl th delta 6 n # rect %
+c112: hsb .16. w2 6 ooC w yy 4 th S T 6 r f2 // .20. .10. Gamma pdot 9 n ls delta Q nous
+c113: g // 40 r g ooC a r q+ w 4 a Q 6 // f2 .31. S n 6 xo 8 f y 2o S r
+c114: 6 8 dsi+ f 6 xo 8s n q+ 6 r nous g 4 th # dots n r f2 a # r q+ delta th 4t
+c115: hs % 4 th hs w delta Q Esign w hs # r g dots q+ T Q q+ Q r 6 z9 eps % S dots f2 n th
+c116: ls 4 a f dots 6 Q Gamma pdot hsb n delta g m + f ls r z9 rC ooC 4 H r # %
+c117: gg a n ls dsi Om 2o q+ g 4 th # 4 S r Q 9 // f th delta 6 a z9 T delta 6 n ls
+c118: tt w ls 4 6 tri r # f 2o q+ 6 r m + th q+ a Tl 4 th xbar f delta g zk delta ls
+c119: r # z9 Lbar // Id dots n # ls r 8 delta 6 n # y 4t 8s 4 ls z9 pi n ls dots 6 4
+c120: delta g S # n a Q g delta ls r a n # 4 6 a S F r hsb w g delta # dots n a fe
+c121: 4 dbar g r z9 y delta th r dots n # ooC .31. 4 6 8 % w n Lbar r Q 9 4 6
+c122: 9 lambda f // th # g w q+ g f2 delta th r 2c dots 6 a 4 pi q+ 4 dbar r .10. S ls dots
+c123: dbar Q invTl 6 r dsi a ls // Id r # 4 .31. % .10. g th n f2 yy f 6 S r ls a 4
+c124: n 6 dsi .10. n ls 4 Ee f 4 4t ooC 9 ls 4 dbar S r Q q+ dots 6 8 ooC 9 f ls 4 hsb
+c125: 4 th curl 6 g z9 S r f2 dots f ls rect tt z9 pdots T a r g z9 2o g th n r
+c126: r 6 a 4 pdots q+ delta # % m dots 6 a th g curl box ls r g .20. g // 40 r g
+c127: th 6 S curl ls zk f dsi z9 pi n q+ delta 2o 6 r .24. a + m 4 n # delta zk # dots
+c128: m f a z9 .15. w 2c w a // 8s pi delta ooC a # delta tt 2c 4 n 6 g th 6 r
+c129: .u. 9 th g r S # delta a 4 n # delta Ee 8s 4 ls g n q+ f r # r 2o nous y delta
+c130: dsi dots hb alpha gg a n S th q+ n r # r eps .12. 4 box + f ls r g z9 4d g zk r
+c131: 4 9 r eps .12. dsi n 6 4 S delta g % g r 8s pi q+ r 2o q+ f m + dsi+ r 6 a
+c201: + z9 B // 6 z9 eps g th # thb zk 4 Id hs delta a x Q g th # Ee T delta 6 x r
+c202: qx th # g w # 4 6 d r hs f 2o q+ 9 n S a w hs delta yy # r 8s n g r
+c203: curl th a r 2c zk f q+ dots 6 f2 r x 4 th S dots n a S dots 8s Lbar # ooC 9 hs delta q+ delta
+c204: a dots # 8 Q Ee # th Lp 8 T ls x z9 S w delta m 4 n S a ? th g r #
+c205: f S delta 9 th L .26. w2 w S r # a 4 n 6 Q dsi r H r g th pi dsi n g a dots
+c206: n 8 yy g n xd f r zk 8s 4 n 6 r g Q H r zk // I dots n a B 4 n # delta rect
+c207: z9 tri ls 4 6 dsi g r box delta S a f2 .26. tt r delta 8s f g 6 r m th ls r 6
+c208: f 4 .20. dsi w // r g 2x oo 2o Dsign delta 4t .u. R

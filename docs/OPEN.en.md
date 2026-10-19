@@ -20,11 +20,10 @@ Signs that get no value in `src/decode.py`. Line numbers are those of `data/tran
 | Dsign (large D with a dot) | 1 | c208 | at the end |
 
 ## Unread stretches and divided readings
-- r c03–c04: « qu'il [?]souffr[e] une [?]soit a desseing ». Word divisions unsettled.
+- r c03–c04: « qu'il souffre ne soit a desseing » (revised in v0.3 following the three-reader vote). The division « des seing » is inferred.
 - r c05: « que l'on de[?]a donne[?s] ».
 - r c09: « qu'un[?e] n de ment pour les [∞]voyer ».
-- r c12: « je vous puis dice ». The c (S) of dice may be a misread ls (r), giving dire. S and ls are the pair on which the second transcription differs most.
-- r c15–c16: « que quelque [?…]ment et conjuration que vous s[?] puis i es faire de s[en] a l'el[?] ».
+- r c15–c16: « que quelque [?…]ment et conjuration que vous s[?] puis i es faire de s[en] aler ».
 - r c22: « est le s[?ieu]r [?M]ontablaye ». The signs are w q+ g f delta th r 2c : 6 a 4 pi q+ 4 dbar r. For « le sieur » the last r (e) should be # or ls (r).
 - r c24: « si je irai[s], [?s'ay en dray] ».
 - r c25–c26: the stretch L r 6 a 4 pdots 9 delta # in « qui sui[?vent] [?…] ».
@@ -46,5 +45,5 @@ Signs that get no value in `src/decode.py`. Line numbers are those of `data/tran
 - Sender and date. From the content (the Cardinal of Guise's letter of the 2nd, Biron, the deputies of the army, La Marsilière, six more weeks), comparison with the neighbouring letters of the volume may narrow them down.
 - Persons: who Bilart, [M]ontablaye and La Marsilière are.
 - The endorsement that Tomokiyo calls « illegible » is not on views 246–247 (perhaps on another leaf).
-- Accuracy of the transcription: in the calibration on seven lines of f. 104r, the blind measurement gave 70.6% character agreement ("Calibration" in [METHOD.en.md](METHOD.en.md)). The accuracy on f. 120 itself was not measured. Agreement of values with the second transcription is about 87%.
+- Accuracy of the transcription: on seven lines of f. 104r, the vote of three blind Claude Opus readers reached 90.5% sign accuracy (95.6% counting same-value names as matches); the first calibration (another session, one pass) gave 86.9% (89.1%) and 70.6% character agreement. The accuracy on f. 120 itself was not measured. On f. 120, agreement of values with the vote is 93.1% (recto) and 88.0% (verso) ("Three-reader vote" in [METHOD.en.md](METHOD.en.md)).
 - The confusions of # and 4t, and of 2o and "a 0", found in the calibration were not re-examined in the transcription of f. 120.

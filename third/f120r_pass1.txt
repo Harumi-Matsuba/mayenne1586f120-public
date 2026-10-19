@@ -1,0 +1,32 @@
+# 読み手1（Claude Opus、2026-10-20、形だけで読んだ）
+c01: thb? 4d? 7 I? Sbar .10. Gamma 4 xbar delta th ls r Q S delta zk # n 6 dsi+ 4t w / Tl x L T dbar delta
+c02: % m + rC S zk 4t Q f 4 2o % 6 Lp 4 // ls 9 # delta z9 q+ r 9 n xbar th 4 z9 # 9 delta
+c03: 8 hs dots f ls delta Q Ee 6 r S delta xbar n a r 2o q+ g curl th box hs r 6 delta rC? // n a 4 .12.
+c04: hsb? r f 6 tri .26.? w2? 8? dots 6 g n z9 # delta Q tt delta box r S a g 6 r x? delta # 4 Lp curl
+c05: ls a delta 6 8 .30.? 4 th .u. 4 9 x n g Q q+ // 6 g 4 9 dots L delta rC q+ delta 8 ls delta
+c06: g dots # f r hs pi n H 4 ls 8 delta g S # f th n a gg Ee z9 # 6 f delta B r
+c07: z9 zk r g S F delta 9 th x f 6 tri a T f2? ^(8 delta) 9 T .31. g r 2o q+ dbar 4 th dots f a
+c08: <角張った枠の中に o、下に C> z9 9 n .u. f dots T # hsb? 2o q+ 4 th dots n a 8 # ooC alpha r 2c? n y <輪3つの ꝏ 形> ooC dots #
+c09: % 2o q+ 6 4 <ψ に横線> ooC 9? dots n a lambda th 6 r 6 z9 eps curl tt ooC th dots dbar r ls q+ delta
+c10: .26.? 9 f f2 + y z9 d th Lp g 4t r g S # n a 9 T 9 x th .u. ^(8 delta) Q S r rC
+c11: f // th # gg a dots n r 6 8 S f 6 xo ^(a r) 8s n q+ <輪3つの ꝏ 形> curl th delta 6 n # rect %
+c12: hsb? .16. w2? 6 ooC w yy 4 th S T 6 r f2 // ^(H r) .20. .10. Gamma pdot 9 n ls delta Q nous?
+c13: g // 40 r g ooC a r q+ w 4 a Q 6 // f2 .31. S n 6 xo ^(a r) 8s f y .20. S r
+c14: 6 8 dsi+ f 6 xo ^(a delta) 8s n q+ <輪3つの ꝏ 形> 6 r nous? g 4 th # dots n r f2 a # r q+ delta th #
+c15: hs % 4 th hs w delta Q Esign w hs # r g dots q+ T Q q+ Q <下線付きの v 形> 6 z9 eps % S dots f2 n th
+c16: ls 4 a f dots 6 Q Gamma g? pdot f2? n delta z9 m + f ls r z9 rC ooC 4 H r # %
+c17: gg a n ls dsi Om 2o q+ g 4 th # 4 S r Q 9 // f th delta 6 a z9 T delta 6 n ls
+c18: tt w ls 4 6 tri r # f2? 2o q+ 6 r m + th q+ a Tl 4 th xbar f delta z9 zk delta ls
+c19: r # z9 L? // Id dots n # ls r 8 delta 6 n # y 4t 8s 4 ls + q+ z9 pi n ls dots 6 g? 4
+c20: delta g S # n a Q g delta ls r a n # 4 6 a S F r f2? g? w? z9 delta # dots n a fe
+c21: 4 dbar g r z9 y delta th r dots n # ooC .31. f2? 4 6 8 % w n Lp? r Q 9 4 6 f2?
+c22: 9 lambda f // th # g w? q+ g f2? delta th r 2c? dots 6 a 4 pi q+ 4 dbar r .10. S ls dots
+c23: dbar Q invTl? 6 r dsi a ls // Id r # 4 .31. % .10. g th n f2? yy f 6 S r ls a 4
+c24: n 6 dsi .10. n ls 4 Ee? f 4 4t ooC 9 ls 4 dbar S r Q q+ dots 6 8 ooC 9 f ls 4 hsb
+c25: 4 th 6b? 6 g z9 S r f2 dots f ls rect tt z9 pdots? T a r g? z9 <上に横線の k 形> 2o g th n r
+c26: <% の下に大きな C 形> r 6 a 4 pdots? q+ delta # % m dots 6 a th g 6b? box? ls r g .20. <ff 形に横線> g // 40 r g
+c27: <下線付きの v 形> th 6 S 6b? ls zk f2 dsi z9 pi n q+ delta 2o 6 r .24.? a + m 4 n # delta zk # dots
+c28: m f a z9 <横線を何本も通した長い f> .15. w 2c? w a // 8s pi delta ooC a # delta w2? 2c? 4 n 6 g th 6 r
+c29: .u. 9 th g r S # delta a 4 n # delta Ee 8s 4 ls g n q+ f r # r 2o nous y delta
+c30: dsi? dots hs alpha gg a n S th q+ n r # r eps .12. 4 box? + f ls r g z9 4d g zk r
+c31: ^(2c?) 4 9 r eps .12. dsi? n 6 4 <下に横線の 4> S delta g % g r 8s pi q+ r 2o q+ f2 m + dsi+ r 6 a
