@@ -31,7 +31,7 @@ The images are not redistributed; please refer to them by view number. Source ga
 - `calib/transcription_f104r_l18-24_context.txt`: f. 104r lines 18–24 read by a blind Claude Opus reader in the same way as the published transcription (decoding with the key) (20 October 2026).
 
 ## Transcriptions by three readers
-- `third/*_pass1–3.txt`: f. 104r lines 18–24 and f. 120, read separately by three blind Claude Opus readers (subagents) from the line images, Burford's reference sheet and a list of sign names with shape descriptions only (20 October 2026). The vote is in `third/*_vote.txt` ("Three-reader vote" in [docs/METHOD.en.md](docs/METHOD.en.md)).
+- `third/*_pass1–3.txt`: f. 104r lines 18–24 and f. 120, read separately by three blind Claude Opus readers from the line images, Burford's reference sheet and a list of sign names with shape descriptions only (20 October 2026). The vote is in `third/*_vote.txt` ("Three-reader vote" in [docs/METHOD.en.md](docs/METHOD.en.md)).
 
 ## Model for the method
 - Harumi-Matsuba, *matignon1586-public* (a reading of another Cipher-2 letter, BnF fr. 15572 ff. 218–219)

@@ -5,7 +5,7 @@
 ## Conclusion
 - **Category: not found.** In the places checked below, nothing was found that reads the cipher of this letter (BnF fr. 15573 f. 120r–v), shows a correspondence between its ciphertext and a plaintext, or gives its plaintext (a contemporary decipherment or a printed edition).
 - Not finding something does not prove that nobody has read it. The reading in this repository is not called the "first".
-- **Limit of this check:** RULES.md 2.2 (5) asks for the search to be made, with the aim of disproving novelty, by a session other than the one that read the letter. This check was made, on the user's instruction, by the same Claude Code session that read the letter, so that condition is not met: the side that might have missed something searched for it itself.
+- **Limit of this check:** it was made by the same reader that read the letter (Claude Opus 5.5), not by a separate reader who had not seen the reading searching with the aim of showing prior work. The side that might have missed something searched for it itself.
 
 ## Places checked (20 October 2026, 01:00–02:30 JST)
 | Where | Date, version | How | Result |

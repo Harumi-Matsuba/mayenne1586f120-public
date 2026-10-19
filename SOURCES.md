@@ -31,7 +31,7 @@
 - `calib/transcription_f104r_l18-24_context.txt`：答えを見ていない Claude Opus の読み手が、公開した書き起こしと同じ読み方（鍵で解読しながら）で f. 104r の18〜24行目を読んだもの（2026-10-20）。
 
 ## 3人の読み手の書き起こし
-- `third/*_pass1〜3.txt`：答えを見ていない Claude Opus の読み手3人（サブエージェント）が、f. 104r の18〜24行目と f. 120 を、行の画像・Burford 氏の見本表・記号の名前と形の説明だけから別々に読んだもの（2026-10-20）。多数決は `third/*_vote.txt`（[docs/METHOD.md](docs/METHOD.md) の「3人の読み手の多数決」）。
+- `third/*_pass1〜3.txt`：答えを見ていない Claude Opus の読み手3人が、f. 104r の18〜24行目と f. 120 を、行の画像・Burford 氏の見本表・記号の名前と形の説明だけから別々に読んだもの（2026-10-20）。多数決は `third/*_vote.txt`（[docs/METHOD.md](docs/METHOD.md) の「3人の読み手の多数決」）。
 
 ## 方法の手本
 - Harumi-Matsuba, *matignon1586-public*（同じ Cipher-2 の書簡 BnF fr. 15572 ff. 218–219 の読み）

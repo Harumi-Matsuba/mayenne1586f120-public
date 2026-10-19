@@ -6,8 +6,8 @@ A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 
 
 ## Status (20 October 2026)
 - **A reading of the whole letter** (meeting all the numerical conditions under "Basis" below). Thirteen kinds of signs (16 places) have no value, and some short stretches are not read ([docs/READING.en.md](docs/READING.en.md), [docs/OPEN.en.md](docs/OPEN.en.md)). The sender and the date are not known.
-  - Basis (the conditions under our publishing rules for calling a reading "whole"): control 0 / 1000. Agreement of values between the first transcription and the independent second (Codex, two runs): the lower is 90.7% (condition: 85% or more). Share of signs with a value, including inferred: 98.5% (95% or more). Sign accuracy in the calibration, by the same way of reading as the published transcription (one Opus reader decoding with the key while reading): 90.5% (90% or more).
-- **Relation to prior work**: Tomokiyo lists f. 120 as a Cipher-2 letter, « Endorsement illegible (to me). Undeciphered. » ([Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm), last modified 2023-09-23). The key is prior work (Tomokiyo's table, Brett Burford's key); the transcription and the reading were made in this repository. The check for prior work ([docs/PRIOR_CHECK.en.md](docs/PRIOR_CHECK.en.md), 20 October 2026) found nothing ("not found"). That check was made by the same session that read the letter; no check by a separate session has been made. Not finding something does not prove that nobody has read it.
+  - Basis (in brackets, the conditions set for calling a reading "whole"): control 0 / 1000. Agreement of values between the first transcription and the independent second (Codex, two runs): the lower is 90.7% (condition: 85% or more). Share of signs with a value, including inferred: 98.5% (95% or more). Sign accuracy in the calibration, by the same way of reading as the published transcription (one Opus reader decoding with the key while reading): 90.5% (90% or more).
+- **Relation to prior work**: Tomokiyo lists f. 120 as a Cipher-2 letter, « Endorsement illegible (to me). Undeciphered. » ([Cryptiana](https://cryptiana.web.fc2.com/code/henryiii.htm), last modified 2023-09-23). The key is prior work (Tomokiyo's table, Brett Burford's key); the transcription and the reading were made in this repository. The check for prior work ([docs/PRIOR_CHECK.en.md](docs/PRIOR_CHECK.en.md), 20 October 2026) found nothing ("not found"). That check was made by the same reader that read the letter (Claude Opus 5.5); no check by a separate reader who has not seen the reading has been made. Not finding something does not prove that nobody has read it.
 - **No person has checked the transcription.** It was read from the images by AI. Agreement between AI readings is not a substitute for a human check.
 - **Figures** (details in [docs/METHOD.en.md](docs/METHOD.en.md)):
   | Item | Result |
@@ -35,9 +35,9 @@ A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 
   - The calibration was taken again by the same way of reading as the published transcription (one Opus reader decoding with the key), on the seven lines of f. 104r, without the answer. Sign accuracy: 90.5%.
   - The sign after mil has three loops (ooo) and is a different sign from the two-loop sign (oo) in r l. 9, as seen on the image. ooo is read as escus by inference. Signs with no value: 13 kinds, 19 places → 13 kinds, 16 places; share with a value (also inferred): 98.3% → 98.5%.
 - 20 October 2026 (check for prior work)
-  - docs/PRIOR_CHECK.en.md (and Japanese) added. Category: not found. Made by the same session that read the letter.
-- 20 October 2026 (revision for the amended publishing rules)
-  - Following "correct only where the image confirms it", the nine places corrected after the vote were re-checked on the image: seven were confirmed, and two (v c05, v c07) could not be confirmed and were returned to the first reading. Share with a value unchanged (88.5% table only, 98.3% also inferred).
+  - docs/PRIOR_CHECK.en.md (and Japanese) added. Category: not found. Made by the same reader that read the letter.
+- 20 October 2026 (corrections limited to image-confirmed places; independent second transcription by Codex)
+  - Corrections were limited to places the image confirms: the nine places corrected after the vote were re-checked on the image: seven were confirmed, and two (v c05, v c07) could not be confirmed and were returned to the first reading. Share with a value unchanged (88.5% table only, 98.3% also inferred).
   - After that, OpenAI's Codex read both pages independently without seeing the first (`codex/`). Agreement of values with the first: 93.2% recto, 90.7% verso. The first was not corrected from this comparison.
   - Version numbers and CITATION.cff removed.
 - 20 October 2026 (revision after the three-reader vote, commit 8f35df6)
@@ -45,7 +45,7 @@ A reading of an undated cipher letter of unknown sender, BnF Français 15573 f. 
   - The 23 places where all three readers agreed on a value different from the first transcription were looked at on the image and in context, and 9 were corrected (« qu'il souffre ne soit a desseing », « les efects », « je vous puis dire », « s[en] aler », « qu'il saura ce que », etc.; two of them were later returned because the image could not confirm them). Sign count 1,103 → 1,101; share with a value (also inferred) unchanged at 98.3%.
   - Sign accuracy can be counted as Burford does (`src/calib.py --lenient`).
 - 20 October 2026 (revision after the calibration and the second transcription, commit 441b3e9)
-  - Calibration (another session, seven lines of f. 104r) added; the character reference checked on the image (« qui reste icy » → « qui restent icy »). Blind letter agreement: 70.6%.
+  - Calibration (seven lines of f. 104r, by a separate reader who had not seen the reading of f. 120) added; the character reference checked on the image (« qui reste icy » → « qui restent icy »). Blind letter agreement: 70.6%.
   - Key revised after the calibration: the backslash-with-o sign is Burford's curl (pour), so it was renamed and the former curl renamed curlo (o); λ given q or x; the stroke-with-a-loop sign (pdot) identified with Tomokiyo's *puis*. Share with a value: table only 87.9% → 88.4%; also inferred 98.1% → 98.3%.
   - Independent second transcription (Claude Sonnet, `second/`) and its comparison (`src/compare2.py`).
   - English versions (docs/*.en.md, SOURCES.en.md, English column in key.tsv, English output of the scripts).
