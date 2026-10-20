@@ -27,7 +27,8 @@
 - `second/transcription2_f120r.txt`・`f120v.txt`：Anthropic の Claude Sonnet が、1回目の書き起こしを見ずに、画像の切り出しと Burford 氏の見本表、記号の名前と形の説明だけから読んだもの（2026-10-20）。読み手を変えた独立の読みとして、1回目と突き合わせた（[docs/METHOD.md](docs/METHOD.md)）。
 
 ## 独立の2回目の書き起こし（Codex）
-- `codex/transcription_codex_f120*.txt`：OpenAI の Codex CLI（codex-cli 0.163.0-alpha.10.2、既定のモデル）が、行をまっすぐにした画像・Burford 氏の見本表・`codex/PROMPT.md`（記号の名前と形の説明だけ）から読んだもの（2026-10-20、画像を1枚ずつ渡した3回目の実行）。`codex/run1_misaligned/`・`codex/run2_ls/` は、画像の渡し方に欠陥があり判定に使っていない回。どちらも1回目を直し終えた後に読ませ、この比較では1回目を直していない。
+- `codex/transcription_codex_f120*.txt`：OpenAI の Codex CLI（codex-cli 0.163.0-alpha.10.2、既定のモデル）が、行をまっすぐにした画像・Burford 氏の見本表・`codex/PROMPT.md`（記号の名前と形の説明だけ）から読んだもの（2026-10-20、画像での確かめで1回目を直した後に、画像を1枚ずつ渡した5回目の実行）。この比較では1回目を直していない。判定に使っていない回：`codex/run3_before_check/`（画像を1枚ずつ渡した3回目。この回との食い違いを画像で確かめて1回目を直した）、`codex/run1_misaligned/`・`codex/run2_ls/`（画像の渡し方に欠陥があった回）。
+- `check/`：1回目と Codex の3回目の実行の食い違い77か所を、Codex と Claude Sonnet に画像で判断させた問い・答え・判断の一覧（2026-10-20）。
 - `calib/transcription_f104r_l18-24_context.txt`：答えを見ていない Claude Opus の読み手が、公開した書き起こしと同じ読み方（鍵で解読しながら）で f. 104r の18〜24行目を読んだもの（2026-10-20）。
 
 ## 3人の読み手の書き起こし

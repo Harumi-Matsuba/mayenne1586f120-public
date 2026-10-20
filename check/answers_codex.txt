@@ -1,0 +1,77 @@
+Q1	A	Looped upper stroke and curved leg resemble R.
+Q2	B	Sloping stroke ends in the reference curl’s hooked foot.
+Q3	B	A separate 2 precedes the 6.
+Q4	B	The curved symbol is 6, following a separate 2.
+Q5	A	The horizontal cap covers three humps.
+Q6	B	The looped upright has a distinct baseline bar.
+Q7	B	The descending stroke ends in a hooked curl.
+Q8	A	An angular horizontal stroke meets an upright at the line’s start.
+Q9	B	The upper loop and lower sweeping base match 2u.
+Q10	A	Three joined loops are visible.
+Q11	A	A crossed upright stands between 4 and ooC.
+Q12	A	A large descending hooked stroke appears before tt.
+Q13	B	A separate 2 appears before 6.
+Q14	B	The arched symbol is 6, following a separate 2.
+Q15	A	The symbol has the broad, curved S shape.
+Q16	A	Three connected loops appear after q+.
+Q17	A	A long slanting stroke ends in a hooked curl.
+Q18	A	The h-like stroke has a horizontal bar.
+Q19	A	The symbol has a rounded S shape.
+Q20	B	The symbol has the crossed h-like form of Qh.
+Q21	A	Three connected loops are visible.
+Q22	A	The tall curved stroke has a bar and dot.
+Q23	A	Two uprights are crossed by a horizontal stroke.
+Q24	A	The low upright and rightward base match r.
+Q25	B	The angular descending tail matches z9.
+Q26	A	Two looped uprights share a long horizontal crossbar.
+Q27	A	The symbol has stacked rounded curves matching Ee.
+Q28	A	The descending shape has rounded stacked curves.
+Q29	A	The cap spans two humps.
+Q30	B	A separate tall f stroke precedes the final compound shape.
+Q31	N	The ending contains separate strokes; neither proposed single-symbol reading is clear.
+Q32	B	A small upper loop sits above a sweeping base.
+Q33	A	A barred upright appears between 4 and ooC.
+Q34	B	The open crossing loops match 8s.
+Q35	A	The tall looped stroke has a bar and dot.
+Q36	B	The sloping stroke ends in a rightward hook.
+Q37	A	A cross with surrounding dots is clearly visible.
+Q38	A	The symbol has an h-like loop and horizontal bars.
+Q39	A	The lower loop and descending sweep match g.
+Q40	A	A crossed mark with surrounding dots appears before 9.
+Q41	B	The descending upright has a long horizontal crossbar.
+Q42	A	A small rounded a appears after 6.
+Q43	B	The sloping stroke has the reference curl’s hooked foot.
+Q44	B	The crossed looped upright resembles Qh.
+Q45	B	A broad baseline supports a central upright.
+Q46	B	The descending curved stroke ends in a hook.
+Q47	B	The horizontal stroke terminates at the upright.
+Q48	B	A narrow curved stroke follows f2.
+Q49	A	Three humps hang below the horizontal cap.
+Q50	B	A small upper loop and broad lower sweep match 2u.
+Q51	B	The upper loop is separate from the sweeping base.
+Q52	A	A crossed double-loop symbol appears before y.
+Q53	B	The narrow upright has two small lobes matching B.
+Q54	A	A crossed angular numeral has a dot above it.
+Q55	A	The curved head and descending tail match 9.
+Q56	B	The upright has a small loop and curled foot.
+Q57	B	The upright has two lobes rather than a flat top.
+Q58	B	A separate crossed descending stroke precedes qx.
+Q59	A	The main symbol has a loop and rightward crossing strokes.
+Q60	B	A separate tall h-like symbol appears before f.
+Q61	A	A large slanting hooked stroke begins the line.
+Q62	B	The upper loop and lower sweeping base match 2u.
+Q63	A	A small curved upright appears between r and 4.
+Q64	B	The open crossed loops match 8s.
+Q65	A	The slender looped upright lacks a clear baseline bar.
+Q66	A	The narrow sinuous stroke matches ls.
+Q67	B	A separate 2 precedes 6.
+Q68	B	A separate 6 follows the initial 2.
+Q69	N	Two separate symbols, 2 and 6, are visible.
+Q70	B	The upright has two small lobes matching B.
+Q71	B	The rounded stroke curls downward like d.
+Q72	B	The small upright and baseline match r.
+Q73	B	A separate 2 appears before 6.
+Q74	B	The arched symbol is 6, following a separate 2.
+Q75	A	A crossed x-shaped symbol appears before dbar.
+Q76	A	A separate double-loop symbol appears before the following oo.
+Q77	A	A small distinct mark appears between 4t and R.

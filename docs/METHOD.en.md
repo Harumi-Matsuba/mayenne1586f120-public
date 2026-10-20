@@ -13,34 +13,34 @@
 ### Share of signs with a value
 | Page | Signs | Table signs only | Table + Burford's alignments | Also inferred |
 |---|---|---|---|---|
-| f. 120r | 885 | 789 (89.2%) | 856 (96.7%) | 872 (98.5%) |
-| f. 120v | 216 | 185 (85.6%) | 211 (97.7%) | 213 (98.6%) |
-| Total | 1,101 | 974 (88.5%) | 1,067 (96.9%) | 1,085 (98.5%) |
+| f. 120r | 885 | 787 (88.9%) | 856 (96.7%) | 874 (98.8%) |
+| f. 120v | 218 | 186 (85.3%) | 213 (97.7%) | 214 (98.2%) |
+| Total | 1,103 | 973 (88.2%) | 1,069 (96.9%) | 1,088 (98.6%) |
 
-Signs with two values, such as f (`i|s`), are counted as having a value. In the first reading (commit 6982c5d) the totals were 970 (87.9%) / 1,064 (96.5%) / 1,082 (98.1%), after the revision following the calibration and the second transcription (441b3e9) 975 (88.4%) / 1,069 (96.9%) / 1,084 (98.3%) (two signs were removed in the revision after the three-reader vote, so the count went from 1,103 to 1,101). Before the three-loop sign was taken as ooo = escus (inferred), the total including inferred values was 1,082 (98.3%).
+Signs with two values, such as f (`i|s`), are counted as having a value. In the first reading (commit 6982c5d) the totals were 970 (87.9%) / 1,064 (96.5%) / 1,082 (98.1%), after the revision following the calibration and the second transcription (441b3e9) 975 (88.4%) / 1,069 (96.9%) / 1,084 (98.3%) (two signs were removed in the revision after the three-reader vote, so the count went from 1,103 to 1,101). Before the three-loop sign was taken as ooo = escus (inferred), the total including inferred values was 1,082 (98.3%). Before the image check (Record of checks 3) the totals were 974 (88.5%) / 1,067 (96.9%) / 1,085 (98.5%) of 1,101 signs.
 
 ### Control with shuffled keys (both pages, 1,000 times each)
 The same transcription was decoded with keys in which the values of the letter signs were swapped among themselves, and the French-likeness was compared with that of the real key. French-likeness is the mean log-likelihood of letter trigrams (built from the top 50,000 French words of `wordfreq`, with j→i and v→u). Word signs and signs with two values are not scored.
 
 | Transcription | Condition | Signs scored | Real key | Shuffled keys (min / median / max) | Shuffled ≥ real |
 |---|---|---|---|---|---|
-| First (revised) | Table signs only | 751 | −2.752 | −5.611 / −4.834 / −3.910 | 0 / 1000 |
-| First (revised) | Table + Burford | 830 | −2.761 | −5.663 / −4.974 / −4.109 | 0 / 1000 |
-| First (revised) | Also inferred | 841 | −2.775 | −5.698 / −4.992 / −4.235 | 0 / 1000 |
-| Independent second (Codex, third run; see "Independent second transcription") | Table signs only | 700 | −2.851 | −5.675 / −4.732 / −3.805 | 0 / 1000 |
-| Independent second (Codex, third run) | Table + Burford | 829 | −2.808 | −5.623 / −4.953 / −4.170 | 0 / 1000 |
-| Independent second (Codex, third run) | Also inferred | 835 | −2.819 | −5.618 / −4.950 / −4.093 | 0 / 1000 |
+| First (revised) | Table signs only | 750 | −2.720 | −5.595 / −4.829 / −3.890 | 0 / 1000 |
+| First (revised) | Table + Burford | 832 | −2.750 | −5.645 / −4.974 / −4.136 | 0 / 1000 |
+| First (revised) | Also inferred | 843 | −2.767 | −5.692 / −4.990 / −4.221 | 0 / 1000 |
+| Independent second (Codex, fifth run; see "Independent second transcription") | Table signs only | 709 | −2.979 | −5.609 / −4.738 / −3.896 | 0 / 1000 |
+| Independent second (Codex, fifth run) | Table + Burford | 846 | −2.878 | −5.721 / −4.982 / −4.199 | 0 / 1000 |
+| Independent second (Codex, fifth run) | Also inferred | 851 | −2.873 | −5.763 / −4.970 / −4.082 | 0 / 1000 |
 
 This shows only that the key's values produce text far closer to French than chance assignments do; it does not show that each sign is read correctly. In the first transcription some look-alike signs were chosen by context, which favours the real key. The second transcription (Sonnet) and the three-reader vote (Opus) were read by shape only and have no context bias. The vote's real-key score is about the same as that of the context-chosen first transcription.
 
 ### Values inferred in this letter
 | Sign | Value | Times | Evidence |
 |---|---|---|---|
-| Lp (ℓ-shape) | i | 5 | n'y a (r c02), Guise (r c10), irai (r c24). Only in r c04 does p fit (ra[p]portent) |
+| Lp (ℓ-shape) | i | 4 | n'y a (r c02), Guise (r c10), irai (r c24). The one place in r c04 was corrected to Lbar (p) in the image check (raportent) |
 | curlo (stroke whose foot curls right) | o | 5 | auons (r c25), corps (r c27), offres (r c26), souffr- (r c03). Named curl in our first transcription |
 | nous (gg struck through) | nous | 3 | que nous somes (r c12–13), mais nous somes (r c26), qui nous le (r c29) |
 | 2c (2 with a swirl) | m | 1 | initial of a name (r c22, [M]ontablaye?) |
-| qx (q with x) | le | 1 | [le]urs estrangers (v c02). The second transcription read r |
+| hsb (ʃ with a bar and a dot) | nous | 2 | cent cinq mil escus ne [nous] sauroient relever (r c14), ce que l'on m'en dira. [Nous] avons de ce soir icy (r c24–25). The Opus vote also read r c14 as nous. The shape is close to Tomokiyo's nous but not confirmed to be the same |
 | ooo (three loops in a row) | escus | 3 | trente mil [escus] en or (r c08), cinq mil [escus] pour venir icy (r c11), cent cinq mil [escus] ne … sauroient relever (r c14). At first given the same name as the two-loop sign (oo) in r c09; the image shows a different shape. Two independent readers also noted "three loops" |
 
 ### Values revised after the calibration and the second transcription
@@ -101,7 +101,7 @@ Signs also named from Tomokiyo's table: dsi+ (ꝺ with a cross) = c, xd (u-shape
 A key value of the first (pdot = puis) was revised after looking at differences with this transcription, so this comparison is not called independent. The independent second transcription is "Independent second transcription (Codex)" below.
 - Another AI (Anthropic's Claude Sonnet) was given the same image tiles (two lines, left and right halves), Burford's reference sheet, and a list of sign names with descriptions of shape only (no values, plaintext or evidence words), and transcribed by shape only, without seeing the first transcription, the key, the decoded text or the notes (`second/transcription2_f120r.txt`, `f120v.txt`). Turning signs into plaintext was forbidden. Its list of names was the one before renaming, so for comparison bslash→curl and curl→curlo were applied (`second/transcription2_f120_all.txt`).
 - The second reader's own report: only two places were enlarged; the rest was read on the tiles at their own size. About a fifth of the signs (226) were marked as uncertain.
-- Comparison with the first (`src/compare2.py`; against the first transcription before the three-reader vote. Against the revised one (after the ooo renaming): recto 81.4% / 87.7%, verso 79.2% / 87.5%):
+- Comparison with the first (`src/compare2.py`; against the first transcription before the three-reader vote. Against the current first transcription (after the image check): recto 81.0% / 87.5%, verso 80.3% / 88.5%):
   | Page | Agreement of sign names | Agreement of values (different names with the same value count as agreeing) |
   |---|---|---|
   | f. 120r | 81.4% (887 signs, edit distance 165) | 87.7% (edit distance 109) |
@@ -124,7 +124,7 @@ The first transcription was corrected after looking at differences with the vote
   | **Vote of the three** | **90.5%** | **95.6%** | 81.8% | 74.2% |
 
   Burford's figures on the same lines: 91.1–93.5% for single passes, 92.9% for a vote of three (either name accepted for look-alikes). Of the 13 errors left in the vote (reference alternatives only), 8 are differences of naming (the reference's 24 vs .24., : vs dots, ooC vs phi) and 5 are misreadings that change the value (z9→9, rC→Lp, w→w2, rC missing, x?|uC|y→9). Letter agreement is lower than sign accuracy because of code signs with no value (place names etc.) and spelling differences between cipher and decipherment (see "Calibration").
-- **Comparison on f. 120**: agreement of values between the revised first transcription and the vote is 93.1% recto (885 signs, edit distance 61) and 87.0% verso (216 signs, edit distance 28), higher than for the Sonnet transcription (87–88%).
+- **Comparison on f. 120**: agreement of values between the current first transcription (after the image check) and the vote is 93.1% recto (885 signs, edit distance 61) and 88.1% verso (218 signs, edit distance 26), higher than for the Sonnet transcription (87–88%).
 - **Places corrected after the vote**: there were 23 places where all three readers agreed on a value different from the first transcription. Each was looked at on the image, and the following 7, confirmed on the image, were changed to the readers' reading (at first 9 were changed, including v c05 and v c07; on re-checking under the rule "correct only where the image confirms it", those two were returned to the first reading):
   | Where | First | Corrected | Reason |
   |---|---|---|---|
@@ -140,25 +140,30 @@ The first transcription was corrected after looking at differences with the vote
 
 - Why the vote was not made the main transcription: in many places the vote breaks words that read in the first transcription (« plus de dix iours » becomes « de di[?] iour[?] », « cardinal » becomes « mn…nal », the curlo of « auons » and « corps », etc.). So the first transcription remains the main one, and only the places where all three agreed against it were checked on the image and corrected.
 
+## Record of checks 3: image check of the differences with Codex (20 October 2026)
+- The 77 differences of value between the first transcription and Codex's independent reading (the third run in "Independent second transcription" below) were judged by shape by Codex and Claude Sonnet, from the straightened line images and the reference sheet only (`check/`). Where both models said the shape is Codex's and the difference is a misread shape, 9 places were corrected: Lp→Lbar in r c04 (raportent), 8→8s in r c24 (l'on m'en dira), 9→q+ in r c26, 8s→B in r c30, delta→curlo in r c31, q+ added at the start of v c02 and hs between r and f (estrangers), 8→8s in v c03, x→r in v c07 (efects). The value of qx was cleared.
+- Ten places where both said Codex's shape were not changed: pairs where the value of the near name on the sheet does not fit the context (curlo/curl, 2/2u, 6b/B, 9/d; [OPEN.en.md](OPEN.en.md)). Places where the two models disagreed or one could not decide (28), or both said the first transcription's shape (30), were not changed. The list of decisions is `check/DECISIONS.md`.
+- Because corrections were made from this check, the comparison with Codex's third run used here is not called independent. A new independent reading was taken after the corrections (see "Independent second transcription").
+
 ## Independent second transcription (OpenAI's Codex, 20 October 2026)
-- Run after the first transcription had been corrected from the checks above, with OpenAI's Codex CLI (codex-cli 0.163.0-alpha.10.2 bundled with the ChatGPT app, default model; no model name appears in the configuration or the run record). `codex exec --ephemeral -s read-only` was run from an empty folder, given only the line images (each line in left and right halves, 78 images), Burford's reference sheet and an English prompt (`codex/PROMPT.md`: sign names and shape descriptions only; no values, first reading, key or plaintext).
-- **Run used for the judgement (third run, `codex/transcription_codex_*`)**: each line was straightened by following its baseline every 200 pixels and shifting columns up or down, then cut into left and right halves (all 39 strips checked by eye; the end of verso line 7 showing at the right of verso line 8 blanked). The images were passed one by one, each with `-i`. The run record contains only reconnection notices and the reply, with no command execution or file reading. Input was about 50,000 tokens, fewer than in the earlier two runs (about 270,000–300,000); the images may have been passed at a lower resolution (inference).
-- **Runs not used**:
-  - First run (`codex/run1_misaligned/`): some right halves were one line off, and the list of images was passed as a single string, so the images may not have been passed one by one.
-  - Second run (`codex/run2_ls/`): straightened images, but passed in the same way as the first run; the run record has a listing of the image folder (`ls`). Whether Codex opened images itself is not recorded, so it cannot be said that the images were passed correctly.
+- Read by OpenAI's Codex CLI (codex-cli 0.163.0-alpha.10.2 bundled with the ChatGPT app, default model; no model name appears in the configuration or the run record). `codex exec --ephemeral -s read-only` was run from an empty folder, given only straightened line images (each line in left and right halves, 78 images), Burford's reference sheet and an English prompt (`codex/PROMPT.md`: sign names and shape descriptions only; no values, first reading, key or plaintext).
+- **The run used for the judgement (fifth run, `codex/transcription_codex_*`)**: run after the first transcription had been corrected in "Record of checks 3" above, with each image passed with its own `-i`. The run record contains only the reply (apart from records of reconnecting), with no command execution or file reading.
+- **Runs not used for the judgement**:
+  - First run (`codex/run1_misaligned/`): some right halves were one line off; also the list of images was passed as a single string, so the images may not have been passed one by one.
+  - Second run (`codex/run2_ls/`): straightened images, but passed as in the first run; the run record has a listing of the image folder (`ls`).
+  - Third run (`codex/run3_before_check/`): images passed correctly one by one. The first transcription was corrected after checking the differences with this run on the image (Record of checks 3), so it is not used as an independent comparison.
+  - Fourth run: stopped before replying because of the ChatGPT usage limit (no transcription).
 - Agreement with the (revised) first transcription:
   | Run | Page | Sign names | Values (same-value names count as agreeing) |
   |---|---|---|---|
-  | third (used) | f. 120r | 86.2% (885 signs, edit distance 122) | 93.7% (edit distance 56) |
-  | third (used) | f. 120v | 83.3% (216 signs, edit distance 36) | 90.3% (edit distance 21) |
-  | second (not used) | f. 120r | 89.7% (edit distance 91) | 92.9% (edit distance 63) |
-  | second (not used) | f. 120v | 88.4% (edit distance 25) | 92.1% (edit distance 17) |
-  | first (not used) | f. 120r | 89.6% (edit distance 92) | 92.9% (edit distance 63) |
-  | first (not used) | f. 120v | 88.0% (edit distance 26) | 90.7% (edit distance 20) |
+  | fifth (used) | f. 120r | 83.8% (885 signs, edit distance 143) | 92.2% (edit distance 69) |
+  | fifth (used) | f. 120v | 82.1% (218 signs, edit distance 39) | 89.9% (edit distance 22) |
+  | third (used for the check before correcting) | f. 120r | 86.8% (edit distance 117) | 94.2% (edit distance 51) |
+  | third (used for the check before correcting) | f. 120v | 85.3% (edit distance 32) | 92.2% (edit distance 17) |
 
-  The judgement uses the lower value of the third run (values 90.3%). Including the two unused runs, the lowest value is still 90.3%. By name the third run is lower (83.3–86.2%), with many differences in the naming of look-alike signs.
-- The first transcription was not corrected from this comparison (that would make it no longer independent). Checking the differences is left in [OPEN.en.md](OPEN.en.md).
-- Decoded with the same key, the Codex transcription also gave 0 / 1000 in the control (table above). Its sign count is higher than the first's because descriptions in <…> are split into words.
+  The lower value of the fifth run (values, 89.9%) is used for the judgement. Agreement by name (83.8%, 82.1%) is lower than by value because of pairs whose near names on the sheet have the same value (: and dots, 4 and 2x, etc.) and pairs treated as a question of value (curlo/curl, 2/2u, etc.; [OPEN.en.md](OPEN.en.md)).
+- The first transcription was not corrected from this comparison.
+- Decoded with the same key, the Codex transcription also gave 0 / 1000 in the control (table above).
 
 ## Use of AI
 - The image transcription, the inferred values, the decipherment, the scripts and the documents were made by Anthropic's Claude (Claude Code, model Claude Opus 5.5). A person (the repository's maintainer) chose the target, saved the images and decided to publish.

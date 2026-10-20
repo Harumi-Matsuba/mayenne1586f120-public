@@ -95,7 +95,7 @@ thb	?	unknown	th に縦線を足した形（r 1行目の先頭だけ）	th with 
 7	?	unknown	数字の7（r 1行目）。Burford の見本表にあるが値なし	the figure 7 (r l. 1). On Burford's sheet, without a value
 Sbar	?	unknown	S に斜線（r 1行目）	S with a slash (r l. 1)
 dsi+	c	table	ꝺ の上に十字。Tomokiyo の c（Burford の dsi＝si とは別の記号として扱う）	ꝺ with a cross on top. Tomokiyo's c (kept apart from Burford's dsi = si)
-Lp	i	inferred	ℓ 形。n'y a（r 2行）、Guise（r 10行）、iray（r 24行）で i。Tomokiyo の表では p の位置にある形に似る	ℓ-shape. Reads i in n'y a (r l. 2), Guise (r l. 10), iray (r l. 24). Resembles the form at p in Tomokiyo's table
+Lp	i	inferred	ℓ 形。n'y a（r 2行）、Guise（r 10行）、iray（r 24行）で i。Tomokiyo の表では p の位置にある形に似る。r 4行の1か所は、画像での確かめ（Codex と Claude Sonnet）で Lbar（p）と直した	ℓ-shape. Reads i in n'y a (r l. 2), Guise (r l. 10), iray (r l. 24). Resembles the form at p in Tomokiyo's table. The one place in r l. 4 was corrected to Lbar (p) in the image check (Codex and Claude Sonnet)
 xd	x	table	点のある u 形（ꝍ）。Tomokiyo の x（1段目）。aux aduis（r 5行）、dix iours（r 8行）、deux（r 10行）、six（v 6行）	u-shape with a dot (ꝍ). Tomokiyo's x (row 1). aux aduis (r l. 5), dix iours (r l. 8), deux (r l. 10), six (v l. 6)
 w2	il	table	ϖ の山2つ。Tomokiyo の il	ϖ with two humps. Tomokiyo's il
 6b	f	table	б 形。Tomokiyo の f（2段目）。fondement（v 1行）、faire（v 6行）。Burford の B（s?）とは別扱い	б-shape. Tomokiyo's f (row 2). fondement (v l. 1), faire (v l. 6). Kept apart from Burford's B (s?)
@@ -104,13 +104,13 @@ oo	?	unknown	∞ 形（輪2つ）。r 9行の les [∞]voyer（en と読みた�
 ooo	escus	inferred	輪3つが横に並ぶ形（ꝏo）。mil の後に3回（r 8・11・14行）：trente mil [escus] en or、cinq mil [escus] pour venir icy、cent cinq mil [escus] ne … sauroient relever。3か所とも escus で通る。独立の読み手2人も「輪3つ」と記した	three loops in a row (ꝏo). Three times after mil (r ll. 8, 11, 14): trente mil [escus] en or, cinq mil [escus] pour venir icy, cent cinq mil [escus] ne … sauroient relever. escus fits all three. Two independent readers also noted "three loops"
 Esign	?	unknown	E 形（r 15行「que [E] est tout resolu」）。人名か称号の記号か	E-shape (r l. 15, que [E] est tout resolu). Perhaps a code sign for a person or a title
 nous	nous	inferred	gg に横線を通した形。que nous somes（r 12〜13行）、qui nous le（r 29行）。Tomokiyo の nous と同じ記号かは未確定	gg struck through. que nous somes (r ll. 12-13), qui nous le (r l. 29). Whether it is Tomokiyo's nous sign is not confirmed
-hsb	?	unknown	ʃ に横線と点（r 14行・r 24行末）	ʃ with a bar and a dot (r l. 14, end of r l. 24)
+hsb	nous	inferred	ʃ に横線と点（r 14行・r 24行末）。2か所とも nous で通る：cent cinq mil escus ne [nous] sauroient relever、ce que l'on m'en dira. [Nous] auons de ce soir icy …。Opus の読み手3人の多数決も r 14行のこの位置を nous の記号と読んだ。形は友清氏の表の nous（縦線に横線と f の鉤）に近いが、同じとは確かめていない。gg に横線の nous とは別の形	ʃ with a bar and a dot (r l. 14, end of r l. 24). Both places read with nous: cent cinq mil escus ne [nous] sauroient relever; ce que l'on m'en dira. [Nous] auons de ce soir icy …. The vote of three Opus readers also read this place in r l. 14 as the nous sign. The shape is close to Tomokiyo's nous (an upright with a bar and an f-hook) but not confirmed to be the same. A different shape from the struck-through gg (nous)
 Om	?	unknown	平たい Ω 形（r 17行「partir si [?] qu'il」）	flat Ω-shape (r l. 17, partir si [?] qu'il)
 invTl	?	unknown	⊏ 形（r 23行「je croy que [?] ne s'y trouuera pas」）	⊏-shape (r l. 23, je croy que [?] ne s'y trouuera pas)
 2c	m	inferred	2 に渦（r 22行の人名の頭、[M]ontablaye?）。Tomokiyo の m（2）の変形とみた	2 with a swirl (initial of a name in r l. 22, [M]ontablaye?). Taken as a variant of Tomokiyo's m (2)
 4d	?	unknown	4 に点（r 30行）	4 with a dot (r l. 30)
 .u.	?	unknown	点で挟んだ u（r 29行の頭）	u between dots (start of r l. 29)
-qx	le	inferred	q に x（v 2行「[le]urs estrangers」）。1か所だけ	q with x (v l. 2, [le]urs estrangers). One place only
+qx	?	unknown	q に x の形（v 2行）。最初は1つの記号として [le]urs と読んで le と推定していたが、画像での確かめ（Codex と Claude Sonnet）で、前に q+ が別の記号として1つあると分かったので、値を空けた。2つのモデルの答えは qx と r に割れた	q with x (v l. 2). At first taken as one sign and inferred as le in [le]urs; the image check (Codex and Claude Sonnet) found a separate q+ before it, so the value was cleared. The two models disagreed between qx and r
 Dsign	?	unknown	大きな D に点（v 8行末）	large D with a dot (end of v l. 8)
 .30.	?	unknown	数字30（r 5行）	the number 30 (r l. 5)
 .15.	?	unknown	数字15（r 28行）	the number 15 (r l. 28)

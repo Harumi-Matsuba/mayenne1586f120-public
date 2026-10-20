@@ -2,18 +2,18 @@
 
 [日本語](OPEN.md)
 
-## Signs with no value (13 kinds, 16 places, among the 1,101 signs of the two pages)
+## Signs with no value (13 kinds, 15 places, among the 1,103 signs of the two pages)
 Signs that get no value in `src/decode.py`. Line numbers are those of `data/transcription_f120_all.txt` (c1NN = f. 120r line NN, c2NN = f. 120v line NN). "Second" is the reading of the Claude Sonnet transcription (`second/`).
 
 | Sign | Times | Where | Context, candidates |
 |---|---|---|---|
 | oo (∞-shape, two loops) | 3 | c109, c208 (2) | c109: pour les [∞]voyer (one would want en). c208: the last two signs. A different shape from the three-loop sign after mil (ooo), which is read as escus by inference |
-| hsb (ʃ with a bar and a dot) | 2 | c114, c124 | ne [?] sauroient relever; ce que l'on en dira [?] |
 | thb, 7, Sbar | 1 each | c101 | opening « [thb] a [7] u [Sbar] je vous asseure ». Perhaps an address (Monsieur or the like). The second reader read thb as tt (les) |
-| 30 | 1 | c105 | ne se ra[p]portent [30] aux advis |
+| 30 | 1 | c105 | ne se raportent [30] aux advis. A negative word fits; point would read (31 is pas in Tomokiyo's table). One place only; 30 also has no value in Burford's f. 385 |
 | Esign (E-shape) | 1 | c115 | que [E] est tout resolu (a code sign for a person or a title?) |
 | Om (flat Ω-shape) | 1 | c117 | partir si [?] qu'il saura (tost?) |
-| invTl (⊏-shape) | 1 | c123 | je croy que [?] ne s'y trouvera pas (on, nul or the like?). The second reader read it as ⊣ (plus) |
+| qx (q with x) | 1 | c202 | l[?]urs estrangers (e for leurs). The image check found a separate q+ before it, so the earlier inference (qx = le) was dropped. Codex and Claude Sonnet disagreed between qx and r |
+| invTl (⊏-shape) | 1 | c123 | je croy que [?] ne s'y trouvera pas (on, nul or the like?). The second reader read it as ⊣ (plus). Burford notes that on f. 385r of the same volume an inverted T (⊥) fits « vostre majesté » in all four places (his method/other-letters.md). « je croy que vostre majesté ne s'y trouvera pas » reads, but on the image the ⊏-shape is a horizontal stroke with a « [ » on its right, unlike the sheet's ⊥ |
 | 15 | 1 | c128 | profit de n[?] [15] … tombé |
 | .u. (u between dots) | 1 | c129 | un[e] [?] du secretaire La Marsilière (a letter or the like?) |
 | 4d (4 with a dot) | 1 | c130 | des affaires de [?]spe… |
@@ -40,7 +40,12 @@ Signs that get no value in `src/decode.py`. Line numbers are those of `data/tran
 - curl (backslash with o) and curlo (stroke whose foot curls right): in the first transcription the backslash-shape was named bslash and the curling shape curl. The calibration showed the backslash-shape to be Burford's curl (pour), and the names were changed. The curling shape (o) is taken to be a sign not on Burford's sheet, but it was not compared with the sheet again.
 - lambda (λ): q in Tomokiyo's table; x in Burford's key and in the calibration. In this letter it can be read both q (qu'une, r c09) and x (d[i]x iours, r c22).
 - Pairs on which the Sonnet transcription used for checking differs most: ls and S (24 places), r and xbar (18), 8s and 8 (8). The first transcription chose by context in all of them.
-- Differences from the independent second transcription (Codex, the run used; edit distance of values 56 recto, 21 verso) have not yet been looked at on the image.
+- Differences from the independent second transcription (Codex, fifth run; edit distance of values 69 recto, 22 verso) have not been looked at (looking and correcting would make this comparison no longer independent). The 77 differences with Codex's third run before it were checked on the image and 9 places corrected (check/DECISIONS.md).
+- Pairs where both models in the image check (Codex and Claude Sonnet) said the shape is that of another name on the sheet, but that name's value does not fit the context, so nothing was changed (check/DECISIONS.md):
+  - curlo taken as the sheet's curl (4 places). Burford's key has curl = pour. In f. 120, reading the backslash-with-o shape (curl) as pour and the curling shape (curlo) as o fits (auons, corps, offres, souffre). Which of the two shapes the sheet's curl examples are has not been checked.
+  - 2 (m) taken as the shape of 2u (de in Burford's key) (5 places): mil, estime, les mains, temps, etc. all read with m.
+  - 6b (f) taken as B (s in Burford's key, from one or two places) (v c01): fondement reads with f.
+  - 9 (d) taken as d (g in Burford's key) (v c07): grands reads with d.
 
 ## Not checked
 - Sender and date. Unchecked inferences:
@@ -49,5 +54,5 @@ Signs that get no value in `src/decode.py`. Line numbers are those of `data/tran
   - How to check: compare paper, hand and folds with ff. 119 and 121; the dates of Biron's letters from f. 112 and of f. 192 (an intercepted letter to a secretary of the King of Navarre's chamber); printed collections (letters to Villeroy etc.). Two web searches (20 October 2026) found nothing.
 - Persons: who Bilart, [M]ontablaye and La Marsilière are. La Marsilière appears in another document in the ledger as an envoy of the King of Navarre (« le Sr de Vesin de la Marsilliere »), and the catalogue describes f. 192 of the same volume as an intercepted letter to a secretary of the King of Navarre's chamber ("Notes" in [PRIOR_CHECK.en.md](PRIOR_CHECK.en.md)). Neither was checked.
 - The endorsement that Tomokiyo calls « illegible » is not on views 246–247 (perhaps on another leaf).
-- Accuracy of the transcription: on seven lines of f. 104r, sign accuracy by the same way of reading as the published transcription (one Opus reader decoding with the key) is 90.5% (95.6% counting same-value names as matches); one shape-only pass gave 86.9% (89.1%) and 70.6% letter agreement. The accuracy on f. 120 itself was not measured. Agreement of values with the independent second transcription (Codex, the run with the images passed correctly) on f. 120: 93.7% recto, 90.3% verso ([METHOD.en.md](METHOD.en.md)).
+- Accuracy of the transcription: on seven lines of f. 104r, sign accuracy by the same way of reading as the published transcription (one Opus reader decoding with the key) is 90.5% (95.6% counting same-value names as matches); one shape-only pass gave 86.9% (89.1%) and 70.6% letter agreement. The accuracy on f. 120 itself was not measured. Agreement of values with the independent second transcription (Codex, fifth run) on f. 120: 92.2% recto, 89.9% verso ([METHOD.en.md](METHOD.en.md)).
 - The confusions of # and 4t, and of 2o and "a 0", found in the calibration were not re-examined in the transcription of f. 120.

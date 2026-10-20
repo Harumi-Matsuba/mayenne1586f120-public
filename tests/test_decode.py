@@ -49,9 +49,9 @@ class TestDecode(unittest.TestCase):
 
     def test_coverage_numbers(self):
         # README・docs/METHOD.md に書いた割合
-        self.assertIn('974 個（88.5%）', run_decode('f120_all', '--table-only'))
-        self.assertIn('1067 個（96.9%）', run_decode('f120_all', '--no-inferred'))
-        self.assertIn('1085 個（98.5%）', run_decode('f120_all'))
+        self.assertIn('973 個（88.2%）', run_decode('f120_all', '--table-only'))
+        self.assertIn('1069 個（96.9%）', run_decode('f120_all', '--no-inferred'))
+        self.assertIn('1088 個（98.6%）', run_decode('f120_all'))
 
     def test_revised_values(self):
         # 較正と2回目の書き起こしを受けて直した値
@@ -72,7 +72,7 @@ class TestDecode(unittest.TestCase):
 class TestSecond(unittest.TestCase):
     def test_agreement_numbers(self):
         # docs/METHOD.md の「2回目の書き起こし」に書いた一致率
-        for page, names, values in [('f120r', '81.4%', '87.7%'), ('f120v', '79.2%', '87.5%')]:
+        for page, names, values in [('f120r', '81.0%', '87.5%'), ('f120v', '80.3%', '88.5%')]:
             out = subprocess.run(
                 [sys.executable, os.path.join(ROOT, 'src', 'compare2.py'),
                  os.path.join(ROOT, 'data', f'transcription_{page}.txt'),
@@ -101,7 +101,7 @@ class TestCodex(unittest.TestCase):
         vote = importlib.util.module_from_spec(spec); spec.loader.exec_module(vote)
         key, _ = load_key(KEY)
         V = lambda t: key.get(t, '[' + t + ']')
-        for page, want in [('f120r', 0.937), ('f120v', 0.903)]:
+        for page, want in [('f120r', 0.922), ('f120v', 0.899)]:
             A = vote.load(os.path.join(ROOT, 'data', f'transcription_{page}.txt'))
             B = vote.load(os.path.join(ROOT, 'codex', f'transcription_codex_{page}.txt'))
             tot = dist = 0

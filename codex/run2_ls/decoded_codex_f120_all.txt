@@ -30,12 +30,12 @@ c129 [?]dusecretaire LA marsil(i|s)ere QUI le
 c130 sort NOUS ticuliere MENT DES afa(i|s)res DE uspe
 c131 ale MENT DES sinances ET semble QUI l(i|s)facent
 c201 PLUS DE son DE MENT suripaurete QUE sur LA uenue
-c202 LE urs EST ranger(i|s) QUI ldict EST reremise
+c202 [?]urs EST ranger(i|s) QUI ldict EST reremise
 c203 [?][?][?][?]te DE p(i|s)lonne(s|z)auroitcom(i|s)r EN drel(q|x)
 c204 tort QUE LA rupture DE c EST e ARMEE faict(a|n)user
 c205 (i|s)cedu[?] CAR IL EST certain QUE SI elesub SI isto
 c206 it ENCORE six(i|s)epmaines QUE lepouoitsaire ICY
 c207 DE grandsefect(i|s) MAIS [?]e(a|n)em(i|s)snefuren
 c208 (i|s)a MAIS SI EST o(a|n)es[?][?][?]y[?][?][?][?][?]ee[?][?][?]h
-# 記号 1137 個のうち、表・Burford・推定を合わせて値が付いたもの 1066 個（93.8%）
-# 1066 of 1137 signs (93.8%) given a value by the table, Burford and inferred values
+# 記号 1137 個のうち、表・Burford・推定を合わせて値が付いたもの 1065 個（93.7%）
+# 1065 of 1137 signs (93.7%) given a value by the table, Burford and inferred values

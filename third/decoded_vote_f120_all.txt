@@ -1,27 +1,27 @@
 c101 e[?][?]u[?] IE VOUS a(s|ss)eure QUE ceprince EST PLUS e(a|n)uye
 c102 ET fa(s|z)che QUE (i|s)a QUI ET niaordre DE ledi(s|ss)ua DE rde
 c103 tro(i|s)re QUE LA nece(s|ss)ite QUI ls POUR ufrene(s|z)oita DES
-c104 [?]e(i|s)gmn IL tonsi DE re QUE LES efectsne(s|z)erai POUR
+c104 NOUS e(i|s)gmn IL tonsi DE re QUE LES efectsne(s|z)erai POUR
 c105 rtent[?]au[?]aduis QUE lonsado(a|n)e(s|z)letre
 c106 sor(i|s)erbilartescr(i|s)uit PAR LA DE rn(i|s)ese
 c107 DE pescheduu(i|s)ngtundu PAS se QUI lyauo(i|s)t
-c108 DE di[?](i|s)our[?] QUI lauoittr EN temil EN or
+c108 DE di[?](i|s)our NOUS QUI lauoittr EN temil EN or
 c109 ET QUI lna EN doit(q|x)unen DE MENT POUR LES [?]uoyerle
 c110 mnd(i|s)nal DE guiseescritduduu[?] QUE ce(s|z)
 c111 (i|s)our PAR toientc(i|s)nqmil POUR uenir ICY ET
-c112 [?] FOIS IL n EN EST ENCORE aucuneno MAIS IE VOUS PUIS dire QUE NOUS
+c112 NOUS FOIS IL n EN EST ENCORE aucuneno MAIS IE VOUS PUIS dire QUE NOUS
 c113 somes EN tel EST at QUE non PAS cinqt(i|s)l QUI ce
 c114 ntc(i|s)nqmilne NOUS sauroientreleue
 c115 r ET aur EST e QUE [?] EST rresolu QUE l QUE en DE MENT ET coniu
-c116 rat(i|s)on QUE VOUS PUIS [?]iesfa(i|s)re DE (s|z) EN aler ET
+c116 rat(i|s)on QUE VOUS PUIS NOUS iesfa(i|s)re DE (s|z) EN aler ET
 c117 PAR tir SI [?] QUI lsaurace QUE do(i|s)uent DE uenir
 c118 LES EST ranger(i|s) QUI lnefault PLUS au(s|ss)(i|s)esper
 c119 er DE pouoirretenirlemar DE birona
-c120 escrit QUE seretirantche[?] EST seroit BIEN
+c120 escrit QUE seretirantche NOUS EST seroit BIEN
 c121 ayse DE leueoir EN PAS ant ET EST ipe QUE dan
 c122 d(q|x)(i|s)ours EST lsneuemontablaye IE cro
 c123 y QUE [?]ne SI trouera PAS ET IE suin ENCORE (i|s)ncerta
-c124 in SI IE ira LA (i|s)ae EN drayce QUE lont EN d(i|s)ra[?]
+c124 in SI IE ira LA (i|s)ae EN drayce QUE lont EN d(i|s)ra NOUS
 c125 au POUR ns DE ceno(i|s)r ICY LES DE putes DE QUI suie
 c126 entapler ET fontus POUR fres MAIS somes
 c127 unc POUR rp(i|s) SI DE bile QUI ne PEU tafairepro
@@ -30,12 +30,12 @@ c129 [?]dusecretaire LA marsil(i|s)ere QUI NOUS le
 c130 SI o TOUT t PAR ticuliere MENT DES afa(i|s)res DE [?]spe
 c131 ade MENT DES SI inaces ET semble QUI l(i|s)facent
 c201 a DE son DE MENT sur[?]pauretu QUE sur LA uenue
-c202 LE urs EST ranger(i|s) QUI ldict EST re ENCORE remise
+c202 [?]urs EST ranger(i|s) QUI ldict EST re ENCORE remise
 c203 POUR utemp(i|s)lonneuaucoitcompr EN drele
 c204 tort QUE LA ruituru DE c EST efaict[?]user
 c205 (i|s)cedu(a|n) CAR IL EST certain QUE SI elesub SI isto
 c206 it ENCORE six(i|s)epmaines QUE lepouoitsaire ICY
 c207 DE gran SI sefectn CAR LES eem(i|s)snefuren
 c208 (i|s)a MAIS SI EST oesa[?] QUI [?]ee[?]h
-# 記号 1085 個のうち、表・Burford・推定を合わせて値が付いたもの 1060 個（97.7%）
-# 1060 of 1085 signs (97.7%) given a value by the table, Burford and inferred values
+# 記号 1085 個のうち、表・Burford・推定を合わせて値が付いたもの 1065 個（98.2%）
+# 1065 of 1085 signs (98.2%) given a value by the table, Burford and inferred values
